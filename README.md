@@ -4,7 +4,7 @@
   🤖 Universal Application Automation Platform with AI Agent Integration
   <br/>
   <br/>
-  <a href="https://wanghaisheng.github.io/openappcli-website/" target="_blank">View Live Website</a>
+  <a href="https://openappcli.borninsea.com/" target="_blank">View Live Website</a>
   •
   <a href="https://github.com/wanghaisheng/openappcli-website" target="_blank">GitHub Repository</a>
 </p>
@@ -230,7 +230,7 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 
 ## 🔗 Links
 
-- **Live Website**: https://wanghaisheng.github.io/openappcli-website/
+- **Live Website**: https://openappcli.borninsea.com/
 - **GitHub Repository**: https://github.com/wanghaisheng/openappcli-website
 - **OpenAppCLI Platform**: https://openappcli.com
 - **Documentation**: https://docs.openappcli.com
