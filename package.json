@@ -20,7 +20,8 @@
 		"astro": "^6.0.8",
 		"astro-icon": "^1.1.5",
 		"autoprefixer": "^10.4.24",
-		"less": "^4.5.1"
+		"less": "^4.5.1",
+		"sharp": "^0.33.0"
 	},
 	"devDependencies": {
 		"slugify": "^1.6.8"
