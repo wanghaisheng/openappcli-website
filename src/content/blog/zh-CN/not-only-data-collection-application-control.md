@@ -4,7 +4,7 @@ description: "探索 OpenAppCLI 如何从单向数据提取转变为双向应用
 author: "OpenAppCLI 团队"
 date: 2025-11-28
 permalink: "not-only-data-collection-application-control"
-image: "@assets/images/blog/not-only-data-collection.svg"
+image: "@assets/images/blog/not-only-data-collection.jpg"
 imageAlt: "OpenAppCLI 应用控制架构图"
 mappingKey: "not-only-data-collection"
 category: "技术"

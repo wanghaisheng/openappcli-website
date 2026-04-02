@@ -12,7 +12,8 @@
 		"remove-dark-mode": "node scripts/remove-dark-mode.js",
 		"remove-decap": "node scripts/remove-decap.js",
 		"config-i18n": "node scripts/config-i18n.js",
-		"create-page": "node scripts/create-page.js"
+		"create-page": "node scripts/create-page.js",
+		"convert-svg-to-jpg": "node scripts/convert-svg-to-jpg.js"
 	},
 	"dependencies": {
 		"@astrojs/sitemap": "^3.7.2",

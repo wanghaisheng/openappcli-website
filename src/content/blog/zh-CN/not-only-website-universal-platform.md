@@ -4,7 +4,7 @@ description: "详细解释 OpenAppCLI 如何突破网站限制，实现真正的
 author: "OpenAppCLI 团队"
 date: 2025-12-01
 permalink: "not-only-website-universal-platform"
-image: "@assets/images/blog/not-only-website.svg"
+image: "@assets/images/blog/not-only-website.jpg"
 imageAlt: "OpenAppCLI 通用平台架构图"
 mappingKey: "not-only-website"
 category: "技术"

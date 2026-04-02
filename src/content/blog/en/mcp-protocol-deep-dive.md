@@ -4,7 +4,7 @@ description: "Comprehensive analysis of the Model Context Protocol (MCP) design,
 author: "OpenAppCLI Team"
 date: 2025-11-25
 permalink: "mcp-protocol-deep-dive"
-image: "@assets/images/blog/mcp-protocol.svg"
+image: "@assets/images/blog/mcp-protocol.jpg"
 imageAlt: "MCP protocol architecture diagram"
 mappingKey: "mcp-protocol"
 category: "technical"

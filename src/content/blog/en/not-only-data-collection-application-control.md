@@ -4,7 +4,7 @@ description: "Explore how OpenAppCLI transforms from one-way data extraction to 
 author: "OpenAppCLI Team"
 date: 2025-11-28
 permalink: "not-only-data-collection-application-control"
-image: "@assets/images/blog/not-only-data-collection.svg"
+image: "@assets/images/blog/not-only-data-collection.jpg"
 imageAlt: "OpenAppCLI application control architecture"
 mappingKey: "not-only-data-collection"
 category: "technical"

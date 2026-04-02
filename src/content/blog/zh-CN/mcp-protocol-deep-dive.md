@@ -4,7 +4,7 @@ description: "全面分析模型上下文协议（MCP）的设计、实现，以
 author: "OpenAppCLI 团队"
 date: 2025-11-25
 permalink: "mcp-protocol-deep-dive"
-image: "@assets/images/blog/mcp-protocol.svg"
+image: "@assets/images/blog/mcp-protocol.jpg"
 imageAlt: "MCP 协议架构图"
 mappingKey: "mcp-protocol"
 category: "技术"

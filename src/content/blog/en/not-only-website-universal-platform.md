@@ -4,7 +4,7 @@ description: "Detailed explanation of how OpenAppCLI breaks through website limi
 author: "OpenAppCLI Team"
 date: 2025-12-01
 permalink: "not-only-website-universal-platform"
-image: "@assets/images/blog/not-only-website.svg"
+image: "@assets/images/blog/not-only-website.jpg"
 imageAlt: "OpenAppCLI universal platform architecture diagram"
 mappingKey: "not-only-website"
 category: "technical"
