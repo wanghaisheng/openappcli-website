@@ -1,0 +1,195 @@
+{
+	"layout": {
+		"title": "Features - OpenAppCLI",
+		"description": "Learn about OpenAppCLI's core features: MCP protocol integration, AI Agent native support, universal application support, and intelligent strategy selection."
+	},
+	"hero": {
+		"title": "Core Features",
+		"subtitle": "Not Only Website, Not Only Data Collection",
+		"description": "OpenAppCLI provides complete application automation solutions, from data extraction to application control, from CLI tools to AI Agent interaction standards."
+	},
+	"mcp": {
+		"title": "MCP Protocol Integration",
+		"subtitle": "AI Agent Native Interaction Capabilities",
+		"description": "Through Model Context Protocol (MCP) protocol, OpenAppCLI provides standardized application interaction interfaces for AI Agents.",
+		"features": [
+			{
+				"title": "Standardized Tool Interfaces",
+				"description": "listTools, callTool and other standard MCP interfaces",
+				"icon": "🔧"
+			},
+			{
+				"title": "Resource Access Interfaces",
+				"description": "listResources, readResource and other resource management interfaces",
+				"icon": "📁"
+			},
+			{
+				"title": "Prompt System",
+				"description": "listPrompts, getPrompt and other intelligent task interfaces",
+				"icon": "💡"
+			},
+			{
+				"title": "Two-way Data Flow",
+				"description": "Real-time two-way communication between AI Agent and applications",
+				"icon": "🔄"
+			}
+		]
+	},
+	"aiAgent": {
+		"title": "AI Agent Native Support",
+		"subtitle": "From CLI Tool to AI Agent Bridge",
+		"description": "OpenAppCLI is not just a CLI tool, but the standard bridge for AI Agent and application interaction.",
+		"features": [
+			{
+				"title": "Native Integration",
+				"description": "AI Agents can directly call OpenAppCLI functions and resources",
+				"icon": "🤖"
+			},
+			{
+				"title": "Structured Interaction",
+				"description": "Achieve reliable structured data exchange through standard protocols",
+				"icon": "📊"
+			},
+			{
+				"title": "Intelligent Adaptation",
+				"description": "AI Agents can intelligently select the best application operation strategy",
+				"icon": "🧠"
+			},
+			{
+				"title": "Error Handling",
+				"description": "Complete error handling and recovery mechanisms",
+				"icon": "🛡️"
+			}
+		]
+	},
+	"platforms": {
+		"title": "Universal Application Support",
+		"subtitle": "Not Only Website - Full Application Type Coverage",
+		"description": "From Web applications to desktop applications, from mobile applications to game applications, one platform supports all application types.",
+		"platforms": [
+			{
+				"name": "Web & Electron",
+				"description": "50+ site adapters, browser reuse, anti-detection mechanisms",
+				"features": [
+					"Chrome DevTools Protocol integration",
+					"50+ pre-built site adapters",
+					"Browser session reuse",
+					"Anti-detection and incognito mode"
+				],
+				"icon": "🌐"
+			},
+			{
+				"name": "Desktop Apps",
+				"description": "Windows/macOS/Linux, system-level access, OCR recognition",
+				"features": [
+					"RobotJS desktop automation",
+					"Windows/macOS/Linux API",
+					"OCR text recognition",
+					"Image recognition and template matching"
+				],
+				"icon": "🖥️"
+			},
+			{
+				"name": "Mobile Apps",
+				"description": "Android/iOS, UIAutomator, Frida instrumentation",
+				"features": [
+					"ADB and UIAutomator integration",
+					"iOS XCUITest support",
+					"Frida dynamic instrumentation",
+					"Mobile UI automation"
+				],
+				"icon": "📱"
+			},
+			{
+				"name": "Game Apps",
+				"description": "Unity/Unreal, anti-cheat bypass, memory access",
+				"features": [
+					"Unity game engine support",
+					"Unreal Engine integration",
+					"Anti-cheat mechanism bypass",
+					"Game memory access"
+				],
+				"icon": "🎮"
+			}
+		]
+	},
+	"intelligence": {
+		"title": "Intelligent Strategy Selection",
+	"subtitle": "AI-Driven Automation Strategies",
+		"description": "OpenAppCLI has built-in intelligent strategy selector that can automatically select the best operation strategy based on application type and environment.",
+		"features": [
+			{
+				"title": "Automatic Strategy Detection",
+				"description": "Intelligently identify application types and best operation methods",
+				"icon": "🔍"
+			},
+			{
+				"title": "Fallback Mechanism",
+				"description": "Automatically switch to backup solutions when primary strategy fails",
+				"icon": "🔄"
+			},
+			{
+				"title": "Performance Optimization",
+				"description": "Optimize operation performance based on historical data",
+				"icon": "⚡"
+			},
+			{
+				"title": "Error Recovery",
+				"description": "Intelligent error detection and automatic recovery",
+				"icon": "🛠️"
+			}
+		]
+	},
+	"comparison": {
+		"title": "Technical Comparison",
+		"subtitle": "OpenAppCLI vs Traditional Solutions",
+		"description": "Compared to traditional application automation solutions, OpenAppCLI provides more powerful and flexible solutions.",
+		"table": {
+			"headers": ["Feature", "Traditional Solution", "OpenAppCLI"],
+			"rows": [
+				["Application Coverage", "Web only", "All application types"],
+				["Interaction Method", "One-way data extraction", "Two-way application control"],
+				["AI Integration", "Need to parse text", "Native MCP protocol"],
+				["Development Efficiency", "Custom development per application", "Unified platform one-time development"],
+				["Reliability", "Unstable", "Production-grade stable"],
+				["Scalability", "Limited", "Unlimited expansion"]
+			]
+		}
+	},
+	"useCases": {
+		"title": "Application Scenarios",
+		"subtitle": "Real-world Use Cases",
+		"description": "OpenAppCLI can be applied to various real-world scenarios to solve practical problems.",
+		"cases": [
+			{
+				"title": "Social Media Automation",
+				"description": "AI Agents automatically manage social media accounts, post content, interact with fans",
+				"icon": "📱"
+			},
+			{
+				"title": "Game Automation",
+				"description": "Automatically complete game daily tasks, resource collection, instance challenges",
+				"icon": "🎮"
+			},
+			{
+				"title": "Enterprise Process Automation",
+				"description": "Automate enterprise internal system operations, improve work efficiency",
+				"icon": "🏢"
+			},
+			{
+				"title": "Data Collection and Analysis",
+				"description": "Large-scale data collection and analysis, support business decisions",
+				"icon": "📊"
+			}
+		]
+	},
+	"cta": {
+		"title": "Experience Powerful Features",
+		"subtitle": "Start Your Automation Journey Now",
+		"description": "Download OpenAppCLI and experience the powerful capabilities of Not Only Website, Not Only Data Collection.",
+		"buttons": {
+			"primary": "Download Now",
+			"secondary": "View Documentation"
+		}
+	}
+}

@@ -1,0 +1,181 @@
+{
+	"layout": {
+		"title": "发展路线图 - OpenAppCLI",
+		"description": "查看 OpenAppCLI 的发展路线图，了解我们如何从 Website 自动化演进到 AI Agent 应用交互标准平台。"
+	},
+	"hero": {
+		"title": "发展路线图",
+		"subtitle": "从理念到现实的实现路径",
+		"description": "我们制定了清晰的 4 阶段发展计划，每一步都朝着 Not Only Website, Not Only Data Collection 的目标前进。"
+	},
+	"milestones": {
+		"title": "里程碑规划",
+		"subtitle": "4 个阶段，14 个月的完整实现路径",
+		"phases": [
+			{
+				"phase": "阶段一：基础扩展 + MCP 增强版",
+				"period": "3个月",
+				"status": "planning",
+				"goals": [
+					"RobotJS 集成 + MCP 基础",
+					"视觉数据提取 + MCP 资源",
+					"系统级访问 + MCP 提示词"
+				],
+				"deliverables": ["MCP Server", "桌面应用适配器", "资源系统"],
+				"breakthrough": "实现 Not Only Website - 支持 Desktop 应用"
+			},
+			{
+				"phase": "阶段二：移动端支持 + MCP 移动集成",
+				"period": "4个月",
+				"status": "planning",
+				"goals": [
+					"Android 基础支持 + MCP 移动工具",
+					"iOS 支持 + MCP iOS 工具",
+					"移动应用生态 + MCP 移动生态"
+				],
+				"deliverables": ["移动适配器", "跨平台工具", "移动提示词"],
+				"breakthrough": "实现真正的 Universal Platform"
+			},
+			{
+				"phase": "阶段三：游戏应用支持 + MCP 游戏集成",
+				"period": "3个月",
+				"status": "planning",
+				"goals": [
+					"Unity 游戏支持 + MCP Unity 工具",
+					"Unreal 游戏支持 + MCP Unreal 工具",
+					"通用游戏框架 + MCP 游戏生态"
+				],
+				"deliverables": ["游戏适配器", "引擎集成", "游戏提示词"],
+				"breakthrough": "覆盖所有应用类型"
+			},
+			{
+				"phase": "阶段四：AI Agent 生态 + 企业级功能",
+				"period": "4个月",
+				"status": "planning",
+				"goals": [
+					"AI Agent 生态完善",
+					"企业级功能",
+					"商业化准备"
+				],
+				"deliverables": ["AI Agent 市场", "企业版本", "云服务"],
+				"breakthrough": "实现 Not Only Data Collection - 双向应用控制"
+			}
+		]
+	},
+	"breakthroughs": {
+		"title": "核心突破点",
+		"subtitle": "每个阶段的关键突破",
+		"items": [
+			{
+				"milestone": "Not Only Website",
+				"description": "从 Web 自动化扩展到全应用类型支持",
+				"before": "只能操作 Website + Electron 应用",
+				"after": "支持 Desktop + Mobile + Game + Web 全应用类型",
+				"impact": "应用覆盖范围从 20% 提升到 100%"
+			},
+			{
+				"milestone": "Not Only Data Collection",
+				"description": "从单向数据提取升级到双向应用控制",
+				"before": "只能提取应用数据，无法控制应用行为",
+				"after": "完整的应用行为控制 + AI Agent 直接交互",
+				"impact": "从信息工具升级为应用交互平台"
+			},
+			{
+				"milestone": "AI Agent Native Integration",
+				"description": "通过 MCP 协议实现 AI Agent 原生集成",
+				"before": "AI Agent 需要解析文本输出，交互不可靠",
+				"after": "AI Agent 直接调用 MCP 工具，交互可靠",
+				"impact": "建立 AI Agent 应用交互标准"
+			}
+		]
+	},
+	"evolution": {
+		"title": "技术演进路径",
+		"subtitle": "三个维度的全面升级",
+		"areas": [
+			{
+				"area": "应用覆盖范围",
+				"evolution": "Website → Universal Platform",
+				"steps": [
+					"OpenCLI: Website + Electron (20% 应用覆盖)",
+					"OpenAppCLI 1.0: Desktop + Mobile + Game (80% 应用覆盖)",
+					"OpenAppCLI 2.0: Universal Platform (100% 应用覆盖)"
+				]
+			},
+			{
+				"area": "能力维度",
+				"evolution": "Data Collection → Application Control",
+				"steps": [
+					"OpenCLI: 单向数据提取",
+					"OpenAppCLI 1.0: 基础应用操作",
+					"OpenAppCLI 2.0: 完整应用行为控制"
+				]
+			},
+			{
+				"area": "交互方式",
+				"evolution": "CLI Tool → AI Agent Bridge",
+				"steps": [
+					"OpenCLI: 人机交互，CLI 命令行",
+					"OpenAppCLI 1.0: 程序交互，API 接口",
+					"OpenAppCLI 2.0: AI 原生交互，MCP 协议"
+				]
+			}
+		]
+	},
+	"timeline": {
+		"title": "时间节点",
+		"subtitle": "关键交付目标",
+		"items": [
+			{
+				"date": "2025 Q4",
+				"milestone": "阶段一完成",
+				"deliverable": "MCP Server + 桌面应用支持"
+			},
+			{
+				"date": "2026 Q1",
+				"milestone": "阶段二完成",
+				"deliverable": "移动端支持 + 跨平台工具"
+			},
+			{
+				"date": "2026 Q2",
+				"milestone": "阶段三完成",
+				"deliverable": "游戏应用支持 + 通用框架"
+			},
+			{
+				"date": "2026 Q3",
+				"milestone": "阶段四完成",
+				"deliverable": "AI Agent 生态 + 企业级功能"
+			}
+		]
+	},
+	"resources": {
+		"title": "相关资源",
+		"subtitle": "深入了解我们的技术实现",
+		"items": [
+			{
+				"title": "技术文档",
+				"description": "详细的技术实现文档",
+				"link": "/docs"
+			},
+			{
+				"title": "MCP 协议规范",
+				"description": "了解 MCP 协议的技术细节",
+				"link": "/docs/mcp"
+			},
+			{
+				"title": "开发博客",
+				"description": "关注我们的开发进展",
+				"link": "/blog"
+			}
+		]
+	},
+	"cta": {
+		"title": "参与我们的建设",
+		"subtitle": "一起实现 AI 自动化未来",
+		"description": "如果你对我们的路线图感兴趣，欢迎参与贡献，一起建设 AI Agent 应用交互的标准化生态。",
+		"buttons": {
+			"primary": "参与贡献",
+			"secondary": "联系我们"
+		}
+	}
+}

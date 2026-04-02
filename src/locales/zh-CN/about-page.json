@@ -1,0 +1,49 @@
+{
+	"layout": {
+		"title": "关于 - OpenAppCLI",
+		"description": "了解 OpenAppCLI - 通用应用自动化平台 + AI Agent 交互标准"
+	},
+	"landing": "关于 OpenAppCLI",
+	"topper": "我们的故事",
+	"title": "革命性的应用自动化",
+	"p-1": "OpenAppCLI 代表了应用自动化的范式转变。我们正在打破不同应用类型之间的壁垒，创建一个统一的通用自动化平台。",
+	"p-2": "从网页抓取到桌面控制，从移动端测试到游戏自动化——我们的平台支持所有类型。通过 MCP 协议的原生 AI Agent 集成，我们正在构建智能自动化的未来。",
+	"p-3": "我们的使命是让每个人都能轻松、强大、智能地进行应用自动化。",
+	"rank": "创始人 & CEO",
+	"team": {
+		"title": "认识我们的团队",
+		"description": "OpenAppCLI 背后的热情贡献者",
+		"members": [
+			{
+				"name": "Justin Time",
+				"role": "创始人 & CEO",
+				"description": "拥有 15+ 年自动化和 AI 经验的远见卓识者"
+			},
+			{
+				"name": "Sarah Chen",
+				"role": "CTO",
+				"description": "分布式系统和自动化框架的技术专家"
+			},
+			{
+				"name": "Mike Johnson",
+				"role": "首席开发",
+				"description": "OpenAppCLI 通用自动化引擎的核心架构师"
+			}
+		]
+	},
+	"mission": {
+		"title": "我们的使命",
+		"description": "为 AI 时代普及应用自动化",
+		"points": [
+			"支持所有应用类型的通用平台",
+			"通过 MCP 协议实现 AI Agent 原生集成",
+			"开源社区驱动开发",
+			"零配置自动化解决方案"
+		]
+	},
+	"vision": {
+		"title": "我们的愿景",
+		"description": "一个任何人都能自动化任何应用的世界",
+		"future": "我们展望一个未来，AI Agent 与所有应用无缝交互，让自动化像呼吸一样自然。"
+	}
+}

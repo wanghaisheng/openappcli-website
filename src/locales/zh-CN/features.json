@@ -1,0 +1,194 @@
+{
+	"layout": {
+		"title": "功能特性 - OpenAppCLI",
+		"description": "了解 OpenAppCLI 的核心功能：MCP 协议集成、AI Agent 原生支持、通用应用支持和智能策略选择。"
+	},
+	"hero": {
+		"title": "功能特性",
+		"subtitle": "Not Only Website, Not Only Data Collection",
+		"description": "OpenAppCLI 提供完整的应用自动化解决方案，从数据提取到应用控制，从 CLI 工具到 AI Agent 交互标准。"
+	},
+	"mcp": {
+		"title": "MCP 协议集成",
+		"subtitle": "AI Agent 原生交互能力",
+		"description": "通过 Model Context Protocol (MCP) 协议，OpenAppCLI 为 AI Agent 提供标准化的应用交互接口。",
+		"features": [
+			{
+				"title": "标准化工具接口",
+				"description": "listTools, callTool 等标准 MCP 接口",
+				"icon": "🔧"
+			},
+			{
+				"title": "资源访问接口",
+				"description": "listResources, readResource 等资源管理接口",
+				"icon": "📁"
+			},
+			{
+				"title": "提示词系统",
+				"description": "listPrompts, getPrompt 等智能任务接口",
+				"icon": "💡"
+			},
+			{
+				"title": "双向数据流",
+				"description": "AI Agent 与应用之间的实时双向通信",
+				"icon": "🔄"
+			}
+		]
+	},
+	"aiAgent": {
+		"title": "AI Agent 原生支持",
+		"subtitle": "从 CLI 工具到 AI Agent 桥梁",
+		"description": "OpenAppCLI 不仅是一个 CLI 工具，更是 AI Agent 与应用交互的标准桥梁。",
+		"features": [
+			{
+				"title": "原生集成",
+				"description": "AI Agent 可以直接调用 OpenAppCLI 的功能和资源",
+				"icon": "🤖"
+			},
+			{
+				"title": "结构化交互",
+				"description": "通过标准协议实现可靠的结构化数据交换",
+				"icon": "📊"
+			},
+			{
+				"title": "智能适配",
+				"description": "AI Agent 可以智能选择最佳的应用操作策略",
+				"icon": "🧠"
+			},
+			{
+				"title": "错误处理",
+				"description": "完善的错误处理和恢复机制",
+				"icon": "🛡️"
+			}
+		]
+	},
+	"platforms": {
+		"title": "通用应用支持",
+		"subtitle": "Not Only Website - 全应用类型覆盖",
+		"description": "从 Web 应用到桌面应用，从移动应用到游戏应用，一个平台支持所有应用类型。",
+		"platforms": [
+			{
+				"name": "Web & Electron",
+				"description": "50+ 站点适配器，浏览器复用，反检测机制",
+				"features": [
+					"Chrome DevTools Protocol 集成",
+					"50+ 预置站点适配器",
+					"浏览器会话复用",
+					"反检测和隐身模式"
+				],
+				"icon": "🌐"
+			},
+			{
+				"name": "Desktop Apps",
+				"description": "Windows/macOS/Linux，系统级访问，OCR 识别",
+				"features": [
+					"RobotJS 桌面自动化",
+					"Windows/macOS/Linux API",
+					"OCR 文字识别",
+					"图像识别和模板匹配"
+				],
+				"icon": "🖥️"
+			},
+			{
+				"name": "Mobile Apps",
+				"description": "Android/iOS，UIAutomator，Frida 插桩",
+				"features": [
+					"ADB 和 UIAutomator 集成",
+					"iOS XCUITest 支持",
+					"Frida 动态插桩",
+					"移动端 UI 自动化"
+				],
+				"icon": "📱"
+			},
+			{
+				"name": "Game Apps",
+				"description": "Unity/Unreal，反作弊绕过，内存访问",
+				"features": [
+					"Unity 游戏引擎支持",
+					"Unreal Engine 集成",
+					"反作弊机制绕过",
+					"游戏内存访问"
+				],
+				"icon": "🎮"
+			}
+		]
+	},
+	"intelligence": {
+		"title": "智能策略选择",
+		"subtitle": "AI 驱动的自动化策略",
+		"description": "OpenAppCLI 内置智能策略选择器，能够根据应用类型和环境自动选择最佳的操作策略。",
+		"features": [
+			{
+				"title": "自动策略检测",
+				"description": "智能识别应用类型和最佳操作方式",
+				"icon": "🔍"
+			},
+			{
+				"title": "Fallback 机制",
+				"description": "当主要策略失败时自动切换到备用方案",
+				"icon": "🔄"
+			},
+			{
+				"title": "性能优化",
+				"description": "基于历史数据优化操作性能",
+				"icon": "⚡"
+			},
+			{
+				"title": "错误恢复",
+				"description": "智能错误检测和自动恢复",
+				"icon": "🛠️"
+			}
+		]
+	},
+	"comparison": {
+		"title": "技术对比",
+		"subtitle": "OpenAppCLI vs 传统方案",
+		"description": "相比传统的应用自动化方案，OpenAppCLI 提供了更强大、更灵活的解决方案。",
+		"table": {
+			"headers": ["特性", "传统方案", "OpenAppCLI"],
+			"rows": [
+				["应用覆盖", "仅 Web 应用", "全应用类型"],
+				["交互方式", "单向数据提取", "双向应用控制"],
+				["AI 集成", "需要解析文本", "原生 MCP 协议"],
+				["开发效率", "每个应用单独开发", "统一平台一次开发"],
+				["可靠性", "不稳定", "生产级稳定"],
+				["扩展性", "有限", "无限扩展"]
+			]
+		}
+	},
+	"useCases": {
+		"title": "应用场景",
+		"subtitle": "真实世界的使用案例",
+		"cases": [
+			{
+				"title": "社交媒体自动化",
+				"description": "AI Agent 自动管理社交媒体账号，发布内容、互动粉丝",
+				"icon": "📱"
+			},
+			{
+				"title": "游戏自动化",
+				"description": "自动完成游戏日常任务、资源收集、副本挑战",
+				"icon": "🎮"
+			},
+			{
+				"title": "企业流程自动化",
+				"description": "自动化企业内部系统操作，提高工作效率",
+				"icon": "🏢"
+			},
+			{
+				"title": "数据采集分析",
+				"description": "大规模数据采集和分析，支持商业决策",
+				"icon": "📊"
+			}
+		]
+	},
+	"cta": {
+		"title": "体验强大功能",
+		"subtitle": "立即开始您的自动化之旅",
+		"description": "下载 OpenAppCLI，体验 Not Only Website, Not Only Data Collection 的强大能力。",
+		"buttons": {
+			"primary": "立即下载",
+			"secondary": "查看文档"
+		}
+	}
+}

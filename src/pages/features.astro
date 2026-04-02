@@ -1,0 +1,492 @@
+---
+import BaseLayout from "@layouts/BaseLayout.astro";
+import { getLocaleFromUrl } from "@js/localeUtils";
+import { useTranslations } from "@js/translationUtils";
+
+const locale = getLocaleFromUrl(Astro.url);
+const t = useTranslations(locale);
+---
+
+<BaseLayout title={t("features:layout.title")} description={t("features:layout.description")}>
+	<section class="features-hero">
+		<div class="container">
+			<h1>{t("features:hero.title")}</h1>
+			<p class="subtitle">{t("features:hero.subtitle")}</p>
+			<p class="description">{t("features:hero.description")}</p>
+		</div>
+	</section>
+
+	<section class="mcp-features">
+		<div class="container">
+			<h2>{t("features:mcp.title")}</h2>
+			<p class="subtitle">{t("features:mcp.subtitle")}</p>
+			<p class="description">{t("features:mcp.description")}</p>
+			
+			<div class="features-grid">
+				{t("features:mcp.features").map((feature, index) => (
+					<div class="feature-card">
+						<div class="feature-icon">{feature.icon}</div>
+						<h3>{feature.title}</h3>
+						<p>{feature.description}</p>
+					</div>
+				))}
+			</div>
+		</div>
+	</section>
+
+	<section class="ai-agent-features">
+		<div class="container">
+			<h2>{t("features:aiAgent.title")}</h2>
+			<p class="subtitle">{t("features:aiAgent.subtitle")}</p>
+			<p class="description">{t("features:aiAgent.description")}</p>
+			
+			<div class="features-grid">
+				{t("features:aiAgent.features").map((feature, index) => (
+					<div class="feature-card">
+						<div class="feature-icon">{feature.icon}</div>
+						<h3>{feature.title}</h3>
+						<p>{feature.description}</p>
+					</div>
+				))}
+			</div>
+		</div>
+	</section>
+
+	<section class="platform-features">
+		<div class="container">
+			<h2>{t("features:platforms.title")}</h2>
+			<p class="subtitle">{t("features:platforms.subtitle")}</p>
+			<p class="description">{t("features:platforms.description")}</p>
+			
+			<div class="platforms-grid">
+				{t("features:platforms.platforms").map((platform, index) => (
+					<div class="platform-card">
+						<div class="platform-header">
+							<div class="platform-icon">{platform.icon}</div>
+							<h3>{platform.name}</h3>
+						</div>
+						<p class="platform-description">{platform.description}</p>
+						<div class="platform-features-list">
+							<h4>Key Features:</h4>
+							<ul>
+								{platform.features.map((feature, featureIndex) => (
+									<li key={featureIndex}>{feature}</li>
+								))}
+							</ul>
+						</div>
+					</div>
+				))}
+			</div>
+		</div>
+	</section>
+
+	<section class="intelligence-features">
+		<div class="container">
+			<h2>{t("features:intelligence.title")}</h2>
+			<p class="subtitle">{t("features:intelligence.subtitle")}</p>
+			<p class="description">{t("features:intelligence.description")}</p>
+			
+			<div class="features-grid">
+				{t("features:intelligence.features").map((feature, index) => (
+					<div class="feature-card">
+						<div class="feature-icon">{feature.icon}</div>
+						<h3>{feature.title}</h3>
+						<p>{feature.description}</p>
+					</div>
+				))}
+			</div>
+		</div>
+	</section>
+
+	<section class="comparison">
+		<div class="container">
+			<h2>{t("features:comparison.title")}</h2>
+			<p class="subtitle">{t("features:comparison.subtitle")}</p>
+			<p class="description">{t("features:comparison.description")}</p>
+			
+			<div class="comparison-table">
+				<table>
+					<thead>
+						<tr>
+							<th>{t("features:comparison.table.headers.0")}</th>
+							<th>{t("features:comparison.table.headers.1")}</th>
+							<th>{t("features:comparison.table.headers.2")}</th>
+						</tr>
+					</thead>
+					<tbody>
+						{t("features:comparison.table.rows").map((row, index) => (
+							<tr key={index}>
+								<td>{row[0]}</td>
+								<td>{row[1]}</td>
+								<td>{row[2]}</td>
+							</tr>
+						))}
+					</tbody>
+				</table>
+			</div>
+		</div>
+	</section>
+
+	<section class="use-cases">
+		<div class="container">
+			<h2>{t("features:useCases.title")}</h2>
+			<p class="subtitle">{t("features:useCases.subtitle")}</p>
+			<p class="description">{t("features:useCases.description")}</p>
+			
+			<div class="use-cases-grid">
+				{t("features:useCases.cases").map((useCase, index) => (
+					<div class="use-case-card">
+						<div class="use-case-icon">{useCase.icon}</div>
+						<h3>{useCase.title}</h3>
+						<p>{useCase.description}</p>
+					</div>
+				))}
+			</div>
+		</div>
+	</section>
+
+	<section class="cta">
+		<div class="container">
+			<h2>{t("features:cta.title")}</h2>
+			<p class="subtitle">{t("features:cta.subtitle")}</p>
+			<p class="description">{t("features:cta.description")}</p>
+			<div class="buttons">
+				<a href="/download" class="btn btn-primary">{t("features:cta.buttons.primary")}</a>
+				<a href="/docs" class="btn btn-secondary">{t("features:cta.buttons.secondary")}</a>
+			</div>
+		</div>
+	</section>
+</BaseLayout>
+
+<style>
+	.features-hero {
+		padding: 8rem 0;
+		background: linear-gradient(135deg, var(--primary-500), var(--secondary-500));
+		color: white;
+		text-align: center;
+	}
+
+	.features-hero h1 {
+		font-size: 3rem;
+		font-weight: 700;
+		margin-bottom: 1rem;
+	}
+
+	.features-hero .subtitle {
+		font-size: 1.5rem;
+		margin-bottom: 1.5rem;
+		opacity: 0.9;
+	}
+
+	.features-hero .description {
+		font-size: 1.1rem;
+		max-width: 600px;
+		margin: 0 auto;
+		opacity: 0.8;
+	}
+
+	.container {
+		max-width: 1200px;
+		margin: 0 auto;
+		padding: 0 2rem;
+	}
+
+	.mcp-features,
+	.ai-agent-features,
+	.platform-features,
+	.intelligence-features,
+	.comparison,
+	.use-cases {
+		padding: 6rem 0;
+	}
+
+	.mcp-features:nth-child(even),
+	.use-cases:nth-child(even) {
+		background: var(--gray-50);
+	}
+
+	section h2 {
+		text-align: center;
+		font-size: 2.5rem;
+		color: var(--primary-600);
+		margin-bottom: 1rem;
+	}
+
+	section .subtitle {
+		text-align: center;
+		font-size: 1.25rem;
+		color: var(--gray-600);
+		margin-bottom: 2rem;
+		max-width: 600px;
+		margin-left: auto;
+		margin-right: auto;
+	}
+
+	section .description {
+		text-align: center;
+		font-size: 1.1rem;
+		color: var(--gray-600);
+		margin-bottom: 3rem;
+		max-width: 800px;
+		margin-left: auto;
+		margin-right: auto;
+	}
+
+	.features-grid {
+		display: grid;
+		grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+		gap: 2rem;
+	}
+
+	.feature-card {
+		background: white;
+		padding: 2.5rem;
+		border-radius: 12px;
+		box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+		text-align: center;
+		transition: transform 0.3s ease, box-shadow 0.3s ease;
+	}
+
+	.feature-card:hover {
+		transform: translateY(-4px);
+		box-shadow: 0 8px 16px rgba(0, 0, 0, 0.15);
+	}
+
+	.feature-icon {
+		font-size: 3rem;
+		margin-bottom: 1.5rem;
+	}
+
+	.feature-card h3 {
+		font-size: 1.5rem;
+		color: var(--primary-600);
+		margin-bottom: 1rem;
+	}
+
+	.feature-card p {
+		color: var(--gray-600);
+		line-height: 1.6;
+	}
+
+	.platforms-grid {
+		display: grid;
+		grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+		gap: 2rem;
+	}
+
+	.platform-card {
+		background: white;
+		padding: 2rem;
+		border-radius: 12px;
+		box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+		transition: transform 0.3s ease, box-shadow 0.3s ease;
+	}
+
+	.platform-card:hover {
+		transform: translateY(-4px);
+		box-shadow: 0 8px 16px rgba(0, 0, 0, 0.15);
+	}
+
+	.platform-header {
+		display: flex;
+		align-items: center;
+		gap: 1rem;
+		margin-bottom: 1rem;
+	}
+
+	.platform-icon {
+		font-size: 2.5rem;
+	}
+
+	.platform-header h3 {
+		font-size: 1.25rem;
+		color: var(--primary-600);
+		margin: 0;
+	}
+
+	.platform-description {
+		color: var(--gray-600);
+		margin-bottom: 1.5rem;
+	}
+
+	.platform-features-list h4 {
+		color: var(--primary-600);
+		margin-bottom: 0.5rem;
+		font-size: 1rem;
+	}
+
+	.platform-features-list ul {
+		margin: 0;
+		padding-left: 1.5rem;
+	}
+
+	.platform-features-list li {
+		margin-bottom: 0.25rem;
+		color: var(--gray-600);
+		font-size: 0.9rem;
+	}
+
+	.comparison-table {
+		max-width: 800px;
+		margin: 0 auto;
+		overflow-x: auto;
+	}
+
+	.comparison-table table {
+		width: 100%;
+		border-collapse: collapse;
+		background: white;
+		border-radius: 12px;
+		overflow: hidden;
+		box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+	}
+
+	.comparison-table th {
+		background: var(--primary-500);
+		color: white;
+		padding: 1rem;
+		text-align: left;
+		font-weight: 600;
+	}
+
+	.comparison-table td {
+		padding: 1rem;
+		border-bottom: 1px solid var(--gray-200);
+	}
+
+	.comparison-table tr:last-child td {
+		border-bottom: none;
+	}
+
+	.comparison-table tr:nth-child(even) {
+		background: var(--gray-50);
+	}
+
+	.use-cases-grid {
+		display: grid;
+		grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+		gap: 2rem;
+	}
+
+	.use-case-card {
+		background: white;
+		padding: 2.5rem;
+		border-radius: 12px;
+		box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+		text-align: center;
+		transition: transform 0.3s ease, box-shadow 0.3s ease;
+	}
+
+	.use-case-card:hover {
+		transform: translateY(-4px);
+		box-shadow: 0 8px 16px rgba(0, 0, 0, 0.15);
+	}
+
+	.use-case-icon {
+		font-size: 3rem;
+		margin-bottom: 1.5rem;
+	}
+
+	.use-case-card h3 {
+		font-size: 1.25rem;
+		color: var(--primary-600);
+		margin-bottom: 1rem;
+	}
+
+	.use-case-card p {
+		color: var(--gray-600);
+		line-height: 1.6;
+	}
+
+	.cta {
+		padding: 6rem 0;
+		text-align: center;
+		background: linear-gradient(135deg, var(--accent-500), var(--primary-500));
+		color: white;
+	}
+
+	.cta h2 {
+		font-size: 2.5rem;
+		margin-bottom: 1rem;
+		color: white;
+	}
+
+	.buttons {
+		margin-top: 2rem;
+		display: flex;
+		gap: 1rem;
+		justify-content: center;
+	}
+
+	.btn {
+		padding: 1rem 2rem;
+		border-radius: 8px;
+		text-decoration: none;
+		font-weight: 600;
+		transition: all 0.3s ease;
+	}
+
+	.btn-primary {
+		background: white;
+		color: var(--primary-600);
+	}
+
+	.btn-secondary {
+		background: transparent;
+		color: white;
+		border: 2px solid white;
+	}
+
+	.btn:hover {
+		transform: translateY(-2px);
+		box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+	}
+
+	@media (max-width: 768px) {
+		.features-hero h1 {
+			font-size: 2rem;
+		}
+
+		.features-hero .subtitle {
+			font-size: 1.2rem;
+		}
+
+		section h2 {
+			font-size: 2rem;
+		}
+
+		section .subtitle {
+			font-size: 1.1rem;
+		}
+
+		section .description {
+			font-size: 1rem;
+		}
+
+		.features-grid,
+		.platforms-grid,
+		.use-cases-grid {
+			grid-template-columns: 1fr;
+		}
+
+		.platform-header {
+			flex-direction: column;
+			text-align: center;
+			gap: 0.5rem;
+		}
+
+		.comparison-table {
+			font-size: 0.9rem;
+		}
+
+		.comparison-table th,
+		.comparison-table td {
+			padding: 0.75rem 0.5rem;
+		}
+
+		.buttons {
+			flex-direction: column;
+			align-items: center;
+		}
+	}
+</style>

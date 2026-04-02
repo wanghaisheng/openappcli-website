@@ -1,0 +1,49 @@
+{
+	"layout": {
+		"title": "About - OpenAppCLI",
+		"description": "Learn about OpenAppCLI - Universal Application Automation Platform + AI Agent Interaction Standard"
+	},
+	"landing": "About OpenAppCLI",
+	"topper": "Our Story",
+	"title": "Revolutionizing Application Automation",
+	"p-1": "OpenAppCLI represents a paradigm shift in application automation. We're breaking down the barriers between different application types and creating a unified platform for universal automation.",
+	"p-2": "From web scraping to desktop control, from mobile testing to game automation—our platform supports it all. With native AI Agent integration through MCP protocol, we're building the future of intelligent automation.",
+	"p-3": "Our mission is to make application automation accessible, powerful, and intelligent for everyone.",
+	"rank": "Founder & CEO",
+	"team": {
+		"title": "Meet Our Team",
+		"description": "The passionate individuals behind OpenAppCLI",
+		"members": [
+			{
+				"name": "Justin Time",
+				"role": "Founder & CEO",
+				"description": "Visionary leader with 15+ years in automation and AI"
+			},
+			{
+				"name": "Sarah Chen",
+				"role": "CTO", 
+				"description": "Technical expert in distributed systems and automation frameworks"
+			},
+			{
+				"name": "Mike Johnson",
+				"role": "Lead Developer",
+				"description": "Core architect of OpenAppCLI's universal automation engine"
+			}
+		]
+	},
+	"mission": {
+		"title": "Our Mission",
+		"description": "Democratizing application automation for the AI era",
+		"points": [
+			"Universal platform supporting all application types",
+			"AI Agent native integration through MCP protocol",
+			"Open source community-driven development",
+			"Zero-configuration automation solutions"
+		]
+	},
+	"vision": {
+		"title": "Our Vision",
+		"description": "A world where any application can be automated by anyone",
+		"future": "We envision a future where AI Agents seamlessly interact with all applications, making automation as natural as breathing."
+	}
+}

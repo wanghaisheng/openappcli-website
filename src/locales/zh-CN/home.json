@@ -1,0 +1,199 @@
+{
+	"layout": {
+		"title": "OpenAppCLI - 通用应用自动化平台 + AI Agent 交互标准",
+		"description": "OpenAppCLI 让任何应用都能通过命令行和 AI Agent 轻松控制和自动化。支持 Web、桌面、移动和游戏应用，实现万物皆可自动化，AI 皆可交互应用。"
+	},
+	"hero": {
+		"title": "Not Only Website, Not Only Data Collection",
+		"subtitle": "从 Web 自动化到通用应用平台，从数据提取到应用控制",
+		"description": "OpenAppCLI 是第一个让 AI Agent 能够直接操作任何应用的平台。通过 MCP 协议，我们建立了 AI Agent 与应用交互的标准桥梁。",
+		"cta1": "立即开始",
+		"cta2": "查看演示"
+	},
+	"features": {
+		"title": "核心突破",
+		"subtitle": "从限制到突破，从工具到平台",
+		"items": [
+			{
+				"title": "Not Only Website：通用平台自动化",
+				"description": "从 Web + Electron 到 Desktop + Mobile + Game，实现真正的通用应用自动化。OpenAppCLI 打破浏览器限制，为所有应用类型提供全面的自动化解决方案。",
+				"icon": "🌐"
+			},
+			{
+				"title": "Not Only Data Collection：双向控制",
+				"description": "从单向数据提取到双向应用控制，让 AI Agent 能够完全操控应用行为。从被动监控转变为主动控制。",
+				"icon": "🔄"
+			},
+			{
+				"title": "AI Agent 原生集成",
+				"description": "通过 MCP 协议，任何 AI Agent 都可以直接操作任何应用，为 AI 时代建立应用交互标准。智能与自动化的无缝集成。",
+				"icon": "🤖"
+			}
+		]
+	},
+	"platforms": {
+		"title": "全平台支持",
+		"subtitle": "一个平台，支持所有应用类型",
+		"items": [
+			{
+				"name": "Web & Electron 应用",
+				"description": "50+ 站点适配器，浏览器复用，反检测机制。全面的 Web 自动化，支持现代浏览器和扩展集成。",
+				"icon": "🌐"
+			},
+			{
+				"name": "桌面应用",
+				"description": "Windows/macOS/Linux，系统级访问，OCR 识别。原生桌面自动化，完全系统集成和智能元素识别。",
+				"icon": "🖥️"
+			},
+			{
+				"name": "移动应用",
+				"description": "Android/iOS，UIAutomator，Frida 插桩。完整的移动自动化框架，支持原生和混合应用。",
+				"icon": "📱"
+			},
+			{
+				"name": "游戏应用",
+				"description": "Unity/Unreal，反作弊绕过，内存访问。高级游戏自动化，具有引擎特定优化和内存操作能力。",
+				"icon": "🎮"
+			}
+		]
+	},
+	"demo": {
+		"title": "实时演示",
+		"subtitle": "体验 AI Agent 与应用的直接交互",
+		"description": "通过 MCP 协议，AI Agent 可以直接调用 OpenAppCLI 的工具和资源，实现可靠的应用自动化。",
+		"examples": [
+			{
+				"title": "Bilibili 热门视频",
+				"description": "AI Agent 获取热门视频列表",
+				"command": "openappcli.bilibili.hot"
+			},
+			{
+				"title": "Instagram 自动点赞",
+				"description": "AI Agent 自动点赞相关内容",
+				"command": "openappcli.instagram.like_posts"
+			},
+			{
+				"title": "原神每日任务",
+				"description": "AI Agent 完成游戏每日任务",
+				"command": "openappcli.genshin.daily_quests"
+			}
+		]
+	},
+	"about": {
+		"topper": "AI Agent 集成",
+		"title": "体验 AI Agent 直接应用交互",
+		"subtitle": "无缝的 AI Agent 与应用交互",
+		"p1": "通过 MCP 协议，AI Agent 可以直接调用 OpenAppCLI 的工具和资源，实现可靠的应用自动化。",
+		"p2": "示例包括 Bilibili 热门视频提取、Instagram 自动点赞、原神每日任务完成。",
+		"p3": "AI Agent 能够理解用户意图并自动执行应用操作。",
+		"cta": "尝试演示",
+		"items": [
+			{
+				"title": "发现应用",
+				"description": "查找系统中所有可自动化的应用",
+				"command": "openappcli.discover_applications()",
+				"result": "返回可用应用列表和元数据"
+			},
+			{
+				"title": "执行自动化",
+				"description": "在任何应用上执行预定义的自动化任务",
+				"command": "openappcli.execute_automation(target, operation, params)",
+				"result": "执行自动化并返回成功状态"
+			},
+			{
+				"title": "获取截图",
+				"description": "捕获当前应用界面截图",
+				"command": "openappcli.get_screenshot()",
+				"result": "返回 base64 编码的截图数据"
+			},
+			{
+				"title": "提取数据",
+				"description": "从应用中提取结构化数据",
+				"command": "openappcli.extract_data(target, query)",
+				"result": "返回应用的结构化 JSON 数据"
+			}
+		]
+	},
+	"stats": {
+		"title": "平台数据",
+		"items": [
+			{
+				"number": "100+",
+				"label": "支持的应用类型"
+			},
+			{
+				"number": "5+",
+				"label": "操作系统平台"
+			},
+			{
+				"number": "100%",
+				"label": "AI Agent 兼容性"
+			},
+			{
+				"number": "0",
+				"label": "配置门槛"
+			}
+		],
+		"cta": {
+			"title": "开启你的 AI 自动化之旅",
+			"subtitle": "加入通用平台革命",
+			"description": "体验 Not Only Website，Not Only Data Collection 的强大力量。下载 OpenAppCLI，开始自动化一切。",
+			"buttons": {
+				"primary": "立即下载",
+				"secondary": "查看文档"
+			},
+			"imageAlt": "OpenAppCLI 自动化平台与 AI Agent 集成"
+		}
+	},
+	"extra": {
+		"topper": "平台统计",
+		"title": "通用覆盖，AI 原生",
+		"p1": "OpenAppCLI 支持 100+ 应用类型，跨 5+ 操作系统，100% AI Agent 兼容。",
+		"p2": "零配置要求 - 任何应用自动化即插即用。"
+	},
+	"testimonials": {
+		"topper": "用户评价",
+		"title": "开发者对 OpenAppCLI 的评价",
+		"items": [
+			{
+				"quote": "OpenAppCLI 彻底改变了我们的自动化工作流程。MCP 协议集成让我们的 AI 代理能够直接控制应用程序，不再需要复杂的解析脚本。",
+				"name": "陈雪莉",
+				"role": "高级 DevOps 工程师"
+			},
+			{
+				"quote": "'Not Only Website' 理念是游戏规则的改变者。我们现在可以用一个统一的平台自动化桌面、移动和游戏应用。这真正是通用自动化。",
+				"name": "迈克尔·罗德里格斯",
+				"role": "自动化架构师"
+			},
+			{
+				"quote": "通过 OpenAppCLI 实现的双向应用控制改变了我们的测试基础设施。我们现在可以无缝地提取数据和控制应用行为。",
+				"name": "艾米丽·沃森",
+				"role": "QA 负责人"
+			},
+			{
+				"quote": "AI Agent 原生集成令人难以置信。我们的 AI 助手现在可以通过 MCP 协议直接操作任何应用程序，让自动化真正智能化。",
+				"name": "金大卫",
+				"role": "AI 研究工程师"
+			},
+			{
+				"quote": "从 20% 到 100% 的应用覆盖不仅仅是改进——这是范式的转变。OpenAppCLI 让通用应用自动化成为现实。",
+				"name": "安德森·丽莎",
+				"role": "CTO"
+			},
+			{
+				"quote": "性能提升非常显著。元素点击快了 3 倍，智能策略选择确保了跨所有平台的可靠自动化。",
+				"name": "泰勒·詹姆斯",
+				"role": "性能工程师"
+			}
+		]
+	},
+	"cta": {
+		"title": "准备好开始了吗？",
+		"subtitle": "加入 AI 自动化革命",
+		"description": "立即下载 OpenAppCLI，体验 AI Agent 与应用直接交互的强大能力。",
+		"buttons": {
+			"primary": "立即下载",
+			"secondary": "查看文档"
+		}
+	}
+}

@@ -1,0 +1,232 @@
+{
+	"layout": {
+		"title": "Community - OpenAppCLI",
+		"description": "Join the OpenAppCLI community and contribute to the universal application automation platform"
+	},
+	"hero": {
+		"title": "Join Our Community",
+		"subtitle": "Together We Build Universal Automation",
+		"description": "OpenAppCLI is more than a tool—it's a community-driven movement towards universal application automation. Join developers worldwide in shaping the future of AI-powered automation."
+	},
+	"contribute": {
+		"title": "Contribute to OpenAppCLI",
+		"subtitle": "Every Contribution Matters",
+		"description": "Whether you're a developer, designer, or automation enthusiast, there are many ways to contribute to the OpenAppCLI ecosystem.",
+		"ways": [
+			{
+				"icon": "💻",
+				"title": "Code Contributions",
+				"description": "Submit pull requests, fix bugs, and add new features to the core platform",
+				"link": "https://github.com/wanghaisheng/openappcli"
+			},
+			{
+				"icon": "📝",
+				"title": "Documentation",
+				"description": "Help improve documentation, write tutorials, and create guides",
+				"link": "https://docs.openappcli.com"
+			},
+			{
+				"icon": "🐛",
+				"title": "Bug Reports",
+				"description": "Report issues and help us identify and fix bugs",
+				"link": "https://github.com/wanghaisheng/openappcli/issues"
+			},
+			{
+				"icon": "🌍",
+				"title": "Translations",
+				"description": "Help translate OpenAppCLI into your native language",
+				"link": "https://github.com/wanghaisheng/openappcli-i18n"
+			}
+		]
+	},
+	"marketplace": {
+		"title": "Automation Marketplace",
+		"subtitle": "Share and Discover Automation Scripts",
+		"description": "Browse, share, and download automation scripts created by the community. From simple tasks to complex workflows, find what you need or contribute your own.",
+		"categories": [
+			{
+				"icon": "🌐",
+				"name": "Web Automation",
+				"description": "Scripts for web scraping, form filling, and browser automation",
+				"count": 150
+			},
+			{
+				"icon": "🖥️",
+				"name": "Desktop Apps",
+				"description": "Automation scripts for desktop applications and system tools",
+				"count": 89
+			},
+			{
+				"icon": "📱",
+				"name": "Mobile Apps",
+				"description": "Scripts for mobile app testing and automation",
+				"count": 67
+			},
+			{
+				"icon": "🎮",
+				"name": "Game Automation",
+				"description": "Game bots, farming scripts, and automation tools",
+				"count": 45
+			},
+			{
+				"icon": "🤖",
+				"name": "AI Integration",
+				"description": "Scripts that integrate with AI models and services",
+				"count": 34
+			},
+			{
+				"icon": "📊",
+				"name": "Data Processing",
+				"description": "Data extraction, processing, and analysis scripts",
+				"count": 78
+			}
+		]
+	},
+	"contributors": {
+		"title": "Our Contributors",
+		"subtitle": "Building Together",
+		"description": "Meet the amazing people who make OpenAppCLI possible. From code to documentation, every contribution counts.",
+		"stats": [
+			{
+				"number": "500+",
+				"label": "Contributors"
+			},
+			{
+				"number": "1,200+",
+				"label": "Commits"
+			},
+			{
+				"number": "50+",
+				"label": "Countries"
+			},
+			{
+				"number": "1000+",
+				"label": "GitHub Stars"
+			}
+		]
+	},
+	"discussions": {
+		"title": "Join the Discussion",
+		"subtitle": "Connect with the Community",
+		"description": "Share ideas, ask questions, and collaborate with other OpenAppCLI users and developers.",
+		"platforms": [
+			{
+				"icon": "💬",
+				"name": "Discord",
+				"description": "Real-time chat with the community",
+				"link": "https://discord.gg/openappcli"
+			},
+			{
+				"icon": "🐙",
+				"name": "GitHub Discussions",
+				"description": "Long-form discussions and Q&A",
+				"link": "https://github.com/wanghaisheng/openappcli/discussions"
+			},
+			{
+				"icon": "🐦",
+				"name": "Twitter",
+				"description": "Latest updates and community highlights",
+				"link": "https://twitter.com/openappcli"
+			},
+			{
+				"icon": "📺",
+				"name": "YouTube",
+				"description": "Tutorials and community content",
+				"link": "https://youtube.com/@openappcli"
+			}
+		]
+	},
+	"events": {
+		"title": "Community Events",
+		"subtitle": "Learn and Connect",
+		"description": "Join workshops, webinars, and meetups to learn from experts and connect with fellow automation enthusiasts.",
+		"upcoming": [
+			{
+				"date": "Dec 15, 2025",
+				"type": "Webinar",
+				"title": "Advanced MCP Protocol Integration",
+				"description": "Learn how to integrate AI Agents with applications using the MCP protocol",
+				"link": "#"
+			},
+			{
+				"date": "Jan 10, 2026",
+				"type": "Workshop",
+				"title": "Building Custom Automation Scripts",
+				"description": "Hands-on workshop for creating custom automation solutions",
+				"link": "#"
+			},
+			{
+				"date": "Feb 5, 2026",
+				"type": "Meetup",
+				"title": "OpenAppCLI Community Summit",
+				"description": "Annual community gathering and roadmap discussion",
+				"link": "#"
+			}
+		]
+	},
+	"resources": {
+		"title": "Learning Resources",
+		"subtitle": "Master OpenAppCLI",
+		"description": "Comprehensive resources to help you get started and become an OpenAppCLI expert.",
+		"items": [
+			{
+				"icon": "📚",
+				"title": "Documentation",
+				"description": "Complete API reference and guides",
+				"link": "https://docs.openappcli.com"
+			},
+			{
+				"icon": "🎓",
+				"title": "Tutorials",
+				"description": "Step-by-step learning paths",
+				"link": "https://learn.openappcli.com"
+			},
+			{
+				"icon": "🔧",
+				"title": "Examples",
+				"description": "Real-world automation examples",
+				"link": "https://examples.openappcli.com"
+			},
+			{
+				"icon": "🎥",
+				"title": "Video Courses",
+				"description": "In-depth video tutorials",
+				"link": "https://courses.openappcli.com"
+			}
+		]
+	},
+	"showcase": {
+		"title": "Community Showcase",
+		"subtitle": "Amazing Projects Built with OpenAppCLI",
+		"description": "Discover what the community has built using OpenAppCLI. From enterprise solutions to personal projects, see the power of universal automation in action.",
+		"cases": [
+			{
+				"title": "E-commerce Automation Suite",
+				"description": "Complete automation for inventory management, price monitoring, and order processing",
+				"logo": "https://via.placeholder.com/60x60/4A90E2/FFFFFF?text=EC",
+				"link": "#"
+			},
+			{
+				"title": "Social Media Management Tool",
+				"description": "Automated posting, engagement tracking, and content scheduling across platforms",
+				"logo": "https://via.placeholder.com/60x60/E94B3C/FFFFFF?text=SM",
+				"link": "#"
+			},
+			{
+				"title": "Testing Framework Integration",
+				"description": "Seamless integration with popular testing frameworks for automated UI testing",
+				"logo": "https://via.placeholder.com/60x60/50C878/FFFFFF?text=TF",
+				"link": "#"
+			}
+		]
+	},
+	"cta": {
+		"title": "Ready to Join the Community?",
+		"subtitle": "Start Contributing Today",
+		"description": "Whether you're writing code, reporting bugs, or sharing ideas, your contribution matters. Join us in building the future of universal automation.",
+		"buttons": {
+			"primary": "Start Contributing",
+			"secondary": "Join Discussion"
+		}
+	}
+}

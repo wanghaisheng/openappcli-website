@@ -1,0 +1,231 @@
+{
+	"layout": {
+		"title": "Download - OpenAppCLI",
+		"description": "Download OpenAppCLI - Universal Application Automation Platform + AI Agent Interaction Standard"
+	},
+	"hero": {
+		"title": "Download OpenAppCLI",
+		"subtitle": "Start Your AI Automation Journey",
+		"description": "Get the latest version of OpenAppCLI and experience the power of Not Only Website, Not Only Data Collection.",
+		"version": "v1.0.0",
+		"releaseDate": "2025-01-15",
+		"changelog": "View Release Notes"
+	},
+	"downloads": {
+		"title": "Choose Your Platform",
+		"items": [
+			{
+				"platform": "Windows",
+				"version": "x64",
+				"size": "45.2 MB",
+				"button": "Download for Windows",
+				"requirements": "Windows 10/11, Node.js 18+"
+			},
+			{
+				"platform": "macOS",
+				"version": "Universal",
+				"size": "42.8 MB",
+				"button": "Download for macOS",
+				"requirements": "macOS 11+, Node.js 18+"
+			},
+			{
+				"platform": "Linux",
+				"version": "x64",
+				"size": "41.5 MB",
+				"button": "Download for Linux",
+				"requirements": "Ubuntu 20.04+, Node.js 18+"
+			}
+		]
+	},
+	"installation": {
+		"title": "Installation",
+		"subtitle": "Multiple options for different needs",
+		"description": "We provide multiple installation methods, you can choose the most suitable one according to your needs and environment.",
+		"methods": [
+			{
+				"title": "NPM Installation",
+				"description": "Install through npm package manager, recommended for most users",
+				"command": "npm install -g @wanghaisheng/openappcli",
+				"icon": "📦",
+				"features": [
+					"Global installation",
+					"Automatic dependency management",
+					"Version updates via npm"
+				]
+			},
+			{
+				"title": "Yarn Installation",
+				"description": "Install using yarn package manager",
+				"command": "yarn global add @wanghaisheng/openappcli",
+				"icon": "🧶",
+				"features": [
+					"Fast installation",
+					"Consistent dependency resolution",
+					"Easy version management"
+				]
+			},
+			{
+				"title": "PNPM Installation",
+				"description": "Install using pnpm package manager",
+				"command": "pnpm add -g @wanghaisheng/openappcli",
+				"icon": "⬇️",
+				"features": [
+					"Disk space efficient",
+					"Fast installation",
+					"Symlink optimization"
+				]
+			},
+			{
+				"title": "Binary Download",
+				"description": "Download pre-compiled binary executables for your platform",
+				"command": "Download from releases page",
+				"icon": "🔧",
+				"features": [
+					"No dependencies required",
+					"Plug and play",
+					"System integration",
+					"Offline installation"
+				]
+			}
+		]
+	},
+	"quickStart": {
+		"title": "Quick Start",
+		"steps": [
+			{
+				"step": "1",
+				"title": "Install OpenAppCLI",
+				"description": "Choose your preferred installation method"
+			},
+			{
+				"step": "2",
+				"title": "Initialize Project",
+				"description": "Run 'openappcli init' to create your first automation project"
+			},
+			{
+				"step": "3",
+				"title": "Discover Applications",
+				"description": "Use 'openappcli discover' to find automatable applications"
+			},
+			{
+				"step": "4",
+				"title": "Start Automating",
+				"description": "Create your first automation script and run it"
+			}
+		]
+	},
+	"requirements": {
+		"title": "System Requirements",
+		"description": "Make sure your system meets these requirements for optimal performance",
+		"systems": [
+			{
+				"os": "Windows",
+				"versions": ["Windows 10", "Windows 11"],
+				"node": "Node.js 18.0+",
+				"requirements": [
+					"Windows 10/11 (64-bit)",
+					"Node.js 18.0 or higher",
+					"4GB RAM minimum",
+					"500MB free disk space"
+				]
+			},
+			{
+				"os": "macOS",
+				"versions": ["macOS 11+", "macOS 12+", "macOS 13+"],
+				"node": "Node.js 18.0+",
+				"requirements": [
+					"macOS 11 or higher",
+					"Node.js 18.0 or higher",
+					"4GB RAM minimum",
+					"500MB free disk space"
+				]
+			},
+			{
+				"os": "Linux",
+				"versions": ["Ubuntu 20.04+", "Ubuntu 22.04+", "Debian 11+"],
+				"node": "Node.js 18.0+",
+				"requirements": [
+					"Ubuntu 20.04 or equivalent",
+					"Node.js 18.0 or higher",
+					"4GB RAM minimum",
+					"500MB free disk space"
+				]
+			}
+		]
+	},
+	"versions": {
+		"title": "Version History",
+		"description": "Browse and download previous versions of OpenAppCLI",
+		"releases": [
+			{
+				"version": "v1.0.0",
+				"date": "2025-01-15",
+				"features": [
+					"Initial release",
+					"MCP protocol support",
+					"AI Agent integration",
+					"Universal platform support"
+				]
+			},
+			{
+				"version": "v0.9.0",
+				"date": "2024-12-15",
+				"features": [
+					"Beta testing complete",
+					"Performance improvements",
+					"Bug fixes"
+				]
+			}
+		]
+	},
+	"troubleshooting": {
+		"title": "Troubleshooting",
+		"description": "Common issues and their solutions",
+		"issues": [
+			{
+				"question": "Installation fails with permission error",
+				"answer": "Try running with administrator privileges or use a package manager like npm"
+			},
+			{
+				"question": "Command not found after installation",
+				"answer": "Make sure the installation path is in your system's PATH environment variable"
+			},
+			{
+				"question": "Node.js version compatibility issues",
+				"answer": "Update Node.js to version 18.0 or higher using nvm or official installer"
+			}
+		]
+	},
+	"support": {
+		"title": "Support & Documentation",
+		"description": "Get help and learn more about OpenAppCLI",
+		"channels": [
+			{
+				"name": "Documentation",
+				"icon": "📚",
+				"description": "Complete API documentation and guides"
+			},
+			{
+				"name": "GitHub Issues",
+				"icon": "🐛",
+				"description": "Report bugs and request features"
+			},
+			{
+				"name": "Discord Community",
+				"icon": "💬",
+				"description": "Chat with other users and developers"
+			}
+		]
+	},
+	"enterprise": {
+		"title": "Enterprise Solutions",
+		"description": "Advanced features for enterprise deployments",
+		"features": [
+			"Private package registry",
+			"Advanced security features",
+			"Priority support",
+			"Custom integrations",
+			"On-premise deployment options"
+		]
+	}
+}

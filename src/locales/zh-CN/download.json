@@ -1,0 +1,265 @@
+{
+	"layout": {
+		"title": "下载 - OpenAppCLI",
+		"description": "下载 OpenAppCLI，体验 Not Only Website, Not Only Data Collection 的强大能力。支持多种安装方式，满足不同用户需求。"
+	},
+	"hero": {
+		"title": "下载 OpenAppCLI",
+		"subtitle": "开始您的 AI 自动化之旅",
+		"description": "选择适合您的安装方式，立即体验 OpenAppCLI 的强大功能。"
+	},
+	"installation": {
+		"title": "安装方式",
+		"subtitle": "多种选择，满足不同需求",
+		"description": "我们提供多种安装方式，您可以根据自己的需求和环境选择最适合的方式。",
+		"methods": [
+			{
+				"title": "NPM 安装",
+				"description": "通过 npm 包管理器安装，推荐大多数用户使用",
+				"command": "npm install -g @wanghaisheng/openappcli",
+				"icon": "📦",
+				"features": [
+					"全局安装",
+					"自动依赖管理",
+					"通过 npm 更新版本"
+				]
+			},
+			{
+				"title": "Yarn 安装",
+				"description": "使用 yarn 包管理器安装",
+				"command": "yarn global add @wanghaisheng/openappcli",
+				"icon": "🧶",
+				"features": [
+					"快速安装",
+					"一致的依赖解析",
+					"简单的版本管理"
+				]
+			},
+			{
+				"title": "PNPM 安装",
+				"description": "使用 pnpm 包管理器安装",
+				"command": "pnpm add -g @wanghaisheng/openappcli",
+				"icon": "⬇️",
+				"features": [
+					"节省磁盘空间",
+					"快速安装",
+					"符号链接优化"
+				]
+			},
+			{
+				"title": "二进制下载",
+				"description": "下载预编译的二进制可执行文件",
+				"command": "从发布页面下载",
+				"icon": "🔧",
+				"features": [
+					"无需依赖",
+					"即开即用",
+					"系统集成",
+					"离线安装"
+				]
+			}
+		]
+	},
+	"requirements": {
+		"title": "系统要求",
+		"subtitle": "确保您的环境满足要求",
+		"description": "OpenAppCLI 支持多种操作系统和 Node.js 版本。",
+		"systems": [
+			{
+				"os": "Windows",
+				"versions": ["Windows 10", "Windows 11"],
+				"node": "Node.js 18.0+",
+				"requirements": [
+					"Windows 10/11 (64位)",
+					"Node.js 18.0 或更高版本",
+					"4GB 内存最低要求",
+					"500MB 可用磁盘空间"
+				]
+			},
+			{
+				"os": "macOS",
+				"versions": ["macOS 11+", "macOS 12+", "macOS 13+"],
+				"node": "Node.js 18.0+",
+				"requirements": [
+					"macOS 11 或更高版本",
+					"Node.js 18.0 或更高版本",
+					"4GB 内存最低要求",
+					"500MB 可用磁盘空间"
+				]
+			},
+			{
+				"os": "Linux",
+				"versions": ["Ubuntu 20.04+", "Ubuntu 22.04+", "Debian 11+"],
+				"node": "Node.js 18.0+",
+				"requirements": [
+					"Ubuntu 20.04 或同等版本",
+					"Node.js 18.0 或更高版本",
+					"4GB 内存最低要求",
+					"500MB 可用磁盘空间"
+				]
+			}
+		]
+	},
+	"quickStart": {
+		"title": "快速开始",
+		"subtitle": "安装后立即开始使用",
+		"description": "安装完成后，您可以通过以下步骤快速开始使用 OpenAppCLI。",
+		"steps": [
+			{
+				"step": 1,
+				"title": "验证安装",
+				"description": "检查 OpenAppCLI 是否正确安装",
+				"command": "openappcli --version",
+				"expected": "OpenAppCLI v2.0.0"
+			},
+			{
+				"step": 2,
+				"title": "查看帮助",
+				"description": "了解可用的命令和选项",
+				"command": "openappcli --help",
+				"expected": "显示帮助信息"
+			},
+			{
+				"step": 3,
+				"title": "启动 MCP 服务",
+				"description": "启动 MCP 服务器以支持 AI Agent 交互",
+				"command": "openappcli mcp start",
+				"expected": "MCP 服务器已启动"
+			},
+			{
+				"step": 4,
+				"title": "测试功能",
+				"description": "测试基本的应用自动化功能",
+				"command": "openappcli bilibili hot",
+				"expected": "返回热门视频列表"
+			}
+		]
+	},
+	"versions": {
+		"title": "版本历史",
+		"subtitle": "查看所有发布版本",
+		"description": "了解不同版本的特性和改进，选择适合您的版本。",
+		"releases": [
+			{
+				"version": "v2.0.0",
+				"date": "2025-12-01",
+				"status": "stable",
+				"description": "MCP 协议集成，AI Agent 原生支持",
+				"features": [
+					"MCP 协议集成",
+					"AI Agent 原生交互",
+					"双向应用控制",
+					"智能策略选择"
+				],
+				"download": "/releases/v2.0.0"
+			},
+			{
+				"version": "v1.5.0",
+				"date": "2025-10-15",
+				"status": "stable",
+				"description": "桌面和移动应用支持扩展",
+				"features": [
+					"桌面应用支持",
+					"移动应用支持",
+					"CLI Hub 功能",
+					"性能优化"
+				],
+				"download": "/releases/v1.5.0"
+			},
+			{
+				"version": "v1.0.0",
+				"date": "2025-08-01",
+				"status": "stable",
+				"description": "初始版本，Web 和 Electron 应用自动化",
+				"features": [
+					"Web 应用自动化",
+					"Electron 应用支持",
+					"AI 辅助开发",
+					"50+ 站点适配器"
+				],
+				"download": "/releases/v1.0.0"
+			}
+		]
+	},
+	"troubleshooting": {
+		"title": "常见问题",
+		"subtitle": "解决安装和使用中的问题",
+		"description": "这里收集了用户在安装和使用过程中遇到的常见问题和解决方案。",
+		"issues": [
+			{
+				"question": "安装失败：权限不足",
+				"answer": "使用管理员权限运行终端，或使用 npx 安装：npx @wanghaisheng/openappcli"
+			},
+			{
+				"question": "命令未找到：PATH 环境变量",
+				"answer": "检查 Node.js 和 npm 是否正确安装，重新启动终端或手动添加 PATH"
+			},
+			{
+				"question": "版本不兼容：Node.js 版本过低",
+				"answer": "升级到 Node.js 16.0 或更高版本，推荐使用 LTS 版本"
+			},
+			{
+				"question": "功能异常：依赖缺失",
+				"answer": "运行 npm install 安装依赖，或使用完整安装包"
+			}
+		]
+	},
+	"support": {
+		"title": "获取帮助",
+		"subtitle": "我们随时为您提供支持",
+		"description": "如果您在安装或使用过程中遇到问题，可以通过以下方式获取帮助。",
+		"channels": [
+			{
+				"name": "文档中心",
+				"description": "详细的文档和教程",
+				"icon": "📚",
+				"link": "/docs"
+			},
+			{
+				"name": "GitHub Issues",
+				"description": "报告 Bug 和功能请求",
+				"icon": "🐛",
+				"link": "https://github.com/wanghaisheng/openappcli/issues"
+			},
+			{
+				"name": "社区讨论",
+				"description": "与其他用户交流经验",
+				"icon": "💬",
+				"link": "https://github.com/wanghaisheng/openappcli/discussions"
+			},
+			{
+				"name": "邮件支持",
+				"description": "直接联系我们的技术团队",
+				"icon": "📧",
+				"link": "mailto:support@openappcli.org"
+			}
+		]
+	},
+	"enterprise": {
+		"title": "企业版",
+		"subtitle": "面向企业用户的增强功能",
+		"description": "OpenAppCLI 企业版提供更多企业级功能，满足大规模部署和使用需求。",
+		"features": [
+			"企业级支持和维护",
+			"定制化开发服务",
+			"私有部署方案",
+			"培训和咨询服务",
+			"优先技术支持",
+			"定制适配器开发"
+		],
+		"cta": {
+			"title": "联系销售团队",
+			"description": "了解更多企业版功能和定价方案",
+			"button": "联系我们"
+		}
+	},
+	"cta": {
+		"title": "立即开始",
+		"subtitle": "体验 AI 自动化的强大能力",
+		"description": "下载 OpenAppCLI，立即开始您的 AI 自动化之旅。我们提供完整的技术支持和社区帮助。",
+		"buttons": {
+			"primary": "立即下载",
+			"secondary": "查看文档"
+		}
+	}
+}

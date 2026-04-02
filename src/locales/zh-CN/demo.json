@@ -1,0 +1,181 @@
+{
+	"layout": {
+		"title": "演示中心 - OpenAppCLI",
+		"description": "体验 OpenAppCLI 的实时演示，了解 AI Agent 如何通过 MCP 协议直接操作各种应用。"
+	},
+	"hero": {
+		"title": "实时演示",
+		"subtitle": "体验 AI Agent 与应用的直接交互",
+		"description": "通过 MCP 协议，AI Agent 可以直接调用 OpenAppCLI 的工具和资源，实现可靠的应用自动化。"
+	},
+	"mcpDemo": {
+		"title": "MCP 协议演示",
+		"subtitle": "AI Agent 原生交互",
+		"description": "展示 AI Agent 如何通过 MCP 协议直接操作应用",
+		"tools": [
+			{
+				"name": "discover_applications",
+				"description": "发现可用应用",
+				"example": "发现系统中所有可自动化的应用",
+				"result": {
+					"applications": ["bilibili", "instagram", "notepad", "calculator"],
+					"count": 4
+				}
+			},
+			{
+				"name": "execute_automation",
+				"description": "执行自动化操作",
+				"example": "执行预定义的自动化任务",
+				"result": {
+					"success": true,
+					"message": "操作成功完成",
+					"duration": "2.3s"
+				}
+			},
+			{
+				"name": "get_screenshot",
+				"description": "获取应用截图",
+				"example": "获取当前应用界面的截图",
+				"result": {
+					"screenshot": "data:image/png;base64,...",
+					"resolution": "1920x1080",
+					"size": "245KB"
+				}
+			},
+			{
+				"name": "extract_data",
+				"description": "提取应用数据",
+				"example": "从应用中提取结构化数据",
+				"result": {
+					"data": {
+						"videos": [
+							{"title": "视频1", "views": 10000},
+							{"title": "视频2", "views": 8000}
+						]
+					}
+				}
+			}
+		]
+	},
+	"aiAgentDemo": {
+		"title": "AI Agent 交互演示",
+		"subtitle": "智能对话和自动化",
+		"description": "展示 AI Agent 如何理解用户意图并自动执行应用操作",
+		"examples": [
+			{
+				"prompt": "使用 OpenAppCLI 提取 Bilibili 热门视频",
+				"response": "✅ AI Agent executed: openappcli.bilibili.hot\n📺 Retrieved 10 hot videos via MCP protocol",
+				"tools": ["openappcli.bilibili.hot"],
+				"timestamp": "2025-12-01 10:30:00"
+			},
+			{
+				"prompt": "完成原神每日任务",
+				"response": "✅ AI Agent executed: openappcli.genshin.daily_quests\n🎮 All daily quests completed successfully",
+				"tools": ["openappcli.genshin.daily_quests"],
+				"timestamp": "2025-12-01 10:25:00"
+			},
+			{
+				"prompt": "自动点赞 Instagram 前5个帖子",
+				"response": "✅ AI Agent executed: openappcli.instagram.like_posts --count 5\n❤️ Successfully liked 5 posts",
+				"tools": ["openappcli.instagram.like_posts"],
+				"timestamp": "2025-12-01 10:20:00"
+			}
+		]
+	},
+	"platformDemo": {
+		"title": "多平台演示",
+		"subtitle": "全应用类型支持",
+		"description": "展示 OpenAppCLI 在不同平台上的应用能力",
+		"platforms": [
+			{
+				"name": "Web 应用",
+				"description": "Bilibili 热门视频提取",
+				"demo": "提取 Bilibili 热门视频列表",
+				"result": "成功提取 10 个热门视频",
+				"icon": "🌐"
+			},
+			{
+				"name": "桌面应用",
+				"description": "记事本自动写入",
+				"demo": "自动在记事本中写入文本",
+				"result": "成功写入文本到记事本",
+				"icon": "🖥️"
+			},
+			{
+				"name": "移动应用",
+				"description": "Instagram 自动点赞",
+				"demo": "自动点赞 Instagram 帖子",
+				"result": "成功点赞 5 个帖子",
+				"icon": "📱"
+			},
+			{
+				"name": "游戏应用",
+				"description": "原神每日任务",
+				"demo": "自动完成原神每日任务",
+				"result": "成功完成所有每日任务",
+				"icon": "🎮"
+			}
+		]
+	},
+	"codeExamples": {
+		"title": "代码示例",
+		"subtitle": "最佳实践展示",
+		"description": "展示如何使用 OpenAppCLI 进行应用自动化开发",
+		"examples": [
+			{
+				"title": "基础应用操作",
+				"description": "展示基本的应用操作示例",
+				"code": "// 获取 Bilibili 热门视频\nconst hotVideos = await openappcli.bilibili.hot();\nconsole.log(hotVideos);\n\n// 自动点赞视频\nawait openappcli.bilibili.like(videoId);",
+				"language": "javascript"
+			},
+			{
+				"title": "MCP 工具调用",
+				"description": "展示 MCP 协议的工具调用",
+				"code": "// MCP 工具调用示例\nconst tools = await mcpClient.listTools();\nconst result = await mcpClient.callTool('bilibili.hot', {});\n\nconsole.log('工具列表:', tools);\nconsole.log('调用结果:', result);",
+				"language": "javascript"
+			},
+			{
+				"title": "AI Agent 集成",
+				"description": "展示 AI Agent 集成示例",
+				"code": "// AI Agent 自动化示例\nconst aiAgent = new OpenAppCLIAgent();\n\n// AI Agent 自动化任务\nawait aiAgent.execute('提取 Bilibili 热门视频并点赞前3个');\nawait aiAgent.execute('完成原神每日任务');",
+				"language": "javascript"
+			}
+		]
+	},
+	"interactiveDemo": {
+		"title": "交互式演示",
+		"subtitle": "亲自体验",
+		"description": "在浏览器中直接体验 OpenAppCLI 的强大功能",
+		"features": [
+			{
+				"title": "实时执行",
+				"description": "在浏览器中实时执行 OpenAppCLI 命令",
+				"icon": "⚡"
+			},
+			{
+				"title": "可视化结果",
+				"description": "以可视化方式展示执行结果",
+				"icon": "👁️"
+			},
+			{
+				"title": "错误处理",
+				"description": "完善的错误处理和用户反馈",
+				"icon": "🛡️"
+			},
+			{
+				"title": "性能监控",
+				"description": "实时显示执行性能和资源使用",
+				"icon": "📊"
+			}
+		]
+	},
+	"tryIt": {
+		"title": "立即体验",
+		"subtitle": "开始您的自动化之旅",
+		"description": "下载 OpenAppCLI，亲自体验 Not Only Website, Not Only Data Collection 的强大能力。",
+		"buttons": {
+			"primary": "立即下载",
+			"secondary": "查看文档"
+		}
+	}
+}

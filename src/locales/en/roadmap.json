@@ -1,0 +1,181 @@
+{
+	"layout": {
+		"title": "Roadmap - OpenAppCLI",
+		"description": "View OpenAppCLI's development roadmap, understand how we evolve from Website automation to AI Agent application interaction standard platform."
+	},
+	"hero": {
+		"title": "Development Roadmap",
+		"subtitle": "From Concept to Reality Implementation Path",
+		"description": "We have defined a clear 4-phase development plan, each step moving towards Not Only Website, Not Only Data Collection goals."
+	},
+	"milestones": {
+		"title": "Milestone Planning",
+		"subtitle": "4 Phases, 14 Months Complete Implementation Path",
+		"phases": [
+			{
+				"phase": "Phase 1: Basic Extension + MCP Enhanced",
+				"period": "3 months",
+				"status": "planning",
+				"goals": [
+					"RobotJS integration + MCP basics",
+					"Visual data extraction + MCP resources",
+					"System-level access + MCP prompts"
+				],
+				"deliverables": ["MCP Server", "Desktop application adapters", "Resource system"],
+				"breakthrough": "Achieve Not Only Website - Support Desktop applications"
+			},
+			{
+				"phase": "Phase 2: Mobile Support + MCP Mobile Integration",
+				"period": "4 months",
+				"status": "planning",
+				"goals": [
+					"Android basic support + MCP mobile tools",
+					"iOS support + MCP iOS tools",
+					"Mobile application ecosystem + MCP mobile ecosystem"
+				],
+				"deliverables": ["Mobile adapters", "Cross-platform tools", "Mobile prompts"],
+				"breakthrough": "Achieve true Universal Platform"
+			},
+			{
+				"phase": "Phase 3: Game Application Support + MCP Game Integration",
+				"period": "3 months",
+				"status": "planning",
+				"goals": [
+					"Unity game support + MCP Unity tools",
+					"Unreal game support + MCP Unreal tools",
+					"Universal game framework + MCP game ecosystem"
+				],
+				"deliverables": ["Game adapters", "Engine integration", "Game prompts"],
+				"breakthrough": "Cover all application types"
+			},
+			{
+				"phase": "Phase 4: AI Agent Ecosystem + Enterprise Features",
+				"period": "4 months",
+				"status": "planning",
+				"goals": [
+					"AI Agent ecosystem improvement",
+					"Enterprise features",
+					"Commercialization preparation"
+				],
+				"deliverables": ["AI Agent marketplace", "Enterprise version", "Cloud services"],
+				"breakthrough": "Achieve Not Only Data Collection - Two-way application control"
+			}
+		]
+	},
+	"breakthroughs": {
+		"title": "Core Breakthrough Points",
+		"subtitle": "Key breakthroughs for each phase",
+		"items": [
+			{
+				"milestone": "Not Only Website",
+				"description": "From Web automation to full application type support",
+				"before": "Only operate Website + Electron applications",
+				"after": "Support Desktop + Mobile + Game + Web all application types",
+				"impact": "Application coverage from 20% to 100%"
+			},
+			{
+				"milestone": "Not Only Data Collection",
+				"description": "From one-way data extraction to two-way application control",
+				"before": "Only extract application data, cannot control application behavior",
+				"after": "Complete application behavior control + AI Agent direct interaction",
+				"impact": "From information tool to application interaction platform"
+			},
+			{
+				"milestone": "AI Agent Native Integration",
+				"description": "Achieve AI Agent native integration through MCP protocol",
+				"before": "AI Agent needs to parse text output, interaction unreliable",
+				"after": "AI Agent directly calls MCP tools, interaction reliable",
+				"impact": "Establish AI Agent application interaction standard"
+			}
+		]
+	},
+	"evolution": {
+		"title": "Technical Evolution Path",
+		"subtitle": "Comprehensive upgrades in three dimensions",
+		"areas": [
+			{
+				"area": "Application Coverage",
+				"evolution": "Website → Universal Platform",
+				"steps": [
+					"OpenCLI: Website + Electron (20% application coverage)",
+					"OpenAppCLI 1.0: Desktop + Mobile + Game (80% application coverage)",
+					"OpenAppCLI 2.0: Universal Platform (100% application coverage)"
+				]
+			},
+			{
+				"area": "Capability Dimension",
+				"evolution": "Data Collection → Application Control",
+				"steps": [
+					"OpenCLI: One-way data extraction",
+					"OpenAppCLI 1.0: Basic application operations",
+					"OpenAppCLI 2.0: Complete application behavior control"
+				]
+			},
+			{
+				"area": "Interaction Method",
+				"evolution": "CLI Tool → AI Agent Bridge",
+				"steps": [
+					"OpenCLI: Human-computer interaction, CLI command line",
+					"OpenAppCLI 1.0: Program interaction, API interface",
+					"OpenAppCLI 2.0: AI native interaction, MCP protocol"
+				]
+			}
+		]
+	},
+	"timeline": {
+		"title": "Timeline Nodes",
+		"subtitle": "Key delivery goals",
+		"items": [
+			{
+				"date": "2025 Q4",
+				"milestone": "Phase 1 Complete",
+				"deliverable": "MCP Server + Desktop application support"
+			},
+			{
+				"date": "2026 Q1",
+				"milestone": "Phase 2 Complete",
+				"deliverable": "Mobile support + Cross-platform tools"
+			},
+			{
+				"date": "2026 Q2",
+				"milestone": "Phase 3 Complete",
+				"deliverable": "Game application support + Universal framework"
+			},
+			{
+				"date": "2026 Q3",
+				"milestone": "Phase 4 Complete",
+				"deliverable": "AI Agent ecosystem + Enterprise features"
+			}
+		]
+	},
+	"resources": {
+		"title": "Related Resources",
+		"subtitle": "Deep dive into our technical implementation",
+		"items": [
+			{
+				"title": "Technical Documentation",
+				"description": "Detailed development guide and API documentation",
+				"link": "/docs"
+			},
+			{
+				"title": "MCP Protocol Specification",
+				"description": "Learn about MCP protocol technical details",
+				"link": "/docs/mcp"
+			},
+			{
+				"title": "Development Blog",
+				"description": "Follow our development progress and updates",
+				"link": "/blog"
+			}
+		]
+	},
+	"cta": {
+		"title": "Join Our Development",
+		"subtitle": "Build AI Automation Future Together",
+		"description": "If you're interested in our roadmap, welcome to contribute and build the standardized ecosystem for AI Agent application interaction together.",
+		"buttons": {
+			"primary": "Contribute Now",
+			"secondary": "Contact Us"
+		}
+	}
+}

@@ -1,0 +1,491 @@
+---
+import BaseLayout from "@layouts/BaseLayout.astro";
+import { getLocaleFromUrl } from "@js/localeUtils";
+import { useTranslations } from "@js/translationUtils";
+
+const locale = getLocaleFromUrl(Astro.url);
+const t = useTranslations(locale);
+---
+
+<BaseLayout title={t("community:layout.title")} description={t("community:layout.description")}>
+	<section class="community-hero">
+		<div class="container">
+			<h1>{t("community:hero.title")}</h1>
+			<p class="subtitle">{t("community:hero.subtitle")}</p>
+			<p class="description">{t("community:hero.description")}</p>
+		</div>
+	</section>
+
+	<section class="contribute">
+		<div class="container">
+			<h2>{t("community:contribute.title")}</h2>
+			<p class="subtitle">{t("community:contribute.subtitle")}</p>
+			<p class="description">{t("community:contribute.description")}</p>
+			
+			<div class="contribute-grid">
+				{t("community:contribute.ways").map((way, index) => (
+					<div class="contribute-card">
+						<div class="contribute-icon">{way.icon}</div>
+						<h3>{way.title}</h3>
+						<p>{way.description}</p>
+						<a href={way.link} class="btn btn-outline">Learn More</a>
+					</div>
+				))}
+			</div>
+		</div>
+	</section>
+
+	<section class="marketplace">
+		<div class="container">
+			<h2>{t("community:marketplace.title")}</h2>
+			<p class="subtitle">{t("community:marketplace.subtitle")}</p>
+			<p class="description">{t("community:marketplace.description")}</p>
+			
+			<div class="categories-grid">
+				{t("community:marketplace.categories").map((category, index) => (
+					<div class="category-card">
+						<div class="category-icon">{category.icon}</div>
+						<h3>{category.name}</h3>
+						<p>{category.description}</p>
+						<div class="category-count">
+							<span>{category.count} adapters</span>
+						</div>
+					</div>
+				))}
+			</div>
+		</div>
+	</section>
+
+	<section class="contributors">
+		<div class="container">
+			<h2>{t("community:contributors.title")}</h2>
+			<p class="subtitle">{t("community:contributors.subtitle")}</p>
+			<p class="description">{t("community:contributors.description")}</p>
+			
+			<div class="stats-grid">
+				{t("community:contributors.stats").map((stat, index) => (
+					<div class="stat-card">
+						<div class="stat-number">{stat.number}</div>
+						<div class="stat-label">{stat.label}</div>
+					</div>
+				))}
+			</div>
+		</div>
+	</section>
+
+	<section class="discussions">
+		<div class="container">
+			<h2>{t("community:discussions.title")}</h2>
+			<p class="subtitle">{t("community:discussions.subtitle")}</p>
+			<p class="description">{t("community:discussions.description")}</p>
+			
+			<div class="platforms-grid">
+				{t("community:discussions.platforms").map((platform, index) => (
+					<div class="platform-card">
+						<div class="platform-icon">{platform.icon}</div>
+						<h3>{platform.name}</h3>
+						<p>{platform.description}</p>
+						<a href={platform.link} class="btn btn-primary" target="_blank" rel="noopener noreferrer">
+							Join Discussion
+						</a>
+					</div>
+				))}
+			</div>
+		</div>
+	</section>
+
+	<section class="events">
+		<div class="container">
+			<h2>{t("community:events.title")}</h2>
+			<p class="subtitle">{t("community:events.subtitle")}</p>
+			<p class="description">{t("community:events.description")}</p>
+			
+			<div class="events-grid">
+				{t("community:events.upcoming").map((event, index) => (
+					<div class="event-card">
+						<div class="event-date">
+							<span class="date">{event.date}</span>
+							<span class="type">{event.type}</span>
+						</div>
+						<h3>{event.title}</h3>
+						<p>{event.description}</p>
+						<a href={event.link} class="btn btn-outline">Learn More</a>
+					</div>
+				))}
+			</div>
+		</div>
+	</section>
+
+	<section class="resources">
+		<div class="container">
+			<h2>{t("community:resources.title")}</h2>
+			<p class="subtitle">{t("community:resources.subtitle")}</p>
+			<p class="description">{t("community:resources.description")}</p>
+			
+			<div class="resources-grid">
+				{t("community:resources.items").map((resource, index) => (
+					<div class="resource-card">
+						<div class="resource-icon">{resource.icon}</div>
+						<h3>{resource.title}</h3>
+						<p>{resource.description}</p>
+						<a href={resource.link} class="btn btn-primary">Access Resource</a>
+					</div>
+				))}
+			</div>
+		</div>
+	</section>
+
+	<section class="showcase">
+		<div class="container">
+			<h2>{t("community:showcase.title")}</h2>
+			<p class="subtitle">{t("community:showcase.subtitle")}</p>
+			<p class="description">{t("community:showcase.description")}</p>
+			
+			<div class="showcases-grid">
+				{t("community:showcase.cases").map((showcase, index) => (
+					<div class="showcase-card">
+						<div class="showcase-logo">
+							<img src={showcase.logo} alt={showcase.title} />
+						</div>
+						<h3>{showcase.title}</h3>
+						<p>{showcase.description}</p>
+						<a href={showcase.link} class="btn btn-outline">Read Case Study</a>
+					</div>
+				))}
+			</div>
+		</div>
+	</section>
+
+	<section class="cta">
+		<div class="container">
+			<h2>{t("community:cta.title")}</h2>
+			<p class="subtitle">{t("community:cta.subtitle")}</p>
+			<p class="description">{t("community:cta.description")}</p>
+			<div class="buttons">
+				<a href="/docs/contributing" class="btn btn-primary">{t("community:cta.buttons.primary")}</a>
+				<a href="/contact" class="btn btn-secondary">{t("community:cta.buttons.secondary")}</a>
+			</div>
+		</div>
+	</section>
+</BaseLayout>
+
+<style>
+	.community-hero {
+		padding: 8rem 0;
+		background: linear-gradient(135deg, var(--primary-500), var(--secondary-500));
+		color: white;
+		text-align: center;
+	}
+
+	.community-hero h1 {
+		font-size: 3rem;
+		font-weight: 700;
+		margin-bottom: 1rem;
+	}
+
+	.community-hero .subtitle {
+		font-size: 1.5rem;
+		margin-bottom: 1.5rem;
+		opacity: 0.9;
+	}
+
+	.community-hero .description {
+		font-size: 1.1rem;
+		max-width: 600px;
+		margin: 0 auto;
+		opacity: 0.8;
+	}
+
+	.container {
+		max-width: 1200px;
+		margin: 0 auto;
+		padding: 0 2rem;
+	}
+
+	.contribute,
+	.marketplace,
+	.contributors,
+	.discussions,
+	.events,
+	.resources,
+	.showcase {
+		padding: 6rem 0;
+	}
+
+	.contribute:nth-child(even),
+	.contributors:nth-child(even),
+	.events:nth-child(even) {
+		background: var(--gray-50);
+	}
+
+	section h2 {
+		text-align: center;
+		font-size: 2.5rem;
+		color: var(--primary-600);
+		margin-bottom: 1rem;
+	}
+
+	section .subtitle {
+		text-align: center;
+		font-size: 1.25rem;
+		color: var(--gray-600);
+		margin-bottom: 2rem;
+		max-width: 600px;
+		margin-left: auto;
+		margin-right: auto;
+	}
+
+	section .description {
+		text-align: center;
+		font-size: 1.1rem;
+		color: var(--gray-600);
+		margin-bottom: 3rem;
+		max-width: 800px;
+		margin-left: auto;
+		margin-right: auto;
+	}
+
+	.contribute-grid,
+	.categories-grid,
+	.platforms-grid,
+	.events-grid,
+	.resources-grid,
+	.showcases-grid {
+		display: grid;
+		grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+		gap: 2rem;
+	}
+
+	.contribute-card,
+	.category-card,
+	.platform-card,
+	.event-card,
+	.resource-card,
+	.showcase-card {
+		background: white;
+		padding: 2rem;
+		border-radius: 12px;
+		box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+		text-align: center;
+		transition: transform 0.3s ease, box-shadow 0.3s ease;
+	}
+
+	.contribute-card:hover,
+	.category-card:hover,
+	.platform-card:hover,
+	.event-card:hover,
+	.resource-card:hover,
+	.showcase-card:hover {
+		transform: translateY(-4px);
+		box-shadow: 0 8px 16px rgba(0, 0, 0, 0.15);
+	}
+
+	.contribute-icon,
+	.category-icon,
+	.platform-icon,
+	.resource-icon {
+		font-size: 3rem;
+		margin-bottom: 1.5rem;
+	}
+
+	.contribute-card h3,
+	.category-card h3,
+	.platform-card h3,
+	.event-card h3,
+	.resource-card h3,
+	.showcase-card h3 {
+		font-size: 1.25rem;
+		color: var(--primary-600);
+		margin-bottom: 1rem;
+	}
+
+	.contribute-card p,
+	.category-card p,
+	.platform-card p,
+	.event-card p,
+	.resource-card p,
+	.showcase-card p {
+		color: var(--gray-600);
+		line-height: 1.6;
+		margin-bottom: 1.5rem;
+	}
+
+	.category-count {
+		background: var(--primary-50);
+		color: var(--primary-600);
+		padding: 0.5rem 1rem;
+		border-radius: 20px;
+		font-weight: 600;
+		font-size: 0.9rem;
+	}
+
+	.stats-grid {
+		display: grid;
+		grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+		gap: 2rem;
+	}
+
+	.stat-card {
+		background: white;
+		padding: 2rem;
+		border-radius: 12px;
+		box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+		text-align: center;
+		transition: transform 0.3s ease, box-shadow 0.3s ease;
+	}
+
+	.stat-card:hover {
+		transform: translateY(-4px);
+		box-shadow: 0 8px 16px rgba(0, 0, 0, 0.15);
+	}
+
+	.stat-number {
+		font-size: 2.5rem;
+		font-weight: 700;
+		color: var(--primary-600);
+		margin-bottom: 0.5rem;
+	}
+
+	.stat-label {
+		color: var(--gray-600);
+		font-size: 1rem;
+	}
+
+	.event-date {
+		background: var(--primary-50);
+		color: var(--primary-600);
+		padding: 0.75rem 1rem;
+		border-radius: 8px;
+		margin-bottom: 1rem;
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+	}
+
+	.event-date .date {
+		font-weight: 600;
+	}
+
+	.event-date .type {
+		background: var(--primary-600);
+		color: white;
+		padding: 0.25rem 0.5rem;
+		border-radius: 4px;
+		font-size: 0.8rem;
+	}
+
+	.showcase-logo {
+		width: 60px;
+		height: 60px;
+		margin: 0 auto 1rem;
+		border-radius: 8px;
+		overflow: hidden;
+	}
+
+	.showcase-logo img {
+		width: 100%;
+		height: 100%;
+		object-fit: cover;
+	}
+
+	.btn {
+		display: inline-block;
+		padding: 0.75rem 1.5rem;
+		border-radius: 8px;
+		text-decoration: none;
+		font-weight: 600;
+		transition: all 0.3s ease;
+		text-align: center;
+	}
+
+	.btn-primary {
+		background: var(--primary-500);
+		color: white;
+	}
+
+	.btn-secondary {
+		background: var(--secondary-500);
+		color: white;
+	}
+
+	.btn-outline {
+		background: transparent;
+		color: var(--primary-600);
+		border: 2px solid var(--primary-600);
+	}
+
+	.btn:hover {
+		transform: translateY(-2px);
+		box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+	}
+
+	.btn-outline:hover {
+		background: var(--primary-500);
+		color: white;
+	}
+
+	.cta {
+		padding: 6rem 0;
+		text-align: center;
+		background: linear-gradient(135deg, var(--accent-500), var(--primary-500));
+		color: white;
+	}
+
+	.cta h2 {
+		font-size: 2.5rem;
+		margin-bottom: 1rem;
+		color: white;
+	}
+
+	.buttons {
+		margin-top: 2rem;
+		display: flex;
+		gap: 1rem;
+		justify-content: center;
+	}
+
+	@media (max-width: 768px) {
+		.community-hero h1 {
+			font-size: 2rem;
+		}
+
+		.community-hero .subtitle {
+			font-size: 1.2rem;
+		}
+
+		section h2 {
+			font-size: 2rem;
+		}
+
+		section .subtitle {
+			font-size: 1.1rem;
+		}
+
+		section .description {
+			font-size: 1rem;
+		}
+
+		.contribute-grid,
+		.categories-grid,
+		.platforms-grid,
+		.events-grid,
+		.resources-grid,
+		.showcases-grid {
+			grid-template-columns: 1fr;
+		}
+
+		.stats-grid {
+			grid-template-columns: repeat(2, 1fr);
+		}
+
+		.event-date {
+			flex-direction: column;
+			gap: 0.5rem;
+		}
+
+		.buttons {
+			flex-direction: column;
+			align-items: center;
+		}
+	}
+</style>

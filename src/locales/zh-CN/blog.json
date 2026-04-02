@@ -1,0 +1,180 @@
+{
+	"layout": {
+		"title": "博客中心 - OpenAppCLI",
+		"description": "OpenAppCLI 技术博客，分享 Not Only Website, Not Only Data Collection 的理念实现过程，以及 MCP 协议和 AI Agent 交互的技术细节。"
+	},
+	"hero": {
+		"title": "技术博客",
+		"subtitle": "记录我们的思考、实现和突破",
+		"description": "在这里，我们分享 OpenAppCLI 的开发过程、技术思考，以及从 Website 到 Universal Platform 的演进历程。"
+	},
+	"categories": {
+		"title": "文章分类",
+		"items": [
+			{
+				"name": "技术文章",
+				"description": "深度技术解析和实现细节",
+				"slug": "technical",
+				"count": 12
+			},
+			{
+				"name": "开发日志",
+				"description": "开发过程中的思考和记录",
+				"slug": "development",
+				"count": 8
+			},
+			{
+				"name": "行业洞察",
+				"description": "AI 自动化行业趋势分析",
+				"slug": "insights",
+				"count": 6
+			},
+			{
+				"name": "用户案例",
+				"description": "真实应用场景和成功案例",
+				"slug": "cases",
+				"count": 4
+			}
+		]
+	},
+	"featured": {
+		"title": "精选文章",
+		"items": [
+			{
+				"title": "Not Only Website: 从 Web 自动化到通用应用平台",
+				"description": "详细阐述我们如何突破 Website 限制，实现真正的通用应用自动化平台。",
+				"category": "技术文章",
+				"date": "2025-12-01",
+				"tags": ["not-only-website", "universal-platform", "mcp"],
+				"image": "/images/blog/not-only-website.jpg",
+				"slug": "not-only-website-universal-platform"
+			},
+			{
+				"title": "Not Only Data Collection: 从信息提取到应用控制",
+				"description": "深入分析从单向数据提取到双向应用控制的技术突破和架构演进。",
+				"category": "技术文章",
+				"date": "2025-11-28",
+				"tags": ["not-only-data-collection", "application-control", "ai-agent"],
+				"image": "/images/blog/not-only-data-collection.jpg",
+				"slug": "not-only-data-collection-application-control"
+			},
+			{
+				"title": "MCP 协议深度解析：AI Agent 交互标准",
+				"description": "全面解析 MCP 协议的设计理念、技术实现和生态系统。",
+				"category": "技术文章",
+				"date": "2025-11-25",
+				"tags": ["mcp", "ai-agent", "protocol"],
+				"image": "/images/blog/mcp-protocol.jpg",
+				"slug": "mcp-protocol-deep-dive"
+			}
+		]
+	},
+	"recent": {
+		"title": "最新文章",
+		"items": [
+			{
+				"title": "MCP 集成开发周记 #1：协议设计",
+				"description": "记录 MCP 协议集成第一周的设计思考和技术决策。",
+				"category": "开发日志",
+				"date": "2025-12-05",
+				"tags": ["mcp", "development", "protocol-design"],
+				"slug": "mcp-integration-week-1"
+			},
+			{
+				"title": "桌面应用适配器开发实战：突破 Website 限制",
+				"description": "分享桌面应用适配器开发过程中的技术挑战和解决方案。",
+				"category": "开发日志",
+				"date": "2025-12-03",
+				"tags": ["desktop", "adapter", "not-only-website"],
+				"slug": "desktop-adapter-development"
+			},
+			{
+				"title": "从 Data Collection 到 Application Control 的行业变革",
+				"description": "分析应用自动化领域的技术变革和市场趋势。",
+				"category": "行业洞察",
+				"date": "2025-12-01",
+				"tags": ["industry", "trends", "automation"],
+				"slug": "data-collection-to-application-control"
+			}
+		]
+	},
+	"tags": {
+		"title": "热门标签",
+		"items": [
+			{
+				"name": "not-only-website",
+				"count": 8,
+				"description": "Not Only Website 理念相关文章"
+			},
+			{
+				"name": "not-only-data-collection",
+				"count": 6,
+				"description": "Not Only Data Collection 理念相关文章"
+			},
+			{
+				"name": "mcp",
+				"count": 12,
+				"description": "MCP 协议相关文章"
+			},
+			{
+				"name": "ai-agent",
+				"count": 10,
+				"description": "AI Agent 相关文章"
+			},
+			{
+				"name": "universal-platform",
+				"count": 7,
+				"description": "通用平台相关文章"
+			},
+			{
+				"name": "application-control",
+				"count": 5,
+				"description": "应用控制相关文章"
+			}
+		]
+	},
+	"subscribe": {
+		"title": "订阅我们的博客",
+		"description": "获取最新的技术文章和开发进展",
+		"placeholder": "输入您的邮箱地址",
+		"button": "订阅",
+		"success": "订阅成功！感谢您的关注。"
+	},
+	"pagination": {
+		"older": "更早的文章",
+		"newer": "更新的文章"
+	},
+	"noResults": {
+		"title": "未找到文章",
+		"description": "没有找到匹配的文章，请尝试其他搜索词。"
+	},
+	"readingTime": {
+		"minute": "分钟阅读",
+		"minutes": "分钟阅读"
+	},
+	"author": {
+		"by": "作者",
+		"publishedOn": "发布于",
+		"updatedOn": "更新于"
+	},
+	"share": {
+		"title": "分享这篇文章",
+		"twitter": "分享到 Twitter",
+		"linkedin": "分享到 LinkedIn",
+		"facebook": "分享到 Facebook",
+		"copy": "复制链接",
+		"copied": "链接已复制"
+	},
+	"related": {
+		"title": "相关文章",
+		"description": "您可能还感兴趣的文章"
+	},
+	"comments": {
+		"title": "讨论",
+		"description": "参与讨论，分享您的想法",
+		"placeholder": "写下您的评论...",
+		"button": "发表评论",
+		"login": "登录以评论",
+		"noComments": "暂无评论，来做第一个评论的人吧！"
+	}
+}

@@ -1,0 +1,154 @@
+{
+	"layout": {
+		"title": "OpenAppCLI - Universal Application Automation Platform + AI Agent Interaction Standard",
+		"description": "OpenAppCLI enables any application to be easily controlled and automated through command line and AI Agent. Support Web, desktop, mobile and game applications, achieving Not Only Website, Not Only Data Collection."
+	},
+	"hero": {
+		"title": "Not Only Website, Not Only Data Collection",
+		"subtitle": "From Web Automation to Universal Platform, from Data Collection to Application Control",
+		"description": "OpenAppCLI is the first platform that enables AI Agents to directly operate any application. Through MCP protocol, we establish the standard bridge for AI Agent and application interaction.",
+		"cta1": "Get Started",
+		"cta2": "View Demo"
+	},
+	"features": {
+		"title": "Core Breakthroughs",
+		"subtitle": "From limitations to breakthroughs, from tools to platforms",
+		"items": [
+			{
+				"title": "Not Only Website: Universal Platform Automation",
+				"description": "From Web + Electron to Desktop + Mobile + Game, achieving true universal application automation. OpenAppCLI breaks through browser limitations to provide comprehensive automation across all application types.",
+				"icon": "🌐"
+			},
+			{
+				"title": "Not Only Data Collection: Bidirectional Control",
+				"description": "From one-way data extraction to two-way application control, enabling AI Agents to fully manipulate application behavior. Transform from passive monitoring to active control.",
+				"icon": "🔄"
+			},
+			{
+				"title": "AI Agent Native Integration",
+				"description": "Through MCP protocol, any AI Agent can directly operate any application, establishing the application interaction standard for the AI era. Seamless integration between intelligence and automation.",
+				"icon": "🤖"
+			}
+		]
+	},
+	"platforms": {
+		"topper": "Platform Support",
+		"title": "Universal Platform Support",
+		"subtitle": "One platform supports all application types",
+		"p1": "One platform supports all application types",
+		"items": [
+			{
+				"name": "Web & Electron Applications",
+				"description": "50+ site adapters, browser reuse, anti-detection mechanisms. Comprehensive web automation with modern browser support and extension integration.",
+				"icon": "🌐"
+			},
+			{
+				"name": "Desktop Applications",
+				"description": "Windows/macOS/Linux, system-level access, OCR recognition. Native desktop automation with full system integration and intelligent element recognition.",
+				"icon": "🖥️"
+			},
+			{
+				"name": "Mobile Applications",
+				"description": "Android/iOS, UIAutomator, Frida instrumentation. Complete mobile automation framework supporting both native and hybrid applications.",
+				"icon": "📱"
+			},
+			{
+				"name": "Game Applications",
+				"description": "Unity/Unreal, anti-cheat bypass, memory access. Advanced game automation with engine-specific optimizations and memory manipulation capabilities.",
+				"icon": "🎮"
+			}
+		]
+	},
+	"about": {
+		"topper": "AI Agent Integration",
+		"title": "Experience AI Agent Direct Application Interaction",
+		"subtitle": "Seamless AI Agent and application interaction",
+		"p1": "Through MCP protocol, AI Agents can directly call OpenAppCLI tools and resources, achieving reliable application automation.",
+		"p2": "Examples include Bilibili hot videos extraction, Instagram auto-like, Genshin daily quests completion.",
+		"p3": "AI Agents can understand user intent and automatically execute application operations.",
+		"cta": "Try Demo",
+		"items": [
+			{
+				"title": "Discover Applications",
+				"description": "Find all automatable applications in the system",
+				"command": "openappcli.discover_applications()",
+				"result": "Returns list of available applications with metadata"
+			},
+			{
+				"title": "Execute Automation",
+				"description": "Execute predefined automation tasks on any application",
+				"command": "openappcli.execute_automation(target, operation, params)",
+				"result": "Executes automation and returns success status"
+			},
+			{
+				"title": "Get Screenshot",
+				"description": "Capture current application interface screenshot",
+				"command": "openappcli.get_screenshot()",
+				"result": "Returns base64 encoded screenshot data"
+			},
+			{
+				"title": "Extract Data",
+				"description": "Extract structured data from applications",
+				"command": "openappcli.extract_data(target, query)",
+				"result": "Returns structured JSON data from application"
+			}
+		]
+	},
+	"cta": {
+		"title": "Start Your AI Automation Journey",
+		"subtitle": "Join the Universal Platform Revolution",
+		"description": "Experience the power of Not Only Website, Not Only Data Collection. Download OpenAppCLI and start automating everything.",
+		"buttons": {
+			"primary": "Download Now",
+			"secondary": "View Documentation"
+		},
+		"imageAlt": "OpenAppCLI automation platform with AI Agent integration"
+	},
+	"extra": {
+		"topper": "Platform Statistics",
+		"title": "Universal Coverage, AI Native",
+		"p1": "OpenAppCLI supports 100+ application types across 5+ operating systems with 100% AI Agent compatibility.",
+		"p2": "Zero configuration required - plug and play for any application automation."
+	},
+	"portfolio": {
+		"topper": "User Testimonials",
+		"title": "Real Feedback from Early Users",
+		"cta": "Join Our Community"
+	},
+	"testimonials": {
+		"topper": "User Testimonials",
+		"title": "What Developers Say About OpenAppCLI",
+		"items": [
+			{
+				"quote": "OpenAppCLI revolutionized our automation workflow. The MCP protocol integration allows our AI agents to directly control applications, eliminating the need for complex parsing scripts.",
+				"name": "Sarah Chen",
+				"role": "Senior DevOps Engineer"
+			},
+			{
+				"quote": "The 'Not Only Website' philosophy is a game-changer. We can now automate desktop, mobile, and game applications with a single unified platform. It's truly universal automation.",
+				"name": "Michael Rodriguez",
+				"role": "Automation Architect"
+			},
+			{
+				"quote": "Bidirectional application control through OpenAppCLI has transformed our testing infrastructure. We can now both extract data and control application behavior seamlessly.",
+				"name": "Emily Watson",
+				"role": "QA Lead"
+			},
+			{
+				"quote": "The AI Agent native integration is incredible. Our AI assistants can now directly operate any application through MCP protocol, making automation truly intelligent.",
+				"name": "David Kim",
+				"role": "AI Research Engineer"
+			},
+			{
+				"quote": "From 20% to 100% application coverage is not just an improvement—it's a paradigm shift. OpenAppCLI has made universal application automation a reality.",
+				"name": "Lisa Anderson",
+				"role": "CTO"
+			},
+			{
+				"quote": "The performance gains are remarkable. Element clicks are 3x faster, and the intelligent strategy selection ensures reliable automation across all platforms.",
+				"name": "James Taylor",
+				"role": "Performance Engineer"
+			}
+		]
+	}
+}

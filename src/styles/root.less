@@ -1,0 +1,251 @@
+/* OPENAPPCLI STYLES, RESET, HEADER/NAVIGATION AND FOOTER */
+
+/*-- -------------------------- -->
+<---        Core Styles         -->
+<--- -------------------------- -*/
+
+/* OpenAppCLI Root and Helpers */
+@media only screen and (min-width: 0em) {
+	:root {
+		--primary: #00d4aa;
+		--primaryDark: #00b894;
+		--primaryLight: #00e5c8;
+		--primary-500: #00d4aa;
+		--primary-600: #00b894;
+		--secondary: #ffd93d;
+		--secondaryDark: #fdcb6e;
+		--secondaryLight: #ffeaa7;
+		--secondary-500: #ffd93d;
+		--headerColor: #00b894;
+		--bodyTextColor: #353535;
+		--bodyTextColorWhite: #ffffff;
+		--backgroundColor: #ffffff;
+		--light: #f9fafb;
+		--medium: #e5e7eb;
+		--dark: #1a1a1a;
+		--gray-50: #f9fafb;
+		--gray-100: #f3f4f6;
+		--gray-200: #e5e7eb;
+		--gray-300: #d1d5db;
+		--gray-400: #9ca3af;
+		--gray-500: #6b7280;
+		--gray-600: #4b5563;
+		--gray-700: #374151;
+		--gray-800: #1f2937;
+		--gray-900: #111827;
+		--navy: #0a0a0a;
+		--topperColor: #cca92c;
+		--topperOverlay: #5d4f1f;
+		--buttonHoverColor: #00b894;
+		--media500: (min-width: 500px);
+		--media850: (min-width: 850px);
+		--media925: (min-width: 925px);
+		--media1025: (min-width: 1025px);
+		--media1200: (min-width: 1200px);
+		--media1440: (min-width: 1440px);
+		--transition: 0.3s;
+		--sectionPadding: clamp(3.75rem, 7.82vw, 6.25rem) 1rem;
+		--topperFontSize: clamp(0.8125rem, 1.6vw, 1rem);
+		--headerFontSize: clamp(1.9375rem, 3.9vw, 3.0625rem);
+		--bodyFontSize: 1rem;
+	}
+
+	// Text styles - can be replaced using OpenAppCLI's "Content Flair" Stitches
+	.cs-topper {
+		font-size: var(--topperFontSize);
+		font-weight: 700;
+		line-height: 1.2em;
+		text-align: center;
+		color: var(--topperColor);
+		margin: 0;
+		display: block;
+	}
+
+	.cs-title {
+		font-size: clamp(2.25rem, 5vw, 3.5rem);
+		font-weight: 700;
+		line-height: 1.1em;
+		max-width: 900px;
+		width: 100%;
+		color: var(--headerColor);
+		margin: 0;
+		display: block;
+	}
+
+	.cs-text {
+		font-size: clamp(0.95rem, 1.5vw, 1.25rem);
+		line-height: 1.5em;
+		max-width: 630px;
+		width: 100%;
+		color: var(--bodyTextColor);
+		margin: 0;
+		display: block;
+	}
+
+	// Button - can be replaced using OpenAppCLI's "Button" Stitches
+	.cs-button-solid {
+		font-size: (16/16rem);
+		font-weight: bold;
+		background-color: var(--primary);
+		color: #fff;
+		text-decoration: none;
+		padding: (12/16rem) (24/16rem);
+		border-radius: (4/16rem);
+		display: inline-block;
+		position: relative;
+		z-index: 1;
+		overflow: hidden;
+		transition: color 0.3s, background-color 0.3s;
+
+		&:hover {
+			color: var(--primary);
+			background-color: #fff;
+		}
+
+		&::before {
+			content: "";
+			position: absolute;
+			z-index: -1;
+			top: 0;
+			left: 0;
+			right: 0;
+			bottom: 0;
+			background-color: var(--buttonHoverColor);
+			transition: background-color 0.3s;
+		}
+	}
+}
+
+/* Dark mode general styles */
+@media only screen and (min-width: 0em) {
+	body.dark-mode {
+		background-color: var(--dark);
+
+		/* Fallback text color */
+		p,
+		li,
+		h1,
+		h2,
+		h3,
+		h4,
+		h5,
+		h6 {
+			color: #fff;
+		}
+
+		.cs-topper {
+			color: var(--primaryDark);
+		}
+
+		.cs-reviewer {
+			color: var(--bodyTextColorWhite);
+		}
+	}
+}
+
+/* Fonts and general styles */
+@media only screen and (min-width: 0em) {
+	body,
+	html {
+		font-family: var(--font-primary);
+		font-size: 100%;
+		margin: 0;
+		padding: 0;
+		color: var(--bodyTextColor);
+		overflow-x: hidden;
+	}
+
+	*,
+	*:before,
+	*:after {
+		margin: 0;
+		box-sizing: border-box;
+		padding: 0;
+	}
+
+	body {
+		transition: background-color 0.3s;
+	}
+
+	.container {
+		width: 92%;
+		margin: auto;
+		position: relative;
+	}
+
+	h1,
+	h2,
+	h3,
+	h4,
+	h5,
+	h6 {
+		margin: 0;
+		color: var(--headerColor);
+	}
+
+	p,
+	li,
+	a {
+		font-size: (16/16rem);
+		line-height: 1.5em;
+		margin: 0;
+	}
+
+	p,
+	li {
+		color: #353535;
+	}
+
+	a,
+	button {
+		&:hover {
+			cursor: pointer;
+		}
+	}
+
+	// Hidden Screen reader skip nav button
+	.skip {
+		opacity: 0;
+		position: absolute;
+		top: 0;
+		left: 0;
+		z-index: -1111111;
+	}
+}
+
+/* Reset Margins */
+@media only screen and (min-width: 1024px) {
+	body,
+	html {
+		margin: 0;
+		padding: 0;
+	}
+}
+
+/* Scale full website with the viewport width */
+@media only screen and (min-width: 2000px) {
+	body,
+	html {
+		font-size: 0.85vw;
+	}
+}
+
+.sr-only {
+	position: absolute;
+	width: 1px;
+	height: 1px;
+	padding: 0;
+	margin: -1px;
+	overflow: hidden;
+	clip: rect(0, 0, 0, 0);
+	white-space: nowrap;
+	border-width: 0;
+}
+
+.cs-hidden {
+	display: none;
+}
+
+.cs-shown {
+	display: flex;
+}

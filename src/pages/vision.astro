@@ -1,0 +1,431 @@
+---
+import BaseLayout from "@layouts/BaseLayout.astro";
+import { getLocaleFromUrl } from "@js/localeUtils";
+import { useTranslations } from "@js/translationUtils";
+
+const locale = getLocaleFromUrl(Astro.url);
+const t = useTranslations(locale);
+---
+
+<BaseLayout title={t("vision:layout.title")} description={t("vision:layout.description")}>
+	<section class="vision-hero">
+		<div class="container">
+			<h1>{t("vision:hero.title")}</h1>
+			<p class="subtitle">{t("vision:hero.subtitle")}</p>
+			<p class="description">{t("vision:hero.description")}</p>
+		</div>
+	</section>
+
+	<section class="philosophy">
+		<div class="container">
+			<h2>{t("vision:philosophy.title")}</h2>
+			<p class="subtitle">{t("vision:philosophy.subtitle")}</p>
+			<div class="philosophy-grid">
+				<div class="philosophy-item">
+					<h3>{t("vision:philosophy.items.0.principle")}</h3>
+					<p>{t("vision:philosophy.items.0.description")}</p>
+					<div class="comparison">
+						<div class="current">
+							<span class="label">Current:</span>
+							<code>{t("vision:philosophy.items.0.current")}</code>
+						</div>
+						<div class="target">
+							<span class="label">Target:</span>
+							<code>{t("vision:philosophy.items.0.target")}</code>
+						</div>
+					</div>
+				</div>
+				<div class="philosophy-item">
+					<h3>{t("vision:philosophy.items.1.principle")}</h3>
+					<p>{t("vision:philosophy.items.1.description")}</p>
+					<div class="comparison">
+						<div class="current">
+							<span class="label">Current:</span>
+							<code>{t("vision:philosophy.items.1.current")}</code>
+						</div>
+						<div class="target">
+							<span class="label">Target:</span>
+							<code>{t("vision:philosophy.items.1.target")}</code>
+						</div>
+					</div>
+				</div>
+				<div class="philosophy-item">
+					<h3>{t("vision:philosophy.items.2.principle")}</h3>
+					<p>{t("vision:philosophy.items.2.description")}</p>
+					<div class="comparison">
+						<div class="current">
+							<span class="label">Current:</span>
+							<code>{t("vision:philosophy.items.2.current")}</code>
+						</div>
+						<div class="target">
+							<span class="label">Target:</span>
+							<code>{t("vision:philosophy.items.2.target")}</code>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<section class="not-only-website">
+		<div class="container">
+			<h2>{t("vision:notOnlyWebsite.title")}</h2>
+			<p class="subtitle">{t("vision:notOnlyWebsite.subtitle")}</p>
+			<p class="description">{t("vision:notOnlyWebsite.description")}</p>
+			<div class="points-grid">
+				<div class="point-item">
+					<div class="icon">🌐</div>
+					<h3>{t("vision:notOnlyWebsite.points.0.title")}</h3>
+					<p>{t("vision:notOnlyWebsite.points.0.description")}</p>
+					<p class="details">{t("vision:notOnlyWebsite.points.0.details")}</p>
+				</div>
+				<div class="point-item">
+					<div class="icon">📈</div>
+					<h3>{t("vision:notOnlyWebsite.points.1.title")}</h3>
+					<p>{t("vision:notOnlyWebsite.points.1.description")}</p>
+					<p class="details">{t("vision:notOnlyWebsite.points.1.details")}</p>
+				</div>
+				<div class="point-item">
+					<div class="icon">🏗️</div>
+					<h3>{t("vision:notOnlyWebsite.points.2.title")}</h3>
+					<p>{t("vision:notOnlyWebsite.points.2.description")}</p>
+					<p class="details">{t("vision:notOnlyWebsite.points.2.details")}</p>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<section class="not-only-data-collection">
+		<div class="container">
+			<h2>{t("vision:notOnlyDataCollection.title")}</h2>
+			<p class="subtitle">{t("vision:notOnlyDataCollection.subtitle")}</p>
+			<p class="description">{t("vision:notOnlyDataCollection.description")}</p>
+			<div class="points-grid">
+				<div class="point-item">
+					<div class="icon">🔄</div>
+					<h3>{t("vision:notOnlyDataCollection.points.0.title")}</h3>
+					<p>{t("vision:notOnlyDataCollection.points.0.description")}</p>
+					<p class="details">{t("vision:notOnlyDataCollection.points.0.details")}</p>
+				</div>
+				<div class="point-item">
+					<div class="icon">⚡</div>
+					<h3>{t("vision:notOnlyDataCollection.points.1.title")}</h3>
+					<p>{t("vision:notOnlyDataCollection.points.1.description")}</p>
+					<p class="details">{t("vision:notOnlyDataCollection.points.1.details")}</p>
+				</div>
+				<div class="point-item">
+					<div class="icon">🎮</div>
+					<h3>{t("vision:notOnlyDataCollection.points.2.title")}</h3>
+					<p>{t("vision:notOnlyDataCollection.points.2.description")}</p>
+					<p class="details">{t("vision:notOnlyDataCollection.points.2.details")}</p>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<section class="evolution">
+		<div class="container">
+			<h2>{t("vision:evolution.title")}</h2>
+			<p class="subtitle">{t("vision:evolution.subtitle")}</p>
+			<div class="timeline">
+				<div class="timeline-item">
+					<div class="timeline-icon">🌐</div>
+					<div class="timeline-content">
+						<h3>{t("vision:evolution.timeline.0.phase")}</h3>
+						<p class="period">{t("vision:evolution.timeline.0.period")}</p>
+						<p class="focus">{t("vision:evolution.timeline.0.focus")}</p>
+						<p class="limitation">{t("vision:evolution.timeline.0.limitation")}</p>
+					</div>
+				</div>
+				<div class="timeline-item">
+					<div class="timeline-icon">🖥️</div>
+					<div class="timeline-content">
+						<h3>{t("vision:evolution.timeline.1.phase")}</h3>
+						<p class="period">{t("vision:evolution.timeline.1.period")}</p>
+						<p class="focus">{t("vision:evolution.timeline.1.focus")}</p>
+						<p class="limitation">{t("vision:evolution.timeline.1.limitation")}</p>
+					</div>
+				</div>
+				<div class="timeline-item">
+					<div class="timeline-icon">🤖</div>
+					<div class="timeline-content">
+						<h3>{t("vision:evolution.timeline.2.phase")}</h3>
+						<p class="period">{t("vision:evolution.timeline.2.period")}</p>
+						<p class="focus">{t("vision:evolution.timeline.2.focus")}</p>
+						<p class="breakthrough">{t("vision:evolution.timeline.2.breakthrough")}</p>
+					</div>
+				</div>
+				<div class="timeline-item">
+					<div class="timeline-icon">🌟</div>
+					<div class="timeline-content">
+						<h3>{t("vision:evolution.timeline.3.phase")}</h3>
+						<p class="period">{t("vision:evolution.timeline.3.period")}</p>
+						<p class="focus">{t("vision:evolution.timeline.3.focus")}</p>
+						<p class="vision">{t("vision:evolution.timeline.3.vision")}</p>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<section class="cta">
+		<div class="container">
+			<h2>{t("vision:cta.title")}</h2>
+			<p class="subtitle">{t("vision:cta.subtitle")}</p>
+			<p class="description">{t("vision:cta.description")}</p>
+			<div class="buttons">
+				<a href="/community" class="btn btn-primary">{t("vision:cta.buttons.primary")}</a>
+				<a href="/contact" class="btn btn-secondary">{t("vision:cta.buttons.secondary")}</a>
+			</div>
+		</div>
+	</section>
+</BaseLayout>
+
+<style>
+	.vision-hero {
+		padding: 8rem 0;
+		background: linear-gradient(135deg, var(--primary-500), var(--secondary-500));
+		color: white;
+		text-align: center;
+	}
+
+	.vision-hero h1 {
+		font-size: 3rem;
+		font-weight: 700;
+		margin-bottom: 1rem;
+	}
+
+	.vision-hero .subtitle {
+		font-size: 1.5rem;
+		margin-bottom: 1.5rem;
+		opacity: 0.9;
+	}
+
+	.vision-hero .description {
+		font-size: 1.1rem;
+		max-width: 600px;
+		margin: 0 auto;
+		opacity: 0.8;
+	}
+
+	.philosophy {
+		padding: 6rem 0;
+		background: var(--gray-50);
+	}
+
+	.philosophy-grid {
+		display: grid;
+		grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+		gap: 2rem;
+		margin-top: 3rem;
+	}
+
+	.philosophy-item {
+		background: white;
+		padding: 2rem;
+		border-radius: 8px;
+		box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+	}
+
+	.philosophy-item h3 {
+		color: var(--primary-600);
+		margin-bottom: 1rem;
+	}
+
+	.comparison {
+		margin-top: 1.5rem;
+		border-left: 4px solid var(--primary-500);
+		padding-left: 1rem;
+	}
+
+	.comparison .current,
+	.comparison .target {
+		margin-bottom: 0.5rem;
+	}
+
+	.comparison .label {
+		font-weight: 600;
+		color: var(--gray-600);
+	}
+
+	.comparison code {
+		background: var(--gray-100);
+		padding: 0.25rem 0.5rem;
+		border-radius: 4px;
+		font-family: monospace;
+		font-size: 0.9rem;
+	}
+
+	.not-only-website,
+	.not-only-data-collection {
+		padding: 6rem 0;
+	}
+
+	.points-grid {
+		display: grid;
+		grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+		gap: 2rem;
+		margin-top: 3rem;
+	}
+
+	.point-item {
+		text-align: center;
+		padding: 2rem;
+	}
+
+	.point-item .icon {
+		font-size: 3rem;
+		margin-bottom: 1rem;
+	}
+
+	.point-item h3 {
+		color: var(--primary-600);
+		margin-bottom: 1rem;
+	}
+
+	.point-item .details {
+		color: var(--gray-600);
+		font-style: italic;
+		margin-top: 0.5rem;
+	}
+
+	.evolution {
+		padding: 6rem 0;
+		background: var(--gray-50);
+	}
+
+	.timeline {
+		position: relative;
+		max-width: 800px;
+		margin: 3rem auto;
+	}
+
+	.timeline::before {
+		content: '';
+		position: absolute;
+		left: 50%;
+		top: 0;
+		bottom: 0;
+		width: 2px;
+		background: var(--primary-300);
+		transform: translateX(-50%);
+	}
+
+	.timeline-item {
+		position: relative;
+		margin-bottom: 3rem;
+		display: flex;
+		align-items: center;
+	}
+
+	.timeline-icon {
+		width: 60px;
+		height: 60px;
+		background: white;
+		border: 3px solid var(--primary-500);
+		border-radius: 50%;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		font-size: 1.5rem;
+		margin-right: 2rem;
+		flex-shrink: 0;
+	}
+
+	.timeline-content {
+		background: white;
+		padding: 2rem;
+		border-radius: 8px;
+		box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+		flex: 1;
+	}
+
+	.timeline-content h3 {
+		color: var(--primary-600);
+		margin-bottom: 0.5rem;
+	}
+
+	.timeline-content .period {
+		color: var(--secondary-600);
+		font-weight: 600;
+		margin-bottom: 0.5rem;
+	}
+
+	.timeline-content .breakthrough {
+		color: var(--accent-600);
+		font-weight: 600;
+		margin-top: 0.5rem;
+	}
+
+	.cta {
+		padding: 6rem 0;
+		text-align: center;
+		background: linear-gradient(135deg, var(--accent-500), var(--primary-500));
+		color: white;
+	}
+
+	.cta h2 {
+		font-size: 2.5rem;
+		margin-bottom: 1rem;
+	}
+
+	.cta .buttons {
+		margin-top: 2rem;
+		display: flex;
+		gap: 1rem;
+		justify-content: center;
+	}
+
+	.btn {
+		padding: 1rem 2rem;
+		border-radius: 8px;
+		text-decoration: none;
+		font-weight: 600;
+		transition: all 0.3s ease;
+	}
+
+	.btn-primary {
+		background: white;
+		color: var(--primary-600);
+	}
+
+	.btn-secondary {
+		background: transparent;
+		color: white;
+		border: 2px solid white;
+	}
+
+	.btn:hover {
+		transform: translateY(-2px);
+		box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+	}
+
+	@media (max-width: 768px) {
+		.vision-hero h1 {
+			font-size: 2rem;
+		}
+
+		.vision-hero .subtitle {
+			font-size: 1.2rem;
+		}
+
+		.timeline::before {
+			left: 30px;
+		}
+
+		.timeline-item {
+			flex-direction: column;
+			text-align: left;
+		}
+
+		.timeline-icon {
+			margin-right: 0;
+			margin-bottom: 1rem;
+		}
+
+		.cta .buttons {
+			flex-direction: column;
+			align-items: center;
+		}
+	}
+</style>

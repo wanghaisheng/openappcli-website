@@ -1,0 +1,430 @@
+---
+import BaseLayout from "@layouts/BaseLayout.astro";
+import { getLocaleFromUrl } from "@js/localeUtils";
+import { useTranslations } from "@js/translationUtils";
+
+const locale = getLocaleFromUrl(Astro.url);
+const t = useTranslations(locale);
+---
+
+<BaseLayout title={t("demo:layout.title")} description={t("demo:layout.description")}>
+	<section class="demo-hero">
+		<div class="container">
+			<h1>{t("demo:hero.title")}</h1>
+			<p class="subtitle">{t("demo:hero.subtitle")}</p>
+			<p class="description">{t("demo:hero.description")}</p>
+		</div>
+	</section>
+
+	<section class="mcp-demo">
+		<div class="container">
+			<h2>{t("demo:mcpDemo.title")}</h2>
+			<p class="subtitle">{t("demo:mcpDemo.subtitle")}</p>
+			<p class="description">{t("demo:mcpDemo.description")}</p>
+			
+			<div class="tools-grid">
+				<div class="tool-card">
+					<h3>{t("demo:mcpDemo.tools.0.name")}</h3>
+					<p>{t("demo:mcpDemo.tools.0.description")}</p>
+					<p class="example">{t("demo:mcpDemo.tools.0.example")}</p>
+					<div class="result">
+						<h4>Result:</h4>
+						<pre><code>{JSON.stringify(t("demo:mcpDemo.tools.0.result"), null, 2)}</code></pre>
+					</div>
+				</div>
+				
+				<div class="tool-card">
+					<h3>{t("demo:mcpDemo.tools.1.name")}</h3>
+					<p>{t("demo:mcpDemo.tools.1.description")}</p>
+					<p class="example">{t("demo:mcpDemo.tools.1.example")}</p>
+					<div class="result">
+						<h4>Result:</h4>
+						<pre><code>{JSON.stringify(t("demo:mcpDemo.tools.1.result"), null, 2)}</code></pre>
+					</div>
+				</div>
+				
+				<div class="tool-card">
+					<h3>{t("demo:mcpDemo.tools.2.name")}</h3>
+					<p>{t("demo:mcpDemo.tools.2.description")}</p>
+					<p class="example">{t("demo:mcpDemo.tools.2.example")}</p>
+					<div class="result">
+						<h4>Result:</h4>
+						<pre><code>{JSON.stringify(t("demo:mcpDemo.tools.2.result"), null, 2)}</code></pre>
+					</div>
+				</div>
+				
+				<div class="tool-card">
+					<h3>{t("demo:mcpDemo.tools.3.name")}</h3>
+					<p>{t("demo:mcpDemo.tools.3.description")}</p>
+					<p class="example">{t("demo:mcpDemo.tools.3.example")}</p>
+					<div class="result">
+						<h4>Result:</h4>
+						<pre><code>{JSON.stringify(t("demo:mcpDemo.tools.3.result"), null, 2)}</code></pre>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<section class="ai-agent-demo">
+		<div class="container">
+			<h2>{t("demo:aiAgentDemo.title")}</h2>
+			<p class="subtitle">{t("demo:aiAgentDemo.subtitle")}</p>
+			<p class="description">{t("demo:aiAgentDemo.description")}</p>
+			
+			<div class="examples-grid">
+				{t("demo:aiAgentDemo.examples").map((example, index) => (
+					<div class="example-card">
+						<div class="prompt">
+							<h4>User Prompt:</h4>
+							<p>{example.prompt}</p>
+						</div>
+						<div class="response">
+							<h4>AI Agent Response:</h4>
+							<p>{example.response}</p>
+						</div>
+						<div class="metadata">
+							<span class="tools">Tools: {example.tools.join(", ")}</span>
+							<span class="timestamp">{example.timestamp}</span>
+						</div>
+					</div>
+				))}
+			</div>
+		</div>
+	</section>
+
+	<section class="platform-demo">
+		<div class="container">
+			<h2>{t("demo:platformDemo.title")}</h2>
+			<p class="subtitle">{t("demo:platformDemo.subtitle")}</p>
+			<p class="description">{t("demo:platformDemo.description")}</p>
+			
+			<div class="platforms-grid">
+				{t("demo:platformDemo.platforms").map((platform, index) => (
+					<div class="platform-card">
+						<div class="platform-icon">{platform.icon}</div>
+						<h3>{platform.name}</h3>
+						<p>{platform.description}</p>
+						<div class="demo-info">
+							<p><strong>Demo:</strong> {platform.demo}</p>
+							<p><strong>Result:</strong> {platform.result}</p>
+						</div>
+					</div>
+				))}
+			</div>
+		</div>
+	</section>
+
+	<section class="code-examples">
+		<div class="container">
+			<h2>{t("demo:codeExamples.title")}</h2>
+			<p class="subtitle">{t("demo:codeExamples.subtitle")}</p>
+			<p class="description">{t("demo:codeExamples.description")}</p>
+			
+			<div class="code-grid">
+				{t("demo:codeExamples.examples").map((example, index) => (
+					<div class="code-card">
+						<h3>{example.title}</h3>
+						<p>{example.description}</p>
+						<div class="code-block">
+							<pre><code class={`language-${example.language}`}>{example.code}</code></pre>
+						</div>
+					</div>
+				))}
+			</div>
+		</div>
+	</section>
+
+	<section class="try-it">
+		<div class="container">
+			<h2>{t("demo:tryIt.title")}</h2>
+			<p class="subtitle">{t("demo:tryIt.subtitle")}</p>
+			<p class="description">{t("demo:tryIt.description")}</p>
+			<div class="buttons">
+				<a href="/download" class="btn btn-primary">{t("demo:tryIt.buttons.primary")}</a>
+				<a href="/docs" class="btn btn-secondary">{t("demo:tryIt.buttons.secondary")}</a>
+			</div>
+		</div>
+	</section>
+</BaseLayout>
+
+<style>
+	.demo-hero {
+		padding: 8rem 0;
+		background: linear-gradient(135deg, var(--primary-500), var(--secondary-500));
+		color: white;
+		text-align: center;
+	}
+
+	.demo-hero h1 {
+		font-size: 3rem;
+		font-weight: 700;
+		margin-bottom: 1rem;
+	}
+
+	.demo-hero .subtitle {
+		font-size: 1.5rem;
+		margin-bottom: 1.5rem;
+		opacity: 0.9;
+	}
+
+	.demo-hero .description {
+		font-size: 1.1rem;
+		max-width: 600px;
+		margin: 0 auto;
+		opacity: 0.8;
+	}
+
+	.container {
+		max-width: 1200px;
+		margin: 0 auto;
+		padding: 0 2rem;
+	}
+
+	.mcp-demo,
+	.ai-agent-demo,
+	.platform-demo,
+	.code-examples {
+		padding: 6rem 0;
+	}
+
+	.mcp-demo:nth-child(even) {
+		background: var(--gray-50);
+	}
+
+	section h2 {
+		text-align: center;
+		font-size: 2.5rem;
+		color: var(--primary-600);
+		margin-bottom: 1rem;
+	}
+
+	section .subtitle {
+		text-align: center;
+		font-size: 1.25rem;
+		color: var(--gray-600);
+		margin-bottom: 2rem;
+		max-width: 600px;
+		margin-left: auto;
+		margin-right: auto;
+	}
+
+	section .description {
+		text-align: center;
+		font-size: 1.1rem;
+		color: var(--gray-600);
+		margin-bottom: 3rem;
+		max-width: 800px;
+		margin-left: auto;
+		margin-right: auto;
+	}
+
+	.tools-grid,
+	.examples-grid,
+	.platforms-grid,
+	.code-grid {
+		display: grid;
+		grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+		gap: 2rem;
+	}
+
+	.tool-card,
+	.example-card,
+	.platform-card,
+	.code-card {
+		background: white;
+		padding: 2rem;
+		border-radius: 12px;
+		box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+		transition: transform 0.3s ease, box-shadow 0.3s ease;
+	}
+
+	.tool-card:hover,
+	.example-card:hover,
+	.platform-card:hover,
+	.code-card:hover {
+		transform: translateY(-4px);
+		box-shadow: 0 8px 16px rgba(0, 0, 0, 0.15);
+	}
+
+	.tool-card h3,
+	.example-card h4,
+	.platform-card h3,
+	.code-card h3 {
+		color: var(--primary-600);
+		margin-bottom: 1rem;
+	}
+
+	.example {
+		font-style: italic;
+		color: var(--gray-600);
+		margin-bottom: 1rem;
+	}
+
+	.result {
+		background: var(--gray-900);
+		color: #e0e0e0;
+		padding: 1rem;
+		border-radius: 8px;
+		overflow-x: auto;
+	}
+
+	.result h4 {
+		color: white;
+		margin-bottom: 0.5rem;
+	}
+
+	.result pre {
+		margin: 0;
+		font-size: 0.9rem;
+	}
+
+	.prompt,
+	.response {
+		margin-bottom: 1rem;
+	}
+
+	.prompt h4,
+	.response h4 {
+		color: var(--primary-600);
+		margin-bottom: 0.5rem;
+	}
+
+	.prompt p,
+	.response p {
+		background: var(--gray-50);
+		padding: 1rem;
+		border-radius: 8px;
+		margin: 0;
+	}
+
+	.response p {
+		background: var(--success-50);
+		color: var(--success-700);
+	}
+
+	.metadata {
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+		font-size: 0.9rem;
+		color: var(--gray-600);
+	}
+
+	.platform-icon {
+		font-size: 2.5rem;
+		margin-bottom: 1rem;
+		text-align: center;
+	}
+
+	.demo-info {
+		background: var(--gray-50);
+		padding: 1rem;
+		border-radius: 8px;
+		margin-top: 1rem;
+	}
+
+	.demo-info p {
+		margin: 0.25rem 0;
+	}
+
+	.code-block {
+		background: var(--gray-900);
+		color: #e0e0e0;
+		padding: 1.5rem;
+		border-radius: 8px;
+		overflow-x: auto;
+		margin-top: 1rem;
+	}
+
+	.code-block pre {
+		margin: 0;
+		font-family: monospace;
+		font-size: 0.9rem;
+		line-height: 1.5;
+	}
+
+	.try-it {
+		padding: 6rem 0;
+		text-align: center;
+		background: linear-gradient(135deg, var(--accent-500), var(--primary-500));
+		color: white;
+	}
+
+	.try-it h2 {
+		font-size: 2.5rem;
+		margin-bottom: 1rem;
+		color: white;
+	}
+
+	.buttons {
+		margin-top: 2rem;
+		display: flex;
+		gap: 1rem;
+		justify-content: center;
+	}
+
+	.btn {
+		padding: 1rem 2rem;
+		border-radius: 8px;
+		text-decoration: none;
+		font-weight: 600;
+		transition: all 0.3s ease;
+	}
+
+	.btn-primary {
+		background: white;
+		color: var(--primary-600);
+	}
+
+	.btn-secondary {
+		background: transparent;
+		color: white;
+		border: 2px solid white;
+	}
+
+	.btn:hover {
+		transform: translateY(-2px);
+		box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+	}
+
+	@media (max-width: 768px) {
+		.demo-hero h1 {
+			font-size: 2rem;
+		}
+
+		.demo-hero .subtitle {
+			font-size: 1.2rem;
+		}
+
+		section h2 {
+			font-size: 2rem;
+		}
+
+		section .subtitle {
+			font-size: 1.1rem;
+		}
+
+		section .description {
+			font-size: 1rem;
+		}
+
+		.tools-grid,
+		.examples-grid,
+		.platforms-grid,
+		.code-grid {
+			grid-template-columns: 1fr;
+		}
+
+		.metadata {
+			flex-direction: column;
+			align-items: flex-start;
+			gap: 0.5rem;
+		}
+
+		.buttons {
+			flex-direction: column;
+			align-items: center;
+		}
+	}
+</style>

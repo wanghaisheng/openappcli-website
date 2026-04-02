@@ -1,0 +1,74 @@
+[
+	{
+		"key": "home",
+		"url": "/",
+		"label": {
+			"en": "Home",
+			"zh-CN": "首页"
+		},
+		"children": []
+	},
+	{
+		"key": "vision",
+		"url": "/vision",
+		"label": {
+			"en": "Vision",
+			"zh-CN": "理念愿景"
+		},
+		"children": []
+	},
+	{
+		"key": "roadmap",
+		"url": "/roadmap",
+		"label": {
+			"en": "Roadmap",
+			"zh-CN": "路线图"
+		},
+		"children": []
+	},
+	{
+		"key": "features",
+		"url": "/features",
+		"label": {
+			"en": "Features",
+			"zh-CN": "功能特性"
+		},
+		"children": []
+	},
+	{
+		"key": "demo",
+		"url": "/demo",
+		"label": {
+			"en": "Demo",
+			"zh-CN": "演示中心"
+		},
+		"children": []
+	},
+	{
+		"key": "blog",
+		"url": "/blog",
+		"label": {
+			"en": "Blog",
+			"zh-CN": "博客"
+		},
+		"children": []
+	},
+	{
+		"key": "community",
+		"url": "/community",
+		"label": {
+			"en": "Community",
+			"zh-CN": "社区"
+		},
+		"children": []
+	},
+	{
+		"key": "download",
+		"url": "/download",
+		"label": {
+			"en": "Download",
+			"zh-CN": "下载"
+		},
+		"children": []
+	}
+]

@@ -1,0 +1,148 @@
+{
+	"layout": {
+		"title": "Vision - OpenAppCLI",
+		"description": "Learn about OpenAppCLI's core philosophy: Not Only Website, Not Only Data Collection. We are building the standard bridge for AI Agent and application interaction."
+	},
+	"hero": {
+		"title": "Vision & Philosophy",
+		"subtitle": "Not Only Website, Not Only Data Collection",
+		"description": "We believe AI Agents should be able to directly operate any application, not through complex indirect methods."
+	},
+	"philosophy": {
+		"title": "Technical Philosophy",
+		"subtitle": "Why - How - What",
+		"items": [
+			{
+				"principle": "Why: Why We Do This",
+				"description": "Current AI Agents cannot directly operate applications, requiring complex indirect interactions",
+				"current": "AI Agent → Parse Text → Simulate Operations → Unreliable",
+				"target": "AI Agent → MCP Protocol → Direct Operations → Reliable"
+			},
+			{
+				"principle": "How: How We Achieve This",
+				"description": "Establish universal language for AI Agent and application interaction through MCP protocol",
+				"current": "Each application requires custom integration solutions",
+				"target": "Unified Protocol + Standard Interfaces + Plug and Play"
+			},
+			{
+				"principle": "What: Final Goal",
+				"description": "Enable any application to be easily controlled and automated by AI Agents",
+				"current": "Web application automation tools",
+				"target": "Universal application type AI Agent interaction platform"
+			}
+		]
+	},
+	"notOnlyWebsite": {
+		"title": "Not Only Website",
+		"subtitle": "From Website to Universal Platform",
+		"description": "Break through website limitations to achieve true universal application automation",
+		"points": [
+			{
+				"title": "From Website to Universal Platform",
+				"description": "Not just website automation, but unified control of all application types",
+				"details": "From Web + Electron to Desktop + Mobile + Game, achieving true universal application automation"
+			},
+			{
+				"title": "Application Coverage from 20% to 100%",
+				"description": "From only supporting Web applications to supporting all application types",
+				"details": "Break through technical limitations, enabling AI Agents to operate any application"
+			},
+			{
+				"title": "Unified Technical Architecture",
+				"description": "One platform supporting all application types",
+				"details": "Automatically adapt to different applications through intelligent strategy selection and Fallback mechanisms"
+			}
+		]
+	},
+	"notOnlyDataCollection": {
+		"title": "Not Only Data Collection",
+		"subtitle": "From Data Collection to Application Control",
+		"description": "Go beyond data extraction to achieve complete application behavior control",
+		"points": [
+			{
+				"title": "From Data Collection to Application Control",
+				"description": "Not just data extraction, but complete application behavior control",
+				"details": "From one-way information extraction to two-way application interaction, enabling AI Agents to fully control application behavior"
+			},
+			{
+				"title": "From Information Tool to Interaction Platform",
+				"description": "Go beyond the limitations of traditional tools",
+				"details": "Enable AI Agents to not only get information but also control application behavior"
+			},
+			{
+				"title": "Two-way Interaction Capabilities",
+				"description": "Complete application operation capabilities",
+				"details": "Support click, input, navigation and all application operations"
+			}
+		]
+	},
+	"evolution": {
+		"title": "Development Journey",
+		"subtitle": "Evolution from OpenCLI to OpenAppCLI",
+		"timeline": [
+			{
+				"phase": "OpenCLI Era",
+				"period": "2023-2024",
+				"focus": "Website + Electron Data Collection",
+				"limitation": "Only support Web applications, only extract data",
+				"icon": "🌐"
+			},
+			{
+				"phase": "OpenAppCLI 1.0",
+				"period": "2024-2025",
+				"focus": "Desktop + Mobile + Game Support",
+				"limitation": "Support more platforms, but still focus on data collection",
+				"icon": "🖥️"
+			},
+			{
+				"phase": "OpenAppCLI 2.0",
+				"period": "2025-2026",
+				"focus": "Not Only Website + Not Only Data Collection",
+				"breakthrough": "MCP protocol integration, AI Agent native interaction, two-way application control",
+				"icon": "🤖"
+			},
+			{
+				"phase": "Future Vision",
+				"period": "2026+",
+				"focus": "AI Agent Application Interaction Standard",
+				"vision": "Become the universal bridge for AI Agent and application interaction",
+				"icon": "🌟"
+			}
+		]
+	},
+	"values": {
+		"title": "Core Values",
+		"subtitle": "Principles guiding us forward",
+		"items": [
+			{
+				"title": "Standardization",
+				"description": "Establish AI Agent and application interaction standard protocol",
+				"icon": "📏"
+			},
+			{
+				"title": "Openness",
+				"description": "Build open, collaborative, shared ecosystem",
+				"icon": "🌍"
+			},
+			{
+				"title": "Reliability",
+				"description": "Provide production environment stable automation solutions",
+				"icon": "🛡️"
+			},
+			{
+				"title": "Innovation",
+				"description": "Lead the human-computer interaction revolution in AI era",
+				"icon": "🚀"
+			}
+		]
+	},
+	"cta": {
+		"title": "Join Our Vision",
+		"subtitle": "Build AI Automation Future Together",
+		"description": "If you share our philosophy, welcome to join us in building the standardized ecosystem for AI Agent application interaction.",
+		"buttons": {
+			"primary": "Contribute Now",
+			"secondary": "Contact Team"
+		}
+	}
+}

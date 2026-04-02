@@ -1,0 +1,584 @@
+---
+import BaseLayout from "@layouts/BaseLayout.astro";
+import { getLocaleFromUrl } from "@js/localeUtils";
+import { useTranslations } from "@js/translationUtils";
+
+const locale = getLocaleFromUrl(Astro.url);
+const t = useTranslations(locale);
+---
+
+<BaseLayout title={t("roadmap:layout.title")} description={t("roadmap:layout.description")}>
+	<section class="roadmap-hero">
+		<div class="container">
+			<h1>{t("roadmap:hero.title")}</h1>
+			<p class="subtitle">{t("roadmap:hero.subtitle")}</p>
+			<p class="description">{t("roadmap:hero.description")}</p>
+		</div>
+	</section>
+
+	<section class="milestones">
+		<div class="container">
+			<h2>{t("roadmap:milestones.title")}</h2>
+			<p class="subtitle">{t("roadmap:milestones.subtitle")}</p>
+			<div class="phases-grid">
+				<div class="phase-card">
+					<div class="phase-header">
+						<h3>{t("roadmap:milestones.phases.0.phase")}</h3>
+						<span class="period">{t("roadmap:milestones.phases.0.period")}</span>
+						<span class="status">{t("roadmap:milestones.phases.0.status")}</span>
+					</div>
+					<div class="phase-content">
+						<h4>Goals:</h4>
+						<ul>
+							{t("roadmap:milestones.phases.0.goals").map((goal, index) => (
+								<li key={index}>{goal}</li>
+							))}
+						</ul>
+						<h4>Deliverables:</h4>
+						<ul>
+							{t("roadmap:milestones.phases.0.deliverables").map((deliverable, index) => (
+								<li key={index}>{deliverable}</li>
+							))}
+						</ul>
+						<div class="breakthrough">
+							<strong>Breakthrough:</strong> {t("roadmap:milestones.phases.0.breakthrough")}
+						</div>
+					</div>
+				</div>
+
+				<div class="phase-card">
+					<div class="phase-header">
+						<h3>{t("roadmap:milestones.phases.1.phase")}</h3>
+						<span class="period">{t("roadmap:milestones.phases.1.period")}</span>
+						<span class="status">{t("roadmap:milestones.phases.1.status")}</span>
+					</div>
+					<div class="phase-content">
+						<h4>Goals:</h4>
+						<ul>
+							{t("roadmap:milestones.phases.1.goals").map((goal, index) => (
+								<li key={index}>{goal}</li>
+							))}
+						</ul>
+						<h4>Deliverables:</h4>
+						<ul>
+							{t("roadmap:milestones.phases.1.deliverables").map((deliverable, index) => (
+								<li key={index}>{deliverable}</li>
+							))}
+						</ul>
+						<div class="breakthrough">
+							<strong>Breakthrough:</strong> {t("roadmap:milestones.phases.1.breakthrough")}
+						</div>
+					</div>
+				</div>
+
+				<div class="phase-card">
+					<div class="phase-header">
+						<h3>{t("roadmap:milestones.phases.2.phase")}</h3>
+						<span class="period">{t("roadmap:milestones.phases.2.period")}</span>
+						<span class="status">{t("roadmap:milestones.phases.2.status")}</span>
+					</div>
+					<div class="phase-content">
+						<h4>Goals:</h4>
+						<ul>
+							{t("roadmap:milestones.phases.2.goals").map((goal, index) => (
+								<li key={index}>{goal}</li>
+							))}
+						</ul>
+						<h4>Deliverables:</h4>
+						<ul>
+							{t("roadmap:milestones.phases.2.deliverables").map((deliverable, index) => (
+								<li key={index}>{deliverable}</li>
+							))}
+						</ul>
+						<div class="breakthrough">
+							<strong>Breakthrough:</strong> {t("roadmap:milestones.phases.2.breakthrough")}
+						</div>
+					</div>
+				</div>
+
+				<div class="phase-card">
+					<div class="phase-header">
+						<h3>{t("roadmap:milestones.phases.3.phase")}</h3>
+						<span class="period">{t("roadmap:milestones.phases.3.period")}</span>
+						<span class="status">{t("roadmap:milestones.phases.3.status")}</span>
+					</div>
+					<div class="phase-content">
+						<h4>Goals:</h4>
+						<ul>
+							{t("roadmap:milestones.phases.3.goals").map((goal, index) => (
+								<li key={index}>{goal}</li>
+							))}
+						</ul>
+						<h4>Deliverables:</h4>
+						<ul>
+							{t("roadmap:milestones.phases.3.deliverables").map((deliverable, index) => (
+								<li key={index}>{deliverable}</li>
+							))}
+						</ul>
+						<div class="breakthrough">
+							<strong>Breakthrough:</strong> {t("roadmap:milestones.phases.3.breakthrough")}
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<section class="breakthroughs">
+		<div class="container">
+			<h2>{t("roadmap:breakthroughs.title")}</h2>
+			<p class="subtitle">{t("roadmap:breakthroughs.subtitle")}</p>
+			<div class="breakthroughs-grid">
+				<div class="breakthrough-item">
+					<h3>{t("roadmap:breakthroughs.items.0.milestone")}</h3>
+					<p>{t("roadmap:breakthroughs.items.0.description")}</p>
+					<div class="comparison">
+						<div class="before">
+							<h4>Before:</h4>
+							<p>{t("roadmap:breakthroughs.items.0.before")}</p>
+						</div>
+						<div class="after">
+							<h4>After:</h4>
+							<p>{t("roadmap:breakthroughs.items.0.after")}</p>
+						</div>
+					</div>
+					<div class="impact">
+						<strong>Impact:</strong> {t("roadmap:breakthroughs.items.0.impact")}
+					</div>
+				</div>
+
+				<div class="breakthrough-item">
+					<h3>{t("roadmap:breakthroughs.items.1.milestone")}</h3>
+					<p>{t("roadmap:breakthroughs.items.1.description")}</p>
+					<div class="comparison">
+						<div class="before">
+							<h4>Before:</h4>
+							<p>{t("roadmap:breakthroughs.items.1.before")}</p>
+						</div>
+						<div class="after">
+							<h4>After:</h4>
+							<p>{t("roadmap:breakthroughs.items.1.after")}</p>
+						</div>
+					</div>
+					<div class="impact">
+						<strong>Impact:</strong> {t("roadmap:breakthroughs.items.1.impact")}
+					</div>
+				</div>
+
+				<div class="breakthrough-item">
+					<h3>{t("roadmap:breakthroughs.items.2.milestone")}</h3>
+					<p>{t("roadmap:breakthroughs.items.2.description")}</p>
+					<div class="comparison">
+						<div class="before">
+							<h4>Before:</h4>
+							<p>{t("roadmap:breakthroughs.items.2.before")}</p>
+						</div>
+						<div class="after">
+							<h4>After:</h4>
+							<p>{t("roadmap:breakthroughs.items.2.after")}</p>
+						</div>
+					</div>
+					<div class="impact">
+						<strong>Impact:</strong> {t("roadmap:breakthroughs.items.2.impact")}
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<section class="evolution">
+		<div class="container">
+			<h2>{t("roadmap:evolution.title")}</h2>
+			<p class="subtitle">{t("roadmap:evolution.subtitle")}</p>
+			<div class="evolution-grid">
+				<div class="evolution-item">
+					<h3>{t("roadmap:evolution.areas.0.area")}</h3>
+					<p class="evolution-path">{t("roadmap:evolution.areas.0.evolution")}</p>
+					<div class="steps">
+						{t("roadmap:evolution.areas.0.steps").map((step, index) => (
+							<div key={index} class="step-item">
+								<span class="step-number">{index + 1}</span>
+								<p>{step}</p>
+							</div>
+						))}
+					</div>
+				</div>
+
+				<div class="evolution-item">
+					<h3>{t("roadmap:evolution.areas.1.area")}</h3>
+					<p class="evolution-path">{t("roadmap:evolution.areas.1.evolution")}</p>
+					<div class="steps">
+						{t("roadmap:evolution.areas.1.steps").map((step, index) => (
+							<div key={index} class="step-item">
+								<span class="step-number">{index + 1}</span>
+								<p>{step}</p>
+							</div>
+						))}
+					</div>
+				</div>
+
+				<div class="evolution-item">
+					<h3>{t("roadmap:evolution.areas.2.area")}</h3>
+					<p class="evolution-path">{t("roadmap:evolution.areas.2.evolution")}</p>
+					<div class="steps">
+						{t("roadmap:evolution.areas.2.steps").map((step, index) => (
+							<div key={index} class="step-item">
+								<span class="step-number">{index + 1}</span>
+								<p>{step}</p>
+							</div>
+						))}
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<section class="timeline">
+		<div class="container">
+			<h2>{t("roadmap:timeline.title")}</h2>
+			<p class="subtitle">{t("roadmap:timeline.subtitle")}</p>
+			<div class="timeline-grid">
+				{t("roadmap:timeline.items").map((item, index) => (
+					<div key={index} class="timeline-item">
+						<div class="timeline-date">{item.date}</div>
+						<div class="timeline-content">
+							<h4>{item.milestone}</h4>
+							<p>{item.deliverable}</p>
+						</div>
+					</div>
+				))}
+			</div>
+		</div>
+	</section>
+
+	<section class="cta">
+		<div class="container">
+			<h2>{t("roadmap:cta.title")}</h2>
+			<p class="subtitle">{t("roadmap:cta.subtitle")}</p>
+			<p class="description">{t("roadmap:cta.description")}</p>
+			<div class="buttons">
+				<a href="/community" class="btn btn-primary">{t("roadmap:cta.buttons.primary")}</a>
+				<a href="/contact" class="btn btn-secondary">{t("roadmap:cta.buttons.secondary")}</a>
+			</div>
+		</div>
+	</section>
+</BaseLayout>
+
+<style>
+	.roadmap-hero {
+		padding: 8rem 0;
+		background: linear-gradient(135deg, var(--primary-500), var(--secondary-500));
+		color: white;
+		text-align: center;
+	}
+
+	.roadmap-hero h1 {
+		font-size: 3rem;
+		font-weight: 700;
+		margin-bottom: 1rem;
+	}
+
+	.roadmap-hero .subtitle {
+		font-size: 1.5rem;
+		margin-bottom: 1.5rem;
+		opacity: 0.9;
+	}
+
+	.roadmap-hero .description {
+		font-size: 1.1rem;
+		max-width: 600px;
+		margin: 0 auto;
+		opacity: 0.8;
+	}
+
+	.milestones {
+		padding: 6rem 0;
+		background: var(--gray-50);
+	}
+
+	.phases-grid {
+		display: grid;
+		grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+		gap: 2rem;
+		margin-top: 3rem;
+	}
+
+	.phase-card {
+		background: white;
+		border-radius: 12px;
+		box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+		overflow: hidden;
+		transition: transform 0.3s ease, box-shadow 0.3s ease;
+	}
+
+	.phase-card:hover {
+		transform: translateY(-4px);
+		box-shadow: 0 12px 24px rgba(0, 0, 0, 0.15);
+	}
+
+	.phase-header {
+		background: linear-gradient(135deg, var(--primary-500), var(--secondary-500));
+		color: white;
+		padding: 1.5rem;
+		text-align: center;
+	}
+
+	.phase-header h3 {
+		font-size: 1.25rem;
+		margin-bottom: 0.5rem;
+	}
+
+	.phase-header .period {
+		display: block;
+		font-size: 0.9rem;
+		opacity: 0.9;
+		margin-bottom: 0.25rem;
+	}
+
+	.phase-header .status {
+		display: inline-block;
+		background: rgba(255, 255, 255, 0.2);
+		padding: 0.25rem 0.75rem;
+		border-radius: 12px;
+		font-size: 0.8rem;
+		font-weight: 600;
+	}
+
+	.phase-content {
+		padding: 2rem;
+	}
+
+	.phase-content h4 {
+		color: var(--primary-600);
+		margin-bottom: 1rem;
+		font-size: 1.1rem;
+	}
+
+	.phase-content ul {
+		margin-bottom: 1.5rem;
+		padding-left: 1.5rem;
+	}
+
+	.phase-content li {
+		margin-bottom: 0.5rem;
+	}
+
+	.breakthrough {
+		background: var(--accent-50);
+		border-left: 4px solid var(--accent-500);
+		padding: 1rem;
+		border-radius: 0 8px 8px 0;
+		margin-top: 1rem;
+	}
+
+	.breakthroughs {
+		padding: 6rem 0;
+	}
+
+	.breakthroughs-grid {
+		display: grid;
+		grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+		gap: 2rem;
+		margin-top: 3rem;
+	}
+
+	.breakthrough-item {
+		background: white;
+		padding: 2rem;
+		border-radius: 12px;
+		box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+	}
+
+	.breakthrough-item h3 {
+		color: var(--primary-600);
+		margin-bottom: 1rem;
+	}
+
+	.comparison {
+		display: grid;
+		grid-template-columns: 1fr 1fr;
+		gap: 2rem;
+		margin: 1.5rem 0;
+	}
+
+	.comparison .before,
+	.comparison .after {
+		padding: 1rem;
+		border-radius: 8px;
+	}
+
+	.comparison .before {
+		background: var(--gray-100);
+	}
+
+	.comparison .after {
+		background: var(--success-50);
+	}
+
+	.comparison h4 {
+		margin-bottom: 0.5rem;
+		color: var(--gray-700);
+	}
+
+	.impact {
+		background: var(--accent-50);
+		padding: 1rem;
+		border-radius: 8px;
+		font-weight: 600;
+		color: var(--accent-700);
+		margin-top: 1rem;
+	}
+
+	.evolution {
+		padding: 6rem 0;
+		background: var(--gray-50);
+	}
+
+	.evolution-grid {
+		display: grid;
+		grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+		gap: 2rem;
+		margin-top: 3rem;
+	}
+
+	.evolution-item {
+		background: white;
+		padding: 2rem;
+		border-radius: 12px;
+		box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+	}
+
+	.evolution-item h3 {
+		color: var(--primary-600);
+		margin-bottom: 1rem;
+	}
+
+	.evolution-path {
+		font-weight: 600;
+		color: var(--secondary-600);
+		margin-bottom: 1.5rem;
+	}
+
+	.steps {
+		border-left: 3px solid var(--primary-300);
+		padding-left: 1rem;
+	}
+
+	.step-item {
+		position: relative;
+		padding-bottom: 1rem;
+	}
+
+	.step-number {
+		position: absolute;
+		left: -2.5rem;
+		top: 0;
+		width: 2rem;
+		height: 2rem;
+		background: var(--primary-500);
+		color: white;
+		border-radius: 50%;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		font-weight: 600;
+		font-size: 0.8rem;
+	}
+
+	.timeline {
+		padding: 6rem 0;
+	}
+
+	.timeline-grid {
+		display: grid;
+		grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+		gap: 2rem;
+		margin-top: 3rem;
+	}
+
+	.timeline-item {
+		background: white;
+		padding: 2rem;
+		border-radius: 12px;
+		box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+		text-align: center;
+	}
+
+	.timeline-date {
+		background: var(--primary-500);
+		color: white;
+		padding: 0.5rem 1rem;
+		border-radius: 20px;
+		display: inline-block;
+		font-weight: 600;
+		margin-bottom: 1rem;
+	}
+
+	.timeline-content h4 {
+		color: var(--primary-600);
+		margin-bottom: 0.5rem;
+	}
+
+	.cta {
+		padding: 6rem 0;
+		text-align: center;
+		background: linear-gradient(135deg, var(--accent-500), var(--primary-500));
+		color: white;
+	}
+
+	.cta h2 {
+		font-size: 2.5rem;
+		margin-bottom: 1rem;
+	}
+
+	.cta .buttons {
+		margin-top: 2rem;
+		display: flex;
+		gap: 1rem;
+		justify-content: center;
+	}
+
+	.btn {
+		padding: 1rem 2rem;
+		border-radius: 8px;
+		text-decoration: none;
+		font-weight: 600;
+		transition: all 0.3s ease;
+	}
+
+	.btn-primary {
+		background: white;
+		color: var(--primary-600);
+	}
+
+	.btn-secondary {
+		background: transparent;
+		color: white;
+		border: 2px solid white;
+	}
+
+	.btn:hover {
+		transform: translateY(-2px);
+		box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+	}
+
+	@media (max-width: 768px) {
+		.roadmap-hero h1 {
+			font-size: 2rem;
+		}
+
+	.roadmap-hero .subtitle {
+			font-size: 1.2rem;
+		}
+
+		.comparison {
+			grid-template-columns: 1fr;
+			gap: 1rem;
+		}
+
+		.cta .buttons {
+			flex-direction: column;
+			align-items: center;
+		}
+	}
+</style>

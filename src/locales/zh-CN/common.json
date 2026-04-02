@@ -1,0 +1,106 @@
+{
+	"home": "首页",
+	"about": "关于",
+	"projects": "项目",
+	"project-1": "项目 1",
+	"project-2": "项目 2",
+	"blog": "博客",
+	"contact": "联系",
+	"vision": "理念愿景",
+	"roadmap": "路线图",
+	"demo": "演示",
+	"features": "功能特性",
+	"community": "社区",
+	"download": "下载",
+	"theme-label": "选择主题",
+	"language-label": "选择语言",
+	"languageSelect": {
+		"en": "English",
+		"zh-CN": "中文",
+		"instructions": "使用方向键导航，按回车键选择"
+	},
+	"themeSelect": {
+		"accessibleLabel": "选择主题",
+		"light": "浅色",
+		"dark": "深色",
+		"auto": "自动"
+	},
+	"quote": "获取免费报价",
+	"estimate": "立即获取估算",
+	"ctaComponent": {
+		"title": "开启你的 AI 自动化之旅",
+		"subtitle": "加入通用平台革命",
+		"message": "体验 Not Only Website，Not Only Data Collection 的强大力量。下载 OpenAppCLI，开始自动化一切。",
+		"buttons": {
+			"primary": "立即下载",
+			"secondary": "查看文档"
+		},
+		"imageAlt": "OpenAppCLI 自动化平台与 AI Agent 集成"
+	},
+	"footer": {
+		"copyright": "© 2025 OpenAppCLI. 保留所有权利。",
+		"privacy": "隐私政策",
+		"terms": "服务条款",
+		"p": "OpenAppCLI 是通用应用自动化平台，通过 MCP 协议让 AI Agent 能够直接控制任何应用。体验我们前沿技术带来的自动化未来。",
+		"information": "信息",
+		"services": "服务",
+		"contact": "联系我们",
+		"click": "联系我们",
+		"credit": "© 2025 OpenAppCLI. 保留所有权利。",
+		"address": {
+			"line1": "OpenAppCLI 总部",
+			"line2": "AI 自动化中心, 科技园区 A 座",
+			"city": "北京市 100000",
+			"phone": "+86 10 8888 8888",
+			"email": "info@openappcli.org"
+		},
+		"social": {
+			"github": "GitHub",
+			"twitter": "Twitter",
+			"discord": "Discord",
+			"linkedin": "LinkedIn"
+		},
+		"quickLinks": {
+			"home": "首页",
+			"vision": "愿景",
+			"roadmap": "路线图",
+			"features": "功能特性",
+			"demo": "演示",
+			"blog": "博客",
+			"community": "社区",
+			"download": "下载",
+			"docs": "文档"
+		},
+		"newsletter": {
+			"title": "保持更新",
+			"description": "获取 OpenAppCLI 最新功能和发布信息",
+			"placeholder": "输入您的邮箱",
+			"button": "订阅",
+			"success": "订阅成功！",
+			"error": "订阅失败，请重试。"
+		}
+	},
+	"navigation": {
+		"toggle": "切换导航",
+		"close": "关闭导航"
+	},
+	"pagination": {
+		"previous": "上一页",
+		"next": "下一页",
+		"page": "第 {{current}} 页，共 {{total}} 页"
+	},
+	"search": {
+		"placeholder": "搜索...",
+		"noResults": "未找到结果",
+		"results": "找到 {{count}} 个结果"
+	},
+	"loading": "加载中...",
+	"error": {
+		"generic": "发生错误，请稍后重试。",
+		"notFound": "页面未找到"
+	},
+	"dateFormat": {
+		"short": "YYYY年MM月DD日",
+		"long": "YYYY年MM月DD日 HH:mm"
+	}
+}

@@ -1,0 +1,706 @@
+---
+import BaseLayout from "@layouts/BaseLayout.astro";
+import { getLocaleFromUrl } from "@js/localeUtils";
+import { useTranslations } from "@js/translationUtils";
+
+const locale = getLocaleFromUrl(Astro.url);
+const t = useTranslations(locale);
+---
+
+<BaseLayout title={t("download:layout.title")} description={t("download:layout.description")}>
+	<section class="download-hero">
+		<div class="container">
+			<h1>{t("download:hero.title")}</h1>
+			<p class="subtitle">{t("download:hero.subtitle")}</p>
+			<p class="description">{t("download:hero.description")}</p>
+		</div>
+	</section>
+
+	<section class="installation">
+		<div class="container">
+			<h2>{t("download:installation.title")}</h2>
+			<p class="subtitle">{t("download:installation.subtitle")}</p>
+			<p class="description">{t("download:installation.description")}</p>
+			
+			<div class="methods-grid">
+				<div class="method-card">
+					<div class="method-icon">📦</div>
+					<h3>{t("download:installation.methods.0.title")}</h3>
+					<p>{t("download:installation.methods.0.description")}</p>
+					<div class="command">
+						<code>{t("download:installation.methods.0.command")}</code>
+					</div>
+					<div class="features">
+						<h4>Features:</h4>
+						<ul>
+							{t("download:installation.methods.0.features").map((feature, index) => (
+								<li key={index}>{feature}</li>
+							))}
+						</ul>
+					</div>
+				</div>
+
+				<div class="method-card">
+					<div class="method-icon">🧶</div>
+					<h3>{t("download:installation.methods.1.title")}</h3>
+					<p>{t("download:installation.methods.1.description")}</p>
+					<div class="command">
+						<code>{t("download:installation.methods.1.command")}</code>
+					</div>
+					<div class="features">
+						<h4>Features:</h4>
+						<ul>
+							{t("download:installation.methods.1.features").map((feature, index) => (
+								<li key={index}>{feature}</li>
+							))}
+						</ul>
+					</div>
+				</div>
+
+				<div class="method-card">
+					<div class="method-icon">⬇️</div>
+					<h3>{t("download:installation.methods.2.title")}</h3>
+					<p>{t("download:installation.methods.2.description")}</p>
+					<div class="features">
+						<h4>Features:</h4>
+						<ul>
+							{t("download:installation.methods.2.features").map((feature, index) => (
+								<li key={index}>{feature}</li>
+							))}
+						</ul>
+					</div>
+					<div class="platforms">
+						<h4>Platforms:</h4>
+						<div class="platform-list">
+							{t("download:downloads.items").map((item, index) => (
+								<a key={index} href="#" class="platform-link">
+									{item.platform} ({item.version})
+								</a>
+							))}
+						</div>
+					</div>
+				</div>
+
+				<div class="method-card">
+					<div class="method-icon">🔧</div>
+					<h3>{t("download:installation.methods.3.title")}</h3>
+					<p>{t("download:installation.methods.3.description")}</p>
+					<div class="command">
+						<code>{t("download:installation.methods.3.command")}</code>
+					</div>
+					<div class="features">
+						<h4>Features:</h4>
+						<ul>
+							{t("download:installation.methods.3.features").map((feature, index) => (
+								<li key={index}>{feature}</li>
+							))}
+						</ul>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<section class="requirements">
+		<div class="container">
+			<h2>{t("download:requirements.title")}</h2>
+			<p class="subtitle">{t("download:requirements.subtitle")}</p>
+			<p class="description">{t("download:requirements.description")}</p>
+			
+			<div class="systems-grid">
+				{t("download:requirements.systems").map((system, index) => (
+					<div class="system-card">
+						<div class="system-header">
+							<h3>{system.os}</h3>
+							<span class="versions">{system.versions.join(", ")}</span>
+						</div>
+						<div class="system-info">
+							<div class="node-version">
+								<strong>Node.js:</strong> {system.node}
+							</div>
+							<div class="requirements-list">
+								<h4>Requirements:</h4>
+								<ul>
+									{system.requirements.map((req, reqIndex) => (
+										<li key={reqIndex}>{req}</li>
+									))}
+								</ul>
+							</div>
+						</div>
+					</div>
+				))}
+			</div>
+		</div>
+	</section>
+
+	<section class="quick-start">
+		<div class="container">
+			<h2>{t("download:quickStart.title")}</h2>
+			<p class="subtitle">{t("download:quickStart.subtitle")}</p>
+			<p class="description">{t("download:quickStart.description")}</p>
+			
+			<div class="steps-grid">
+				{t("download:quickStart.steps").map((step, index) => (
+					<div class="step-card">
+						<div class="step-number">{step.step}</div>
+						<h3>{step.title}</h3>
+						<p>{step.description}</p>
+						<div class="command">
+							<code>{step.command}</code>
+						</div>
+						<div class="expected">
+							<strong>Expected:</strong> {step.expected}
+						</div>
+					</div>
+				))}
+			</div>
+		</div>
+	</section>
+
+	<section class="versions">
+		<div class="container">
+			<h2>{t("download:versions.title")}</h2>
+			<p class="subtitle">{t("download:versions.subtitle")}</p>
+			<p class="description">{t("download:versions.description")}</p>
+			
+			<div class="releases-grid">
+				{t("download:versions.releases").map((release, index) => (
+					<div class="release-card">
+						<div class="release-header">
+							<h3>{release.version}</h3>
+							<span class="date">{release.date}</span>
+							<span class="status">{release.status}</span>
+						</div>
+						<p class="release-description">{release.description}</p>
+						<div class="features">
+							<h4>Features:</h4>
+							<ul>
+								{release.features.map((feature, featureIndex) => (
+									<li key={featureIndex}>{feature}</li>
+								))}
+							</ul>
+						</div>
+						<a href={release.download} class="btn btn-primary">Download</a>
+					</div>
+				))}
+			</div>
+		</div>
+	</section>
+
+	<section class="troubleshooting">
+		<div class="container">
+			<h2>{t("download:troubleshooting.title")}</h2>
+			<p class="subtitle">{t("download:troubleshooting.subtitle")}</p>
+			<p class="description">{t("download:troubleshooting.description")}</p>
+			
+			<div class="issues-grid">
+				{t("download:troubleshooting.issues").map((issue, index) => (
+					<div class="issue-card">
+						<h3>{issue.question}</h3>
+						<p>{issue.answer}</p>
+					</div>
+				))}
+			</div>
+		</div>
+	</section>
+
+	<section class="support">
+		<div class="container">
+			<h2>{t("download:support.title")}</h2>
+			<p class="subtitle">{t("download:support.subtitle")}</p>
+			<p class="description">{t("download:support.description")}</p>
+			
+			<div class="channels-grid">
+				{t("download:support.channels").map((channel, index) => (
+					<div class="channel-card">
+						<div class="channel-icon">{channel.icon}</div>
+						<h3>{channel.name}</h3>
+						<p>{channel.description}</p>
+						<a href={channel.link} class="btn btn-outline" target="_blank" rel="noopener noreferrer">
+							Get Support
+						</a>
+					</div>
+				))}
+			</div>
+		</div>
+	</section>
+
+	<section class="enterprise">
+		<div class="container">
+			<h2>{t("download:enterprise.title")}</h2>
+			<p class="subtitle">{t("download:enterprise.subtitle")}</p>
+			<p class="description">{t("download:enterprise.description")}</p>
+			
+			<div class="enterprise-features">
+				<div class="features-grid">
+					{t("download:enterprise.features").map((feature, index) => (
+						<div class="feature-item">
+							<div class="feature-icon">✓</div>
+							<p>{feature}</p>
+						</div>
+					))}
+				</div>
+			</div>
+			
+			<div class="enterprise-cta">
+				<h3>{t("download:enterprise.cta.title")}</h3>
+				<p>{t("download:enterprise.cta.description")}</p>
+				<a href="/contact" class="btn btn-primary">{t("download:enterprise.cta.button")}</a>
+			</div>
+		</div>
+	</section>
+
+	<section class="cta">
+		<div class="container">
+			<h2>{t("download:cta.title")}</h2>
+			<p class="subtitle">{t("download:cta.subtitle")}</p>
+			<p class="description">{t("download:cta.description")}</p>
+			<div class="buttons">
+				<a href="/docs" class="btn btn-primary">{t("download:cta.buttons.primary")}</a>
+				<a href="/community" class="btn btn-secondary">{t("download:cta.buttons.secondary")}</a>
+			</div>
+		</div>
+	</section>
+</BaseLayout>
+
+<style>
+	.download-hero {
+		padding: 8rem 0;
+		background: linear-gradient(135deg, var(--primary-500), var(--secondary-500));
+		color: white;
+		text-align: center;
+	}
+
+	.download-hero h1 {
+		font-size: 3rem;
+		font-weight: 700;
+		margin-bottom: 1rem;
+	}
+
+	.download-hero .subtitle {
+		font-size: 1.5rem;
+		margin-bottom: 1.5rem;
+		opacity: 0.9;
+	}
+
+	.download-hero .description {
+		font-size: 1.1rem;
+		max-width: 600px;
+		margin: 0 auto;
+		opacity: 0.8;
+	}
+
+	.container {
+		max-width: 1200px;
+		margin: 0 auto;
+		padding: 0 2rem;
+	}
+
+	.installation,
+	.requirements,
+	.quick-start,
+	.versions,
+	.troubleshooting,
+	.support,
+	.enterprise {
+		padding: 6rem 0;
+	}
+
+	.installation:nth-child(even),
+	.requirements:nth-child(even),
+	.quick-start:nth-child(even),
+	.troubleshooting:nth-child(even) {
+		background: var(--gray-50);
+	}
+
+	section h2 {
+		text-align: center;
+		font-size: 2.5rem;
+		color: var(--primary-600);
+		margin-bottom: 1rem;
+	}
+
+	section .subtitle {
+		text-align: center;
+		font-size: 1.25rem;
+		color: var(--gray-600);
+		margin-bottom: 2rem;
+		max-width: 600px;
+		margin-left: auto;
+		margin-right: auto;
+	}
+
+	section .description {
+		text-align: center;
+		font-size: 1.1rem;
+		color: var(--gray-600);
+		margin-bottom: 3rem;
+		max-width: 800px;
+		margin-left: auto;
+		margin-right: auto;
+	}
+
+	.methods-grid,
+	.systems-grid,
+	.steps-grid,
+	.releases-grid,
+	.issues-grid,
+	.channels-grid {
+		display: grid;
+		grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+		gap: 2rem;
+	}
+
+	.method-card,
+	.system-card,
+	.step-card,
+	.release-card,
+	.issue-card,
+	.channel-card {
+		background: white;
+		padding: 2rem;
+		border-radius: 12px;
+		box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+		transition: transform 0.3s ease, box-shadow 0.3s ease;
+	}
+
+	.method-card:hover,
+	.system-card:hover,
+	.step-card:hover,
+	.release-card:hover,
+	.issue-card:hover,
+	.channel-card:hover {
+		transform: translateY(-4px);
+		box-shadow: 0 8px 16px rgba(0, 0, 0, 0.15);
+	}
+
+	.method-icon,
+	.channel-icon {
+		font-size: 3rem;
+		margin-bottom: 1.5rem;
+		text-align: center;
+	}
+
+	.method-card h3,
+	.system-card h3,
+	.step-card h3,
+	.release-card h3,
+	.issue-card h3,
+	.channel-card h3 {
+		font-size: 1.25rem;
+		color: var(--primary-600);
+		margin-bottom: 1rem;
+	}
+
+	.method-card p,
+	.system-card p,
+	.step-card p,
+	.release-card p,
+	.issue-card p,
+	.channel-card p {
+		color: var(--gray-600);
+		line-height: 1.6;
+		margin-bottom: 1.5rem;
+	}
+
+	.command {
+		background: var(--gray-900);
+		color: #e0e0e0;
+		padding: 1rem;
+		border-radius: 8px;
+		font-family: monospace;
+		font-size: 0.9rem;
+		overflow-x: auto;
+		margin-bottom: 1.5rem;
+	}
+
+	.features {
+		margin-bottom: 1.5rem;
+	}
+
+	.features h4 {
+		color: var(--primary-600);
+		margin-bottom: 0.5rem;
+		font-size: 1rem;
+	}
+
+	.features ul {
+		margin: 0;
+		padding-left: 1.5rem;
+	}
+
+	.features li {
+		margin-bottom: 0.25rem;
+		color: var(--gray-600);
+		font-size: 0.9rem;
+	}
+
+	.platform-list {
+		display: flex;
+		flex-wrap: wrap;
+		gap: 0.5rem;
+	}
+
+	.platform-link {
+		background: var(--primary-50);
+		color: var(--primary-600);
+		padding: 0.5rem 1rem;
+		border-radius: 20px;
+		text-decoration: none;
+		font-size: 0.8rem;
+		font-weight: 600;
+		transition: all 0.3s ease;
+	}
+
+	.platform-link:hover {
+		background: var(--primary-500);
+		color: white;
+	}
+
+	.system-header {
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+		margin-bottom: 1rem;
+	}
+
+	.system-header h3 {
+		margin: 0;
+	}
+
+	.system-header .versions {
+		background: var(--primary-50);
+		color: var(--primary-600);
+		padding: 0.25rem 0.75rem;
+		border-radius: 12px;
+		font-size: 0.8rem;
+		font-weight: 600;
+	}
+
+	.node-version {
+		background: var(--success-50);
+		color: var(--success-700);
+		padding: 0.5rem 1rem;
+		border-radius: 8px;
+		margin-bottom: 1rem;
+		font-weight: 600;
+	}
+
+	.requirements-list h4 {
+		color: var(--primary-600);
+		margin-bottom: 0.5rem;
+		font-size: 1rem;
+	}
+
+	.requirements-list ul {
+		margin: 0;
+		padding-left: 1.5rem;
+	}
+
+	.requirements-list li {
+		margin-bottom: 0.25rem;
+		color: var(--gray-600);
+		font-size: 0.9rem;
+	}
+
+	.step-number {
+		background: var(--primary-500);
+		color: white;
+		width: 3rem;
+		height: 3rem;
+		border-radius: 50%;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		font-size: 1.5rem;
+		font-weight: 700;
+		margin: 0 auto 1rem;
+	}
+
+	.expected {
+		background: var(--success-50);
+		color: var(--success-700);
+		padding: 0.5rem 1rem;
+		border-radius: 8px;
+		margin-top: 1rem;
+		font-weight: 600;
+	}
+
+	.release-header {
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+		margin-bottom: 1rem;
+		flex-wrap: wrap;
+		gap: 0.5rem;
+	}
+
+	.release-header h3 {
+		margin: 0;
+	}
+
+	.release-header .date {
+		background: var(--gray-100);
+		color: var(--gray-600);
+		padding: 0.25rem 0.75rem;
+		border-radius: 12px;
+		font-size: 0.8rem;
+	}
+
+	.release-header .status {
+		background: var(--success-500);
+		color: white;
+		padding: 0.25rem 0.75rem;
+		border-radius: 12px;
+		font-size: 0.8rem;
+		font-weight: 600;
+	}
+
+	.release-description {
+		color: var(--gray-600);
+		margin-bottom: 1.5rem;
+	}
+
+	.enterprise {
+		background: var(--gray-50);
+	}
+
+	.enterprise-features {
+		margin-bottom: 3rem;
+	}
+
+	.feature-item {
+		display: flex;
+		align-items: center;
+		gap: 1rem;
+		margin-bottom: 1rem;
+	}
+
+	.feature-icon {
+		background: var(--success-500);
+		color: white;
+		width: 2rem;
+		height: 2rem;
+		border-radius: 50%;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		font-weight: 700;
+		flex-shrink: 0;
+	}
+
+	.feature-item p {
+		margin: 0;
+		color: var(--gray-600);
+	}
+
+	.enterprise-cta {
+		text-align: center;
+		background: white;
+		padding: 2rem;
+		border-radius: 12px;
+		box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+	}
+
+	.enterprise-cta h3 {
+		color: var(--primary-600);
+		margin-bottom: 1rem;
+	}
+
+	.btn {
+		display: inline-block;
+		padding: 0.75rem 1.5rem;
+		border-radius: 8px;
+		text-decoration: none;
+		font-weight: 600;
+		transition: all 0.3s ease;
+		text-align: center;
+	}
+
+	.btn-primary {
+		background: var(--primary-500);
+		color: white;
+	}
+
+	.btn-secondary {
+		background: var(--secondary-500);
+		color: white;
+	}
+
+	.btn-outline {
+		background: transparent;
+		color: var(--primary-600);
+		border: 2px solid var(--primary-600);
+	}
+
+	.btn:hover {
+		transform: translateY(-2px);
+		box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+	}
+
+	.btn-outline:hover {
+		background: var(--primary-500);
+		color: white;
+	}
+
+	.cta {
+		padding: 6rem 0;
+		text-align: center;
+		background: linear-gradient(135deg, var(--accent-500), var(--primary-500));
+		color: white;
+	}
+
+	.cta h2 {
+		font-size: 2.5rem;
+		margin-bottom: 1rem;
+		color: white;
+	}
+
+	.buttons {
+		margin-top: 2rem;
+		display: flex;
+		gap: 1rem;
+		justify-content: center;
+	}
+
+	@media (max-width: 768px) {
+		.download-hero h1 {
+			font-size: 2rem;
+		}
+
+		.download-hero .subtitle {
+			font-size: 1.2rem;
+		}
+
+		section h2 {
+			font-size: 2rem;
+		}
+
+		section .subtitle {
+			font-size: 1.1rem;
+		}
+
+		section .description {
+			font-size: 1rem;
+		}
+
+		.methods-grid,
+		.systems-grid,
+		.steps-grid,
+		.releases-grid,
+		.issues-grid,
+		.channels-grid {
+			grid-template-columns: 1fr;
+		}
+
+		.release-header {
+			flex-direction: column;
+			align-items: flex-start;
+		}
+
+		.buttons {
+			flex-direction: column;
+			align-items: center;
+		}
+	}
+</style>

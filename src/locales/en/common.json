@@ -1,0 +1,112 @@
+{
+	"home": "Home",
+	"about": "About",
+	"projects": "Projects",
+	"project-1": "Project 1",
+	"project-2": "Project 2",
+	"blog": "Blog",
+	"contact": "Contact",
+	"vision": "Vision",
+	"roadmap": "Roadmap",
+	"demo": "Demo",
+	"features": "Features",
+	"community": "Community",
+	"download": "Download",
+	"theme-label": "Select Theme",
+	"language-label": "Select Language",
+	"languageSelect": {
+		"en": "English",
+		"zh-CN": "中文",
+		"instructions": "Use arrow keys to navigate, press Enter to select"
+	},
+	"themeSelect": {
+		"accessibleLabel": "Select Theme",
+		"light": "Light",
+		"dark": "Dark",
+		"auto": "Auto"
+	},
+	"quote": "Get Free Quote",
+	"estimate": "Get an estimate now",
+	"ctaComponent": {
+		"title": "Start Your AI Automation Journey",
+		"subtitle": "Join the Universal Platform Revolution",
+		"message": "Experience the power of Not Only Website, Not Only Data Collection. Download OpenAppCLI and start automating everything.",
+		"buttons": {
+			"primary": "Download Now",
+			"secondary": "View Documentation"
+		},
+		"imageAlt": "OpenAppCLI automation platform with AI Agent integration"
+	},
+	"footer": {
+		"copyright": "© 2025 OpenAppCLI. All rights reserved.",
+		"privacy": "Privacy Policy",
+		"terms": "Terms of Service",
+		"p": "OpenAppCLI is the universal application automation platform that enables AI Agents to directly control any application through MCP protocol. Experience the future of automation with our cutting-edge technology.",
+		"information": "Information",
+		"services": "Services",
+		"contact": "Contact",
+		"click": "Contact Us",
+		"credit": "© 2025 OpenAppCLI. All rights reserved.",
+		"address": {
+			"line1": "OpenAppCLI Headquarters",
+			"line2": "AI Automation Center, Tech Hub, Building A",
+			"city": "San Francisco, CA 94105",
+			"phone": "+1 (415) 555-0123",
+			"email": "info@openappcli.org"
+		},
+	"social": {
+			"github": "GitHub",
+			"twitter": "Twitter",
+			"discord": "Discord",
+			"linkedin": "LinkedIn"
+		},
+	"quickLinks": {
+			"home": "Home",
+			"vision": "Vision",
+			"roadmap": "Roadmap",
+			"features": "Features",
+			"demo": "Demo",
+			"blog": "Blog",
+			"community": "Community",
+			"download": "Download",
+			"docs": "Documentation"
+		},
+	"newsletter": {
+			"title": "Stay Updated",
+			"description": "Get the latest updates on OpenAppCLI features and releases",
+			"placeholder": "Enter your email",
+			"button": "Subscribe",
+			"success": "Successfully subscribed!",
+			"error": "Failed to subscribe. Please try again."
+		}
+	},
+	"navigation": {
+		"toggle": "Toggle Navigation",
+		"close": "Close Navigation"
+	},
+	"pagination": {
+		"previous": "Previous",
+		"next": "Next",
+		"page": "Page {{current}} of {{total}}"
+	},
+	"search": {
+		"placeholder": "Search...",
+		"noResults": "No results found",
+		"results": "{{count}} results found"
+	},
+	"loading": "Loading...",
+	"error": {
+		"generic": "An error occurred, please try again later.",
+		"notFound": "Page not found"
+	},
+	"dateFormat": {
+		"short": "MMM DD, YYYY",
+		"long": "MMM DD, YYYY HH:mm"
+	},
+	"notFound": {
+		"pageNotFound": "404 - The page you're looking for does not exist.",
+		"linkText": "Back to homepage"
+	},
+	"skipLink": "Click To Skip To Main Content",
+	"reviews": "Reviews"
+}

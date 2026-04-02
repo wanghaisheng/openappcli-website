@@ -1,0 +1,154 @@
+<svg width="800" height="400" viewBox="0 0 800 400" xmlns="http://www.w3.org/2000/svg">
+  <!-- Background -->
+  <rect width="800" height="400" fill="#f8fafc"/>
+  
+  <!-- Grid Pattern -->
+  <defs>
+    <pattern id="grid" width="40" height="40" patternUnits="userSpaceOnUse">
+      <path d="M 40 0 L 0 0 0 40" fill="none" stroke="#e2e8f0" stroke-width="1"/>
+    </pattern>
+  </defs>
+  <rect width="800" height="400" fill="url(#grid)" opacity="0.5"/>
+  
+  <!-- Data Extraction (Before) -->
+  <g transform="translate(100, 50)">
+    <rect x="0" y="0" width="120" height="80" rx="8" fill="#94a3b8" stroke="#64748b" stroke-width="2"/>
+    <text x="60" y="25" text-anchor="middle" fill="white" font-family="Arial, sans-serif" font-size="12" font-weight="bold">Data Extraction</text>
+    
+    <!-- Extraction Icon -->
+    <g transform="translate(50, 35)">
+      <path d="M 0 0 L 10 0 L 5 8 L 0 16 Z" fill="#60a5fa"/>
+      <path d="M 0 8 L 5 0 L 10 8" stroke="white" stroke-width="1" fill="none"/>
+    </g>
+    
+    <!-- Direction Arrow -->
+    <path d="M 60 45 L 60 55" stroke="white" stroke-width="2" marker-end="url(#arrowhead-small)"/>
+    
+    <!-- Data Flow -->
+    <g transform="translate(30, 35)">
+      <circle cx="0" cy="0" r="3" fill="#60a5fa"/>
+      <circle cx="10" cy="0" r="3" fill="#60a5fa"/>
+      <circle cx="20" cy="0" r="3" fill="#60a5fa"/>
+    </g>
+  </g>
+  
+  <!-- Application Control (After) -->
+  <g transform="translate(300, 50)">
+    <rect x="0" y="0" width="120" height="80" rx="8" fill="#10b981" stroke="#059669" stroke-width="2"/>
+    <text x="60" y="25" text-anchor="middle" fill="white" font-family="Arial, sans-serif" font-size="12" font-weight="bold">Application Control</text>
+    
+    <!-- Control Icon -->
+    <g transform="translate(50, 35)">
+      <path d="M 0 0 L 10 0 L 5 8 L 0 16 Z" fill="#34d399"/>
+      <path d="M 0 8 L 5 0 L 10 8" stroke="white" stroke-width="1" fill="none"/>
+    </g>
+    
+    <!-- Bidirectional Arrows -->
+    <g transform="translate(30, 35)">
+      <path d="M 0 0 L 10 0 L 5 8 L 0 16 Z" fill="#34d399"/>
+      <path d="M 0 8 L 5 0 L 10 8" stroke="white" stroke-width="1" fill="none"/>
+      <path d="M 20 8 L 10 0 L 15 8 L 20 16 Z" fill="#34d399"/>
+      <path d="M 20 8 L 15 0 L 10 8" stroke="white" stroke-width="1" fill="none"/>
+    </g>
+  </g>
+  
+  <!-- Bidirectional Arrow -->
+  <path d="M 220 90 L 280 90" stroke="#64748b" stroke-width="2" marker-end="url(#arrowhead)"/>
+  
+  <!-- Two-way Communication -->
+  <g transform="translate(100, 180)">
+    <rect x="0" y="0" width="400" height="80" rx="8" fill="#f1f5f9" stroke="#e5e7eb" stroke-width="1"/>
+    <text x="200" y="25" text-anchor="middle" fill="#374151" font-family="Arial, sans-serif" font-size="14" font-weight="bold">Two-way Communication</text>
+    
+    <!-- Communication Flow -->
+    <g transform="translate(50, 45)">
+      <!-- Read Channel -->
+      <rect x="0" y="0" width="60" height="15" rx="4" fill="#3b82f6"/>
+      <text x="30" y="10" text-anchor="middle" fill="white" font-size="10" font-weight="bold">Read</text>
+      
+      <!-- Write Channel -->
+      <rect x="140" y="0" width="60" height="15" rx="4" fill="#10b981"/>
+      <text x="170" y="10" text-anchor="middle" fill="white" font-size="10" font-weight="bold">Write</text>
+      
+      <!-- Bidirectional Arrow -->
+      <path d="M 110 7.5 L 130 7.5 M 125 5 L 130 10 L 125 15" stroke="#64748b" stroke-width="2"/>
+    </g>
+  </g>
+  
+  <!-- Operations Comparison -->
+  <g transform="translate(100, 280)">
+    <rect x="0" y="0" width="400" height="80" rx="8" fill="#f1f5f9" stroke="#e5e7eb" stroke-width="1"/>
+    <text x="200" y="25" text-anchor="middle" fill="#374151" font-family="Arial, sans-serif" font-size="14" font-weight="bold">Operations Comparison</text>
+    
+    <!-- Before -->
+    <g transform="translate(50, 45)">
+      <text x="0" y="0" fill="#6b7280" font-family="Arial, sans-serif" font-size="11">Before:</text>
+      <rect x="0" y="10" width="80" height="8" rx="4" fill="#94a3b8"/>
+      <text x="40" y="17" fill="white" font-size="10">Read-only</text>
+      
+      <text x="100" y="0" fill="#6b7280" font-family="Arial, sans-serif" font-size="11">After:</text>
+      <rect x="100" y="10" width="80" height="8" rx="4" fill="#10b981"/>
+      <text x="140" y="17" fill="white" font-size="10">Read/Write</text>
+    </g>
+    
+    <!-- Operations List -->
+    <g transform="translate(50, 70)">
+      <text x="0" y="0" fill="#6b7280" font-family="Arial, sans-serif" font-size="10">• Extract data</text>
+      <text x="100" y="0" fill="#6b7280" font-family="Arial, sans-serif" font-size="10">• Extract data</text>
+      <text x="0" y="15" fill="#6b7280" font-family="Arial, sans-serif" font-size="10">• Extract data</text>
+      <text x="100" y="15" fill="#6b7280" font-family="Arial, sans-serif" font-size="10">• Click elements</text>
+      <text x="100" y="30" fill="#6b7280" font-family="Arial, sans-serif" font-size="10">• Type text</text>
+      <text x="100" y="45" fill="#6b7280" font-family="Arial, sans-serif" font-size="10">• Navigate</text>
+      <text x="100" y="60" fill="#6b7280" font-family="Arial, sans-serif" font-size="10">• Submit forms</text>
+    </g>
+  </g>
+  
+  <!-- AI Agent Integration -->
+  <g transform="translate(100, 380)">
+    <rect x="0" y="0" width="400" height="80" rx="8" fill="#f1f5f9" stroke="#e5e7eb" stroke-width="1"/>
+    <text x="200" y="25" text-anchor="middle" fill="#374151" font-family="Arial, sans-serif" font-size="14" font-weight="bold">AI Agent Integration</text>
+    
+    <!-- AI Agent -->
+    <g transform="translate(50, 45)">
+      <circle cx="15" cy="15" r="8" fill="#3b82f6"/>
+      <path d="M 11 15 L 15 19 L 19 15" stroke="white" stroke-width="2" fill="none"/>
+      <text x="30" y="20" fill="#374151" font-family="Arial, sans-serif" font-size="11" font-weight="bold">AI Agent</text>
+      
+      <!-- Natural Language -->
+      <rect x="100" y="5" width="120" height="25" rx="4" fill="#e0e7ff" stroke="#1976d2" stroke-width="1"/>
+      <text x="110" y="15" fill="#1976d2" font-family="monospace" font-size="9">"Like top 5 posts"</text>
+      
+      <!-- Arrow to Application -->
+      <path d="M 220 17.5 L 250 17.5" stroke="#64748b" stroke-width="2" marker-end="url(#arrowhead-small)"/>
+      
+      <!-- Application -->
+      <rect x="250" y="5" width="80" height="25" rx="4" fill="#10b981" stroke="#059669" stroke-width="1"/>
+      <text x="255" y="15" fill="#059669" font-family="Arial, sans-serif" font-size="10">Instagram</text>
+    </g>
+  </g>
+  
+  <!-- Performance Metrics -->
+  <g transform="translate(100, 480)">
+    <rect x="0" y="0" width="400" height="80" rx="8" fill="#f1f5f9" stroke="#e5e7eb" stroke-width="1"/>
+    <text x="200" y="25" text-anchor="middle" fill="#374151" font-family="Arial, sans-serif" font-size="14" font-weight="bold">Performance Metrics</text>
+    
+    <!-- Metrics -->
+    <g transform="translate(50, 45)">
+      <text x="0" y="0" fill="#6b7280" font-family="Arial, sans-serif" font-size="11">• Element Click: 150ms → 50ms</text>
+      <text x="0" y="15" fill="#6b7280" font-family="Arial, sans-serif" font-size="11">• Text Extraction: 200ms → 80ms</text>
+      <text x="0" y="30" fill="#6b7280" font-family="Arial, sans-serif" font-size="11">• Screenshot: 300ms → 100ms</text>
+      <text x="200" y="0" fill="#6b7280" font-family="Arial, sans-serif" font-size="11">• Complex Op: N/A → 200ms</text>
+      <text x="200" y="15" fill="#6b280" font-family="Arial, sans-serif" font-size="11">• State Change: N/A → 50ms</text>
+    </g>
+  </g>
+  
+  <!-- Arrow Markers -->
+  <defs>
+    <marker id="arrowhead" markerWidth="10" markerHeight="10" refX="9" refY="3" orient="auto">
+      <polygon points="0 0, 10 5, 5 0, 10" fill="#64748b"/>
+    </marker>
+    <marker id="arrowhead-small" markerWidth="8" markerHeight="8" refX="7" refY="3" orient="auto">
+      <polygon points="0 0, 8 4, 4 0, 8" fill="#64748b"/>
+    </marker>
+  </defs>
+</svg>

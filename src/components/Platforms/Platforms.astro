@@ -1,0 +1,120 @@
+---
+import { getLocaleFromUrl } from "@js/localeUtils";
+import { useTranslations } from "@js/translationUtils";
+
+const locale = getLocaleFromUrl(Astro.url);
+const t = useTranslations(locale);
+---
+
+<section class="platforms">
+	<div class="container">
+		<h2>{t("home:platforms.title")}</h2>
+		<p class="subtitle">{t("home:platforms.subtitle")}</p>
+		
+		<div class="platforms-grid">
+			<div class="platform-card">
+				<div class="platform-icon">🌐</div>
+				<h3>{t("home:platforms.items.0.name")}</h3>
+				<p>{t("home:platforms.items.0.description")}</p>
+			</div>
+			
+			<div class="platform-card">
+				<div class="platform-icon">🖥️</div>
+				<h3>{t("home:platforms.items.1.name")}</h3>
+				<p>{t("home:platforms.items.1.description")}</p>
+			</div>
+			
+			<div class="platform-card">
+				<div class="platform-icon">📱</div>
+				<h3>{t("home:platforms.items.2.name")}</h3>
+				<p>{t("home:platforms.items.2.description")}</p>
+			</div>
+			
+			<div class="platform-card">
+				<div class="platform-icon">🎮</div>
+				<h3>{t("home:platforms.items.3.name")}</h3>
+				<p>{t("home:platforms.items.3.description")}</p>
+			</div>
+		</div>
+	</div>
+</section>
+
+<style>
+	.platforms {
+		padding: 6rem 0;
+	}
+
+	.container {
+		max-width: 1200px;
+		margin: 0 auto;
+		padding: 0 2rem;
+	}
+
+	.platforms h2 {
+		text-align: center;
+		font-size: 2.5rem;
+		color: var(--primary-600);
+		margin-bottom: 1rem;
+	}
+
+	.platforms .subtitle {
+		text-align: center;
+		font-size: 1.25rem;
+		color: var(--gray-600);
+		margin-bottom: 3rem;
+		max-width: 600px;
+		margin-left: auto;
+		margin-right: auto;
+	}
+
+	.platforms-grid {
+		display: grid;
+		grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+		gap: 2rem;
+	}
+
+	.platform-card {
+		background: white;
+		padding: 2rem;
+		border-radius: 12px;
+		box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+		text-align: center;
+		transition: transform 0.3s ease, box-shadow 0.3s ease;
+	}
+
+	.platform-card:hover {
+		transform: translateY(-4px);
+		box-shadow: 0 8px 16px rgba(0, 0, 0, 0.15);
+	}
+
+	.platform-icon {
+		font-size: 2.5rem;
+		margin-bottom: 1rem;
+	}
+
+	.platform-card h3 {
+		font-size: 1.25rem;
+		color: var(--primary-600);
+		margin-bottom: 0.75rem;
+	}
+
+	.platform-card p {
+		color: var(--gray-600);
+		line-height: 1.5;
+		font-size: 0.95rem;
+	}
+
+	@media (max-width: 768px) {
+		.platforms h2 {
+			font-size: 2rem;
+		}
+
+		.platforms .subtitle {
+			font-size: 1.1rem;
+		}
+
+		.platforms-grid {
+			grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+		}
+	}
+</style>

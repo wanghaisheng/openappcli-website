@@ -1,0 +1,232 @@
+{
+	"layout": {
+		"title": "社区 - OpenAppCLI",
+		"description": "加入 OpenAppCLI 社区，为通用应用自动化平台做贡献"
+	},
+	"hero": {
+		"title": "加入我们的社区",
+		"subtitle": "共同构建通用自动化",
+		"description": "OpenAppCLI 不仅仅是一个工具——它是一个社区驱动的通用应用自动化运动。与全球开发者一起塑造 AI 自动化的未来。"
+	},
+	"contribute": {
+		"title": "为 OpenAppCLI 做贡献",
+		"subtitle": "每个贡献都很重要",
+		"description": "无论你是开发者、设计师还是自动化爱好者，都有很多方式可以为 OpenAppCLI 生态系统做贡献。",
+		"ways": [
+			{
+				"icon": "💻",
+				"title": "代码贡献",
+				"description": "提交拉取请求、修复错误、为核心平台添加新功能",
+				"link": "https://github.com/wanghaisheng/openappcli"
+			},
+			{
+				"icon": "📝",
+				"title": "文档",
+				"description": "帮助改进文档、编写教程和创建指南",
+				"link": "https://docs.openappcli.com"
+			},
+			{
+				"icon": "�",
+				"title": "错误报告",
+				"description": "报告问题并帮助我们识别和修复错误",
+				"link": "https://github.com/wanghaisheng/openappcli/issues"
+			},
+			{
+				"icon": "🌍",
+				"title": "翻译",
+				"description": "帮助将 OpenAppCLI 翻译成你的母语",
+				"link": "https://github.com/wanghaisheng/openappcli-i18n"
+			}
+		]
+	},
+	"marketplace": {
+		"title": "自动化市场",
+		"subtitle": "分享和发现自动化脚本",
+		"description": "浏览、分享和下载社区创建的自动化脚本。从简单任务到复杂工作流，找到你需要的内容或贡献你自己的脚本。",
+		"categories": [
+			{
+				"icon": "🌐",
+				"name": "Web 自动化",
+				"description": "网页抓取、表单填充和浏览器自动化脚本",
+				"count": 150
+			},
+			{
+				"icon": "�️",
+				"name": "桌面应用",
+				"description": "桌面应用程序和系统工具的自动化脚本",
+				"count": 89
+			},
+			{
+				"icon": "📱",
+				"name": "移动应用",
+				"description": "移动应用测试和自动化脚本",
+				"count": 67
+			},
+			{
+				"icon": "🎮",
+				"name": "游戏自动化",
+				"description": "游戏机器人、挂机脚本和自动化工具",
+				"count": 45
+			},
+			{
+				"icon": "🤖",
+				"name": "AI 集成",
+				"description": "与 AI 模型和服务集成的脚本",
+				"count": 34
+			},
+			{
+				"icon": "�",
+				"name": "数据处理",
+				"description": "数据提取、处理和分析脚本",
+				"count": 78
+			}
+		]
+	},
+	"contributors": {
+		"title": "我们的贡献者",
+		"subtitle": "共同建设",
+		"description": "认识让 OpenAppCLI 成为可能的杰出人才。从代码到文档，每个贡献都很重要。",
+		"stats": [
+			{
+				"number": "500+",
+				"label": "贡献者"
+			},
+			{
+				"number": "1,200+",
+				"label": "提交"
+			},
+			{
+				"number": "50+",
+				"label": "国家"
+			},
+			{
+				"number": "1000+",
+				"label": "GitHub 星标"
+			}
+		]
+	},
+	"discussions": {
+		"title": "加入讨论",
+		"subtitle": "与社区连接",
+		"description": "分享想法、提出问题，并与其他 OpenAppCLI 用户和开发者协作。",
+		"platforms": [
+			{
+				"icon": "💬",
+				"name": "Discord",
+				"description": "与社区实时聊天",
+				"link": "https://discord.gg/openappcli"
+			},
+			{
+				"icon": "🐙",
+				"name": "GitHub 讨论",
+				"description": "长篇讨论和问答",
+				"link": "https://github.com/wanghaisheng/openappcli/discussions"
+			},
+			{
+				"icon": "🐦",
+				"name": "Twitter",
+				"description": "最新更新和社区亮点",
+				"link": "https://twitter.com/openappcli"
+			},
+			{
+				"icon": "📺",
+				"name": "YouTube",
+				"description": "教程和社区内容",
+				"link": "https://youtube.com/@openappcli"
+			}
+		]
+	},
+	"events": {
+		"title": "社区活动",
+		"subtitle": "学习和连接",
+		"description": "参加研讨会、网络研讨会和聚会，向专家学习并与自动化爱好者联系。",
+		"upcoming": [
+			{
+				"date": "2025年12月15日",
+				"type": "网络研讨会",
+				"title": "高级 MCP 协议集成",
+				"description": "学习如何使用 MCP 协议将 AI Agent 与应用程序集成",
+				"link": "#"
+			},
+			{
+				"date": "2026年1月10日",
+				"type": "工作坊",
+				"title": "构建自定义自动化脚本",
+				"description": "创建自定义自动化解决方案的实践工作坊",
+				"link": "#"
+			},
+			{
+				"date": "2026年2月5日",
+				"type": "聚会",
+				"title": "OpenAppCLI 社区峰会",
+				"description": "年度社区聚会和路线图讨论",
+				"link": "#"
+			}
+		]
+	},
+	"resources": {
+		"title": "社区资源",
+		"subtitle": "有用的工具和资料",
+		"description": "社区整理的各种资源，帮助您更好地使用和贡献 OpenAppCLI。",
+		"items": [
+			{
+				"title": "开发文档",
+				"description": "详细的开发指南和 API 文档",
+				"icon": "📚",
+				"link": "/docs"
+			},
+			{
+				"title": "视频教程",
+				"description": "社区制作的视频教程和演示",
+				"icon": "🎥",
+				"link": "/tutorials"
+			},
+			{
+				"title": "最佳实践",
+				"description": "社区总结的最佳实践和使用技巧",
+				"icon": "✨",
+				"link": "/best-practices"
+			},
+			{
+				"title": "常见问题",
+				"description": "社区整理的常见问题和解决方案",
+				"icon": "❓",
+				"link": "/faq"
+			}
+		]
+	},
+	"showcase": {
+		"title": "用户展示",
+		"subtitle": "社区用户的成功案例",
+		"description": "展示社区用户如何使用 OpenAppCLI 解决实际问题。",
+		"cases": [
+			{
+				"title": "某电商公司",
+				"description": "使用 OpenAppCLI 自动化社交媒体运营，效率提升 10 倍",
+				"logo": "/images/showcases/ecommerce.png",
+				"link": "/showcases/ecommerce"
+			},
+			{
+				"title": "某游戏工作室",
+				"description": "通过 OpenAppCLI 实现游戏测试自动化，节省 80% 测试时间",
+				"logo": "/images/showcases/gaming.png",
+				"link": "/showcases/gaming"
+			},
+			{
+				"title": "某企业用户",
+				"description": "利用 OpenAppCLI 构建企业内部自动化系统",
+				"logo": "/images/showcases/enterprise.png",
+				"link": "/showcases/enterprise"
+			}
+		]
+	},
+	"cta": {
+		"title": "加入我们的社区",
+		"subtitle": "一起建设 AI 自动化未来",
+		"description": "无论您是想贡献代码、分享经验，还是寻求帮助，都欢迎您加入 OpenAppCLI 社区。",
+		"buttons": {
+			"primary": "立即加入",
+			"secondary": "了解更多"
+		}
+	}
+}

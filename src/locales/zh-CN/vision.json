@@ -1,0 +1,148 @@
+{
+	"layout": {
+		"title": "理念愿景 - OpenAppCLI",
+		"description": "了解 OpenAppCLI 的核心理念：Not Only Website, Not Only Data Collection。我们致力于建立 AI Agent 与应用交互的标准桥梁。"
+	},
+	"hero": {
+		"title": "理念愿景",
+		"subtitle": "Not Only Website, Not Only Data Collection",
+		"description": "我们相信 AI Agent 应该能够直接操作任何应用，而不是通过复杂的方式间接交互。"
+	},
+	"philosophy": {
+		"title": "技术哲学",
+		"subtitle": "Why - How - What",
+		"items": [
+			{
+				"principle": "Why: 为什么要做",
+				"description": "当前 AI Agent 无法直接操作应用，需要通过复杂的方式间接交互",
+				"current": "AI Agent → 解析文本 → 模拟操作 → 不可靠",
+				"target": "AI Agent → MCP 协议 → 直接操作 → 可靠"
+			},
+			{
+				"principle": "How: 如何实现",
+				"description": "通过 MCP 协议建立 AI Agent 与应用交互的通用语言",
+				"current": "每个应用都需要定制化集成方案",
+				"target": "统一协议 + 标准接口 + 即插即用"
+			},
+			{
+				"principle": "What: 最终目标",
+				"description": "让任何应用都能被 AI Agent 轻松控制和自动化",
+				"current": "Web 应用自动化工具",
+				"target": "全应用类型 AI Agent 交互平台"
+			}
+		]
+	},
+	"notOnlyWebsite": {
+		"title": "Not Only Website",
+		"subtitle": "从 Website 到 Universal Platform",
+		"description": "突破 Web 应用的限制，实现真正的通用应用自动化",
+		"points": [
+			{
+				"title": "从 Website 到 Universal Platform",
+				"description": "不只是网站自动化，而是全应用类型的统一控制",
+				"details": "从 Web + Electron 扩展到 Desktop + Mobile + Game，实现真正的通用应用自动化"
+			},
+			{
+				"title": "应用覆盖范围从 20% 提升到 100%",
+				"description": "从只能操作 Web 应用到支持所有应用类型",
+				"details": "突破技术限制，让 AI Agent 能够操作任何应用"
+			},
+			{
+				"title": "统一的技术架构",
+				"description": "一个平台支持所有应用类型",
+				"details": "通过智能策略选择和 Fallback 机制，自动适配不同应用"
+			}
+		]
+	},
+	"notOnlyDataCollection": {
+		"title": "Not Only Data Collection",
+		"subtitle": "从 Data Collection 到 Application Control",
+		"description": "超越数据提取，实现完整的应用行为控制",
+		"points": [
+			{
+				"title": "从 Data Collection 到 Application Control",
+				"description": "不只是数据提取，而是完整的应用行为控制",
+				"details": "从单向信息提取升级为双向应用交互，让 AI Agent 能够完整控制应用行为"
+			},
+			{
+				"title": "从信息工具到交互平台",
+				"description": "超越传统工具的局限性",
+				"details": "让 AI Agent 不仅能获取信息，还能控制应用行为"
+			},
+			{
+				"title": "双向交互能力",
+				"description": "完整的应用操作能力",
+				"details": "支持点击、输入、导航等所有应用操作"
+			}
+		]
+	},
+	"evolution": {
+		"title": "发展历程",
+		"subtitle": "从 OpenCLI 到 OpenAppCLI 的演进",
+		"timeline": [
+			{
+				"phase": "OpenCLI 时代",
+				"period": "2023-2024",
+				"focus": "Website + Electron 数据提取",
+				"limitation": "只支持 Web 应用，只能提取数据",
+				"icon": "🌐"
+			},
+			{
+				"phase": "OpenAppCLI 1.0",
+				"period": "2024-2025",
+				"focus": "Desktop + Mobile + Game 支持",
+				"limitation": "支持更多平台，但仍以数据提取为主",
+				"icon": "🖥️"
+			},
+			{
+				"phase": "OpenAppCLI 2.0",
+				"period": "2025-2026",
+				"focus": "Not Only Website + Not Only Data Collection",
+				"breakthrough": "MCP 协议集成，AI Agent 原生交互，双向应用控制",
+				"icon": "🤖"
+			},
+			{
+				"phase": "未来愿景",
+				"period": "2026+",
+				"focus": "AI Agent 应用交互标准",
+				"vision": "成为 AI Agent 与应用交互的通用桥梁",
+				"icon": "🌟"
+			}
+		]
+	},
+	"values": {
+		"title": "核心价值观",
+		"subtitle": "指导我们前进的原则",
+		"items": [
+			{
+				"title": "标准化",
+				"description": "建立 AI Agent 与应用交互的标准协议",
+				"icon": "📏"
+			},
+			{
+				"title": "开放性",
+				"description": "构建开放、协作、共享的生态系统",
+				"icon": "🌍"
+			},
+			{
+				"title": "可靠性",
+				"description": "提供生产环境稳定的自动化解决方案",
+				"icon": "🛡️"
+			},
+			{
+				"title": "创新性",
+				"description": "引领 AI 时代的人机交互革命",
+				"icon": "🚀"
+			}
+		]
+	},
+	"cta": {
+		"title": "加入我们的愿景",
+		"subtitle": "共同建设 AI 自动化未来",
+		"description": "如果你认同我们的理念，欢迎加入我们，一起建设 AI Agent 应用交互的标准化生态。",
+		"buttons": {
+			"primary": "参与贡献",
+			"secondary": "联系团队"
+		}
+	}
+}

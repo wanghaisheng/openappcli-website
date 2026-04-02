@@ -1,0 +1,177 @@
+---
+import { getLocaleFromUrl } from "@js/localeUtils";
+import { useTranslations, getLocalizedRoute } from "@js/translationUtils";
+
+const locale = getLocaleFromUrl(Astro.url);
+const t = useTranslations(locale);
+import CSPicture from "@components/CSPicture/CSPicture.astro";
+import ctaImage from "@assets/images/CTA/cabinets2.jpg";
+import ctaSquaresUrl from "@assets/svgs/cta-squares.svg?url";
+const ctaSquaresBg = `url("${ctaSquaresUrl}")`;
+---
+
+<section id="cta">
+  <div class="container">
+    <h2 class="title">
+      {t("home:cta.title")}
+      <br />
+      {t("home:cta.subtitle")}
+    </h2>
+    <p>
+      {t("home:cta.description")}
+    </p>
+    <div class="buttons">
+      <a href={getLocalizedRoute(locale,"/download")} class="cs-button-solid cs-button-primary">{t("home:cta.buttons.primary")}</a>
+      <a href={getLocalizedRoute(locale,"/docs")} class="cs-button-solid cs-button-secondary">{t("home:cta.buttons.secondary")}</a>
+    </div>
+  </div>
+  <CSPicture src={ctaImage} alt={t("home:cta.imageAlt")} />
+</section>
+
+<!-- Don't forget to place the picture styles over into the CSPicture component -->
+<style lang="less" define:vars={{ ctaSquaresBg }}>
+  /* Mobile */
+  @media only screen and (min-width: 0em) {
+    #cta {
+      padding: (50/16rem) 0;
+      position: relative;
+
+      &:before {
+        content: "";
+        width: 100%;
+        height: 100%;
+        background: linear-gradient(135deg, var(--primary-500), var(--secondary-500));
+        opacity: 0.9;
+        display: block;
+        position: absolute;
+        top: 0;
+        left: 0;
+        z-index: -1;
+      }
+
+      .container {
+        text-align: center;
+      }
+
+      .title {
+        font-size: ~"min(9vw, 3rem)";
+        font-weight: 900;
+        line-height: 58/48;
+        text-align: center;
+        margin-bottom: (36/16rem);
+        color: #fff;
+        position: relative;
+      }
+
+      p {
+        text-align: center;
+        width: 96%;
+        max-width: (598/16rem);
+        margin: auto;
+        margin-bottom: (36/16rem);
+        color: #fff;
+        opacity: 1;
+      }
+
+      .buttons {
+        display: flex;
+        flex-direction: column;
+        gap: 1rem;
+        align-items: center;
+      }
+
+      .cs-button-solid {
+        padding: 1rem 2rem;
+        border-radius: 8px;
+        text-decoration: none;
+        font-weight: 600;
+        transition: all 0.3s ease;
+        display: inline-block;
+        text-align: center;
+        min-width: 150px;
+      }
+
+      .cs-button-primary {
+        background: #ffffff;
+        color: #1a1a1a;
+        border: 2px solid #ffffff;
+      }
+
+      .cs-button-secondary {
+        background: transparent;
+        color: white;
+        border: 2px solid white;
+      }
+
+      .cs-button-solid:hover {
+        transform: translateY(-2px);
+        box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+      }
+
+      .cs-button-primary:hover {
+        background: var(--primary-600);
+        color: white;
+        border-color: var(--primary-600);
+      }
+    }
+  }
+
+  /* Tablet */
+  @media only screen and (min-width: 48em) {
+    #cta {
+      .buttons {
+        flex-direction: row;
+        justify-content: center;
+      }
+    }
+  }
+
+  /* Small Desktop */
+  @media only screen and (min-width: 64em) {
+    #cta {
+      padding: (168/16rem) 0;
+    }
+  }
+
+  /* Large Desktop */
+  @media only screen and (min-width: 1300px) {
+    #cta {
+      margin-top: (100/16rem);
+      position: relative;
+      &:before {
+        display: none;
+      }
+      &:after {
+        content: "";
+        width: (2000/16rem);
+        height: (1108/16rem);
+        background: var(--ctaSquaresBg);
+        background-position: center;
+        background-size: contain;
+        background-repeat: no-repeat;
+        opacity: 1;
+        display: block;
+        position: absolute;
+        bottom: 0;
+        left: 50%;
+        z-index: -3;
+        transform: translateX(-50%);
+      }
+      .container {
+        width: 90.0625%;
+        margin: auto;
+      }
+    }
+  }
+
+  /* Dark Mode */
+  @media only screen and (min-width: 0em) {
+    body.dark-mode {
+      #cta {
+        &:after {
+          display: none;
+        }
+      }
+    }
+  }
+</style>

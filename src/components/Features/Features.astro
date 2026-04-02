@@ -1,0 +1,114 @@
+---
+import { getLocaleFromUrl } from "@js/localeUtils";
+import { useTranslations } from "@js/translationUtils";
+
+const locale = getLocaleFromUrl(Astro.url);
+const t = useTranslations(locale);
+---
+
+<section class="features">
+	<div class="container">
+		<h2>{t("home:features.title")}</h2>
+		<p class="subtitle">{t("home:features.subtitle")}</p>
+		
+		<div class="features-grid">
+			<div class="feature-card">
+				<div class="feature-icon">🌐</div>
+				<h3>{t("home:features.items.0.title")}</h3>
+				<p>{t("home:features.items.0.description")}</p>
+			</div>
+			
+			<div class="feature-card">
+				<div class="feature-icon">🔄</div>
+				<h3>{t("home:features.items.1.title")}</h3>
+				<p>{t("home:features.items.1.description")}</p>
+			</div>
+			
+			<div class="feature-card">
+				<div class="feature-icon">🤖</div>
+				<h3>{t("home:features.items.2.title")}</h3>
+				<p>{t("home:features.items.2.description")}</p>
+			</div>
+		</div>
+	</div>
+</section>
+
+<style>
+	.features {
+		padding: 6rem 0;
+		background: var(--gray-50);
+	}
+
+	.container {
+		max-width: 1200px;
+		margin: 0 auto;
+		padding: 0 2rem;
+	}
+
+	.features h2 {
+		text-align: center;
+		font-size: 2.5rem;
+		color: var(--primary-600);
+		margin-bottom: 1rem;
+	}
+
+	.features .subtitle {
+		text-align: center;
+		font-size: 1.25rem;
+		color: var(--gray-600);
+		margin-bottom: 3rem;
+		max-width: 600px;
+		margin-left: auto;
+		margin-right: auto;
+	}
+
+	.features-grid {
+		display: grid;
+		grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+		gap: 2rem;
+	}
+
+	.feature-card {
+		background: white;
+		padding: 2.5rem;
+		border-radius: 12px;
+		box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+		text-align: center;
+		transition: transform 0.3s ease, box-shadow 0.3s ease;
+	}
+
+	.feature-card:hover {
+		transform: translateY(-4px);
+		box-shadow: 0 8px 16px rgba(0, 0, 0, 0.15);
+	}
+
+	.feature-icon {
+		font-size: 3rem;
+		margin-bottom: 1.5rem;
+	}
+
+	.feature-card h3 {
+		font-size: 1.5rem;
+		color: var(--primary-600);
+		margin-bottom: 1rem;
+	}
+
+	.feature-card p {
+		color: var(--gray-600);
+		line-height: 1.6;
+	}
+
+	@media (max-width: 768px) {
+		.features h2 {
+			font-size: 2rem;
+		}
+
+		.features .subtitle {
+			font-size: 1.1rem;
+		}
+
+		.features-grid {
+			grid-template-columns: 1fr;
+		}
+	}
+</style>
